@@ -1,0 +1,67 @@
+</body>
+</html>
+
+</body>
+</html> 
+<!DOCTYPE html>
+<html>
+<body style="text-align: center;">
+
+	<h2 style="color: blue">Bài tập tính phân số</h2>
+
+
+	<p id="demo"></p>
+
+	<script>
+		var a,b,c,d,x,y;
+		a=3;
+		b=6;
+		c=5;
+		d=8;
+		document.write("2 phân số là : "+"<br/>");
+		document.write("x ="+ a+"/"+b+"<br/>");
+		document.write("y ="+ c+"/"+d+"<br/>");
+		//kiểm tra mẫu không âm
+		if (b==0) {
+			document.write("x không phải là phân số");
+		}
+		else{ 
+			if (d==0) {
+				document.write("y không phải là phân số");
+			}
+		//thực hiện biểu thức
+		else{
+
+			//tích
+			document.write("Tích của 2 phân số x và y là :" +"</br>");
+			document.write(" x * y = "+(a*c)+"/"+(b*d)+ "= "+ (a*c)/(b*d)+"<br/>");
+			//tổng
+			document.write("Tổng của 2 phân số x và y là :"+"<br/>");
+			if (b==d){
+				document.write(" x + y = " + (a+c)+"/"+(b)+"="+ (a+c)/(b)+"<br/>");
+			}
+			else{
+				document.write(" x + y = "+(a*d)+"/"+(b*d)+"+"+(c*b)+"/"+(d*b)+ "="+((a*d)+(c*b))+"/"+(b*d)+"="+((a*d)+(c*b))/(b*d)+"</br>");
+			}
+			//thương
+			document.write("Thương của 2 phân số x và y là :"+"<br/>");
+			document.write(" x / y = "+(a*d)+"/"+(b*c)+ "= "+ (a*d)/(b*c)+"<br/>");
+			//hiệu
+			document.write("Hiệu của 2 phân số là :"+"<br/>");
+			if (b==d){
+				document.write(" x - y = " + (a-c)+"/"+(b)+"="+ (a-c)/(b)+"<br/>");
+			}
+			else{
+				document.write(" x - y = "+(a*d)+"/"+(b*d)+"-"+(c*b)+"/"+(d*b)+ "="+((a*d)-(c*b))+"/"+(b*d)+"="+((a*d)-(c*b))/(b*d)+"</br>");
+			}
+		}
+
+		
+	}
+
+
+</script>
+
+</body>
+</html> 
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var a, b, c, d, x, y;
+    a=1; //Tử số phân số thứ nhất
+    b=2; //Mẫu số phân số thứ nhất
+    c=3; //Tử số phân số thứ hai
+    d=0; //Mẫu số phân số thứ hai
+    x=b;
+    y=d;    
+
+    if((b==0)||(d==0)){document.write("Phan so khong hop le. Hay nhap mau so khac 0")}
+    else {
+        while (x!==y){ //Tim UCLN de rut gon
+            if (x>y){x=x-y;}
+            else {y=y-x;}};
+        document.write("Tong 2 phan so la " + ((a*d+b*c)/x)+"/"+(b*d/x)+"</br>");
+        document.write("Hieu 2 phan so la " + ((a*d-b*c)/x)+"/"+(b*d/x)+"</br>");
+        document.write("Tich 2 phan so la " + (a*c)+"/"+(b*d)+"</br>");
+        document.write("Thuong 2 phan so la " + (a*d)+"/"+(c*b)+"</br>")}
+    </script>
+</body>
+</html>
