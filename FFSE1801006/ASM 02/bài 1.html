@@ -1,0 +1,81 @@
+<script type="text/javascript">
+
+
+
+   var a = parseInt(prompt(" Nhập tử số của phân số x: "));
+
+	var b = parseInt(prompt(" Nhập mẫu số của phân số x: "));
+
+	var c = parseInt(prompt(" Nhập tử số của phân số y: "));
+
+	var d = parseInt(prompt(" Nhập mẫu số của phân số y: "));
+	
+	var x = a/b;
+
+	var y = c/d;
+
+
+
+	var tong = tinhtong (x,y);
+
+	var tich = tinhtich (x,y);
+
+	var hieu = tinhhieu (x,y);
+
+	var thuong = tinhthuong (x,y);
+
+	var s = tong.toFixed(2); 
+
+	var p = tich.toFixed(2);
+
+	var h = hieu.toFixed(2);
+
+	var t = thuong.toFixed(2);
+
+
+	
+	function tinhtong (x,y) {
+
+		return x + y;
+
+	}
+
+	function tinhhieu (x,y) {
+
+		return x - y;
+	}
+
+	function tinhtich (x,y) {
+
+		return x * y;
+
+	}
+
+	function tinhthuong (x,y) {
+
+		return x / y;
+
+	}
+
+
+
+	if ( isFinite(x)) {
+
+		document.write ( ' Phân số hợp lệ ' + ' <BR>');
+
+		document.write (' Tổng của ' + a + '/' + b + ' và ' + c + '/' + d + ' là: ' + s + '<BR>' );
+	
+		document.write (' Hiệu của ' + a + '/' + b + ' và ' + c + '/' + d + ' là: ' + Math.abs(h) + '<BR>' );
+	
+		document.write (' Tích của ' + a + '/' + b + ' và ' + c + '/' + d + ' là: ' + p + '<BR>' );
+
+		document.write (' Thương của ' + a + '/' + b + ' và ' + c + '/' + d + ' là: ' + t + '<BR>' );
+
+
+	}else{
+
+		document.write(' Phân số không hợp lệ');
+	}
+
+
+</script>
