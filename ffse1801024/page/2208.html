@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>22-08</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <style>
+        .bt {
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .btn {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bt">
+            <div class="alert alert-primary" role="alert">
+                Bài tập 1: Nhập vào 2 phân số và hiển thị kết quả cộng trừ nhân và chia của 2 phân số đó.(yêu cầu kiểm tra phân số hợp lệ)
+            </div>
+            <form>
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" id="psa" class="form-control" placeholder="Nhập phân số a dạng: 1/3">
+                    </div>
+                    <div class="col">
+                        <input type="text" id="psb" class="form-control" placeholder="Nhập phân số b dạng: 2/5">
+                    </div>
+                </div>
+                <button type="button" onclick="btn_ps()" class="btn btn-primary btn-md btn-block">Kết quả</button>
+            </form>
+            <div class="alert alert-light" id="equalps" role="alert"></div>
+        </div>
+        <div class="bt">
+            <div class="alert alert-primary" role="alert">
+                Bài tập 2: Kiểm tra sự tồn tại của tam giác. (Ba số dương a, b, c là độ dài các cạnh của một tam giác nếu tổng của 2 số bất
+                kỳ lớn hơn số còn lại. Nhập 3 số a, b, c và kiểm tra xem chúng có thể là độ dài của các cạnh của một tam
+                giác hay không.)
+            </div>
+            <form>
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" id="ca" class="form-control" placeholder="Nhập giá trị cạnh a:">
+                    </div>
+                    <div class="col">
+                        <input type="text" id="cb" class="form-control" placeholder="Nhập giá trị cạnh b:">
+                    </div>
+                    <div class="col">
+                        <input type="text" id="cc" class="form-control" placeholder="Nhập giá trị cạnh c:">
+                    </div>
+                </div>
+                <button type="button" onclick="btn_tg()" class="btn btn-primary btn-md btn-block">Kết quả</button>
+            </form>
+            <div class="alert alert-light" id="equaltg" role="alert"></div>
+        </div>
+        <div class="bt">
+            <div class="alert alert-primary" role="alert">
+                Bài tập 3: Tìm giá trị lớn nhất của 4 số a,b,c,d bất kỳ
+            </div>
+            <form>
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" id="ga" class="form-control" placeholder="Nhập giá trị a:">
+                    </div>
+                    <div class="col">
+                        <input type="text" id="gb" class="form-control" placeholder="Nhập giá trị b:">
+                    </div>
+                    <div class="col">
+                        <input type="text" id="gc" class="form-control" placeholder="Nhập giá trị c:">
+                    </div>
+                    <div class="col">
+                        <input type="text" id="gd" class="form-control" placeholder="Nhập giá trị d:">
+                    </div>
+                </div>
+                <button type="button" onclick="btn_ln()" class="btn btn-primary btn-md btn-block">Kết quả</button>
+            </form>
+            <div class="alert alert-light" id="equalln" role="alert"></div>
+        </div>
+        <div class="bt">
+            <div class="alert alert-primary" role="alert">
+                Bài tập 4: Nhập vào số n từ 1 đến 9. Sau đó hiển thị cách đọc của số đó( Vd: nhập n = 1. Hiển thị " Số một")
+            </div>
+            <form>
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" id="n" class="form-control" placeholder="Số n: (từ 1 đến 9)">
+                    </div>
+                </div>
+                <button type="button" onclick="btn_n()" class="btn btn-primary btn-md btn-block">Kết quả</button>
+            </form>
+            <div class="alert alert-light" id="equaln" role="alert"></div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
