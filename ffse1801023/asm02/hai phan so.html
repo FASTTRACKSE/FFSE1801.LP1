@@ -1,0 +1,30 @@
+<doctype html>
+<html>
+<head>
+<title>bai 1 </title>
+<h1>tuong quan giua hai phan so </h1>
+<script language="javascript">
+var x=parseFloat(prompt("nhap so x"));
+var y=parseFloat(prompt("nhap so y"));
+if (isFloat(x) && isFloat(y)) {
+document.write("x+y=" + (x+y)+"<br/>");
+document.write("x*y=" + (x*y)+"<br/>");
+document.write("x-y=" + (x-y)+"<br/>");
+document.write("x/y=" + (x/y)+"<br/>");
+
+}
+else{
+document.write("so ban nhap k dung");
+}
+
+
+function isFloat( x )
+{
+    return ( typeof x === "number" && Math.abs( x % 1 ) > 0);
+}
+			
+</script>
+</head>
+<body>
+</body>
+</html>
