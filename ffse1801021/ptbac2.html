@@ -1,0 +1,24 @@
+<script> 
+	var a,b,c,d,x1,x2,x;
+	a=1;
+	b=-4;
+	c=5;
+	a!=0;
+	d=(b*b)-4*(a*c);
+	if(d>0){
+		x1=((-b)+ Math.sqrt(d))/(2*a)
+	    x2=((-b)- Math.sqrt(d))/(2*a)
+		document.write("phuong trinh co nghiem" + x1 );
+		document.write("<br>")
+		document.write("phuong trinh co nghiem" + x2);
+	}else{
+		if(d==0){
+			x=(-b)/(2*a);
+			document.write("phuong trinh co nghiem kep"+ x)
+
+		}else{ 
+			document.write("phuong trinh vo nghiem");
+		}
+	}
+
+</script>
