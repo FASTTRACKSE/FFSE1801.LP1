@@ -1,0 +1,28 @@
+<script type="text/javascript">
+	var arSo=[3,5,2,7,6,9,12];
+	//max
+	max=arSo[0];
+		for(var i=0; i< arSo.length;i++){
+					if(max<arSo[i]){max=arSo[i];}
+			}
+			document.write("max la "+max);
+			document.write("<br>");
+			//min
+			min=arSo[0];
+			for(var i=0; i< arSo.length;i++){
+					if(min>arSo[i]){min=arSo[i];} 
+			}
+			document.write("min la "+min);
+			document.write("<br>");
+			//sapxep
+			for(var i=1;i<= (arSo.length)-1;i++){
+				for(var j=i+1;j<=(arSo.length);j++){
+					if(arSo[i]>arSo[j]){
+						tg=arSo[i];
+						arSo[i]=arSo[j];
+						arSo[j]=tg;
+					}
+				}
+				document.write(+arSo[i]+", ");
+			}
+</script>
