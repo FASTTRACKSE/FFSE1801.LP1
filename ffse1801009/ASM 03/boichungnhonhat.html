@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hưng</title>
+</head>
+<h2 style="color: red">Bài tập tìm bội chung nhỏ nhất</h2>
+<body style="text-align: center;">
+	<script type="text/javascript">
+		var a= prompt("Nhập số a :");
+		var b = prompt("Nhập số b :");
+		c=a;
+		d=b;
+		while(a!=b){
+			BCNN=(c*d)/a;
+			if (a>b) {
+				a=a-b;
+			}else{
+				b=b-a;
+			}
+		}
+		document.write("BCNN là : "+BCNN);
+	</script>
+</body>
+</html>
