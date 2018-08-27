@@ -1,0 +1,25 @@
+<script type="text/javascript">
+	function timsolonnhat(arr){
+		max=arr[0];
+		for(var i=0;i<arr.length;i++){
+			if(max<arr[i]){
+				max=arr[i];
+			}
+		}
+		return max;
+	}
+	max=timsolonnhat([3,4,6,7,1]);
+	document.write(max);
+	document.write("<br>");
+	function timsonhonhat(arr){
+		min=arr[0];
+		for(var i=0;i>arr.length;i++){
+			if(min>arr[i]){
+				min=arr[i];
+			}
+		}
+		return min;
+	}
+	min=timsonhonhat([3,4,6,7,1]);
+	document.write(min);
+</script>

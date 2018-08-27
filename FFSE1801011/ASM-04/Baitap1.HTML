@@ -1,0 +1,14 @@
+<script>
+var n=parseInt(prompt("Nhap so phan tu cua mang"))
+arr=[];
+for (i=0; i<n;i++){
+    arr[i]=parseInt(prompt("Nhap phan tu thu "+ (i+1)))
+}
+ 
+c=0;
+
+for (var i=0;i<n;i++){
+    if (arr[i]%7==0){c++}
+} 
+document.write("So phan tu chia het cho 7 trong mang la " + c + ".")
+</script>

@@ -1,0 +1,24 @@
+<script>
+	var n,arrSo;
+	arrSo=[];
+	n=prompt("Nhập số phần tử cho mảng");
+	for(var i=0;i<n;i++){
+		arrSo[i]=prompt("Nhập phần tử thứ "+(i+1));
+	}
+	for (var i = 0; i < arrSo.length; i++) {
+		document.write(arrSo[i]+"-");
+	}
+	
+	n=n-1;
+	for (var i = 0; i < n/2; i++) {
+		tg=arrSo[i];
+		arrSo[i]=arrSo[n-i];
+		arrSo[n-i]=tg;
+
+	}
+	document.write("<hr>");
+	for (var i = 0; i < arrSo.length; i++) {
+		document.write(arrSo[i]+"-");
+	}
+
+</script>

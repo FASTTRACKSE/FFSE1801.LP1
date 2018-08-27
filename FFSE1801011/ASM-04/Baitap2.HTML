@@ -1,0 +1,16 @@
+<script>
+    var n=parseInt(prompt("Nhap so phan tu cua mang"))
+arr=[];
+for (i=0; i<n;i++){
+    arr[i]=parseInt(prompt("Nhap phan tu thu "+ (i+1)))
+}
+    var c=arr.length;
+    for (var i=0; i<arr.length;i++){
+         
+        for (var j =2; j<=Math.sqrt(arr[i]);j++)
+        {
+            if ((arr[i]%j)==0){c--; break}
+        }
+        }
+    document.write("Co "+c + " so nguyen to trong mang.")
+</script>

@@ -1,0 +1,21 @@
+<script>
+	function giaiptbac2(a,b,c){
+		dt=b*b-4*a*c;
+		if(dt>0){
+			x1=(-b*b+Math.sqrt(dt))/(2*a);
+			x2=(-b*b-Math.sqrt(dt))/(2*a);
+			return "Pt co 2 nghiem x1= "+x1+"<br> x2= "+x2;
+		}else{
+			if(dt==0){
+				x=(-b)/(2*a);
+				return "Pt co co nghiem kep x= "+x;
+			}else{
+				return "Pt vo nghiem";
+			}
+		}
+	}
+	var kq=giaiptbac2(1,2,1);
+	kq2=giaiptbac2(3,2,1);
+	document.write(kq);
+	document.write(kq2);
+</script>

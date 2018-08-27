@@ -1,0 +1,27 @@
+<script>
+	var t1,t2,m1,m2;
+	t1=3;
+	m1=2;
+	t2=2;
+	m2=5;
+	if(!(m2!=0&&m1!=0)){
+		document.write("Phan so khong hop le");
+	}else{
+		msc=m1*m2;
+		tong=((t1*m2)+(t2*m1))/msc;
+		hieu=((t1*m2)-(t2*m1))/msc;
+		tich=(t1*t2)/(m1*m2);
+		thuong=(t1*m2)/(t2*m1);
+
+		document.write("Tong 2 phan so la:"+ ((t1*m2)+(t2*m1))+"/"+msc);
+		document.write("<br>");
+		document.write("Hieu 2 phan so la:"+ hieu);
+		document.write("<br>");
+		document.write("Tich 2 phan so la:"+ tich);
+		document.write("<br>");
+		document.write("Thuong 2 phan so la:"+ thuong);
+		
+
+	}
+
+</script>
