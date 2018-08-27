@@ -1,0 +1,28 @@
+<script>
+	var b=[];
+	var t;
+	var dem=0;
+	var n=parseInt(prompt("nhap so phan tu "));
+	for (var i=0;i<n;i++){
+		b[i]=parseInt(prompt("nhap so pahn tu thu "+i));
+	}
+	dem=0;
+	j=0;
+	for(t=0;t<n;t++){
+		stt=true;
+		if(b[t]!=1){
+	    for (var j=2;j<b[t];j++){
+		   if (b[t]%j==0){
+			  stt=false;break;
+		}
+	}if(stt==true){
+		dem++;
+	}
+}	
+}
+		document.write("co "+dem+" so nguyen to");
+
+
+	 	
+
+</script>
