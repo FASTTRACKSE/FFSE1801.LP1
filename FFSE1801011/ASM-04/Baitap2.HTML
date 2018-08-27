@@ -1,0 +1,12 @@
+<script>
+    var arr=[12,34,53,11,67,2,5,12,43]
+    var c=arr.length;
+    for (var i=0; i<arr.length;i++){
+         
+        for (var j =2; j<=Math.sqrt(arr[i]);j++)
+        {
+            if ((arr[i]%j)==0){c--; break}
+        }
+        }
+    document.write("Co "+c + " so nguyen to trong mang.")
+</script>
