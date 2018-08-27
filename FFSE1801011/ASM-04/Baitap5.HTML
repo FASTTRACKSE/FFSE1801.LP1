@@ -5,8 +5,8 @@
     B=parseInt(prompt("Nhap b"));
     C=parseInt(prompt("Nhap c"));
 
-    ptb2 = function (a,b,c){
-    var a,b,c,x,x1,x2,dt;
+    function ptb2 (a,b,c){
+    var a,b,c,x1,x2,dt;
     dt=(b*b-4*a*c);
         if (dt<0){
         document.write("Phuong trinh vo nghiem.");
@@ -15,8 +15,8 @@
             x1=parseFloat((-b-Math.sqrt(dt))/(2*a)).toFixed(2);
             x2=parseFloat((-b+Math.sqrt(dt))/(2*a)).toFixed(2);
         document.write("Phuong trinh co 2 nghiem phan biet la x1 = " + x1 + " va x2 = "+x2 + ".");
-            } else {x=parseFloat(-b/(2*a)).toFixed(2);
-        document.write("Phuong trinh co 1 nghiem kep x = "+x + ".");}
+            } else {x1=parseFloat(-b/(2*a)).toFixed(2);
+        document.write("Phuong trinh co 1 nghiem kep x = "+x1 + ".");}
     }
     
     ptb2 (A,B,C);
