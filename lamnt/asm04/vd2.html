@@ -1,0 +1,23 @@
+<script>
+	//Viết hàm nhập tên
+	function nhap_ten(){
+		var n = prompt("Vui lòng nhập tên");
+		return n;
+	}
+	function hienthi(ten){
+		document.write(ten);
+	}
+	function xuongdong(){
+		document.write("<br>");
+		document.write("<hr>");
+	}
+	
+	// Viết hàm nhập và hiển thị ra màng kết quả vừa nhập
+	function chaychuongtrinh(){
+		var n = nhap_ten();
+		hienthi(n);
+	}
+	chaychuongtrinh();
+	xuongdong();
+	chaychuongtrinh();
+</script>

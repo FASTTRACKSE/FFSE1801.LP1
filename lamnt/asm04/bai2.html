@@ -1,0 +1,21 @@
+<script>
+	var n,arrSo;
+	arrSo=[];
+	n=prompt("Nhập số phần tử cho mảng");
+	for(var i=0;i<n;i++){
+		arrSo[i]=prompt("Nhập phần tử thứ "+(i+1));
+	}
+	var dem=0;
+	for (var i = 0; i < arrSo.length; i++) {
+		check=0;
+		for (var j = 2; j <arrSo[i]; j++) {
+			if(arrSo[i]%j==0){
+				check++;
+			}
+		}
+		if(check==0){
+			dem=dem+1;
+		}
+	}
+	document.write("Có " +dem+ " số nguyên tố trong mảng");
+</script>
