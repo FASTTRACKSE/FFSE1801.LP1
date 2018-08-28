@@ -1,0 +1,16 @@
+<script type="text/javascript">
+	function fibonancci(n) {
+		t=0
+		s=1
+		document.write(" "+t+" "+s)
+		for(i=2;i<n;i++){
+			tg=t+s
+			t=s
+			s=tg
+			document.write(" "+tg)
+		}
+	}
+	var n=prompt("Vui long hay nhap n")
+	fibonancci(parseInt(n))
+
+</script>
