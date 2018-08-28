@@ -1,0 +1,14 @@
+<script>
+    function tamgiac(A,B,C){
+    if ((A+B>C) && (A+C>B) && (B+C>A)){document.write("Chieu dai 3 canh a, b, c tao thanh tam giac.")}
+    else {document.write("Chieu dai 3 canh a, b, c KHONG tao thanh tam giac.")}
+    }
+    do {a=parseInt(prompt("Nhap canh a"))}
+    while (a<=0);
+    do {b=parseInt(prompt("Nhap canh b"))}
+    while (b<=0);
+    do {c=parseInt(prompt("Nhap canh c"))}
+    while (c<=0);
+    tamgiac(a,b,c);
+
+</script>

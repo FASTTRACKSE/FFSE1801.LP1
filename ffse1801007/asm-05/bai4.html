@@ -1,0 +1,23 @@
+<script type="text/javascript">
+	var n=parseInt(prompt("Nhập n số dãy Fibonanci (n>1)."));
+	function fibonanci(n)
+	{
+	var t=0;
+	var s=1;
+	var i,k;
+	if(n>1)
+	{
+		document.write("Dãy "+n+" số Fibonanci : "+t+" "+s+" ");
+		for(i=2;i<n;i++)
+		{
+			k=t+s;
+			t=s;
+			s=k;
+			document.write(k+" ");
+		}
+	}
+	else 
+		document.write("n phải lớn hơn 1!");
+	}
+	fibonanci(n);
+</script>

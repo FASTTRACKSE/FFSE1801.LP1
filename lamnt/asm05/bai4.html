@@ -1,0 +1,16 @@
+<script>
+	function fibonanci(n){
+		t=0;
+		s=1;
+		document.write(t +" - "+s);
+		for(var i=2;i<n;i++){
+			tg=t+s;
+			t=s;
+			s=tg;
+			document.write(" - "+tg);
+		}
+	}
+
+	var n = prompt("Vui long nhap n");
+	fibonanci(parseInt(n));
+</script>

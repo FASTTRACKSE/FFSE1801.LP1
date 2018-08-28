@@ -1,0 +1,27 @@
+<script> 
+	var d,x1,x2,x,y,z;
+	var a=parseInt(prompt("nhap so a "));
+	var b=parseInt(prompt("nhap so b "));
+	var c=parseInt(prompt("nhap so c "));
+	PTB2(a,b,c);
+	function PTB2(a,b,c){
+	    d=(b*b)-4*(a*c);
+	      if(d>0){
+		x1=((-b)+ Math.sqrt(d))/(2*a)
+	    x2=((-b)- Math.sqrt(d))/(2*a)
+		document.write("phuong trinh co nghiem" + x1 );
+		document.write("<br>")
+		document.write("phuong trinh co nghiem" + x2);
+	}else{
+		if(d==0){
+			x=(-b)/(2*a);
+			document.write("phuong trinh co nghiem kep"+ x)
+
+		}else{ 
+			document.write("phuong trinh vo nghiem");
+		}
+	}
+}
+
+
+</script>
