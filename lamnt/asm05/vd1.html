@@ -1,0 +1,22 @@
+<script>
+	//Viết hàm nhập mảng số
+	
+	function nhap_mang(){
+		arrSo=[];
+		n = prompt("Vui lòng nhập số phần tử");
+		for(var i =0;i<n;i++){
+			arrSo[i]=prompt("Nhập phần tử thứ "+(i+1));
+		}
+		return arrSo;
+	}
+	var arr_so= nhap_mang();
+	//In mảng
+	function in_mang(arr){
+		for (var i = 0; i < arr.length; i++) {
+			document.write(arr[i]+" - ");
+		}
+	}
+	in_mang(arr_so);
+	document.write("<hr>");
+	in_mang(arr_so);
+</script>

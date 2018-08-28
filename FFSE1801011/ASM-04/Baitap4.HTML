@@ -1,12 +1,22 @@
 <script>
-    var arr=[1,3,5,7,9];
-    x=[]
+    var n=parseInt(prompt("Nhap so phan tu cua mang"))
+arr=[];
+for (i=0; i<n;i++){
+    arr[i]=parseInt(prompt("Nhap phan tu thu "+ (i+1)))
+}
+ ;
+    print=function (array){
+        for (var i=0;i<n;i++){
+        document.write(array[i] + "-")   
+    }}
     document.write("Input: ")
-    for (var i=0;i<arr.length;i++){
-        document.write(arr[i] + "-")
+    print(arr)
+        
+    for (var i=0;i<n/2;i++){
+        tg=arr[i];
+        arr[i]=arr[n-1-i];
+        arr[n-1-i]=tg;
     }
     document.write("</br>"+"Output: ")
-    for (var i=arr.length-1;i>-1;i--){
-        document.write(arr[i] + "-")
-    }
+    print(arr)
 </script>

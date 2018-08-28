@@ -1,0 +1,16 @@
+<script type="text/javascript">
+	var j,dem,n;
+	var arSo=[];
+	n=parseInt(prompt("Nhập số lượng phần tử mảng: "));
+	for(var i=0;i<n;i++){
+		arSo[i]=parseInt(prompt("Nhập giá trị phần tử thứ "+i+" trong mảng: "));
+	}
+	j=0;
+	dem=0;
+	while(j<n){
+		if(arSo[j]%7==0){
+			dem++;
+		}j++;
+	}
+	document.write("Có "+dem+" số nguyên trong mảng chia hết cho 7!");
+</script>

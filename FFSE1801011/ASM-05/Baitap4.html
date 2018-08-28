@@ -1,0 +1,15 @@
+<script>
+    do {n = parseInt(prompt("Nhập số phần tử Fibonacci bạn muốn in (>2)"))}
+    while (n<2)
+    function fibo(N){
+    var a=0;
+    var b=1;
+    document.write(a + ", " + b + ", "); 
+    for(j=2;j<N;j++)
+    {
+        b=b+a;
+        a=b-a;
+        document.write(b+", ");
+    }}
+    fibo(n);
+</script>
