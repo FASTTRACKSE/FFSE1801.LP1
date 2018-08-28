@@ -1,0 +1,19 @@
+<script>
+	var arSo=[1,2,3,4,5,6,7,8,9];
+	var s=arSo.length;
+	for(var i=0;i<arSo.length;i++){
+		if(arSo[i]<2){
+			s--;
+		}else{
+			for(var j=2;j<arSo[i];j++){
+				if(arSo[i]%j==0){
+					s--;
+					break;
+				}
+			}
+		}
+	}
+
+
+	document.write("co "+s+" so nguyen to")
+</script>
