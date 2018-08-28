@@ -8,10 +8,12 @@
 
 		return true;
 	}
-	var kq=kt_songuyento(4);
-	if(kq==true){
-		document.write("La so nguyen to");
-	}else{
-		document.write("Khong phai la so nguyen to");
+	var arrSo=[3,5,7,6,4];
+	dem=0;
+	for (var i = 0; i < arrSo.length; i++) {
+		if(kt_songuyento(arrSo[i])==true){
+			dem=dem+1;
+		}
 	}
+	document.write("Co "+ dem+" so nguyen to trong mang");
 </script>
