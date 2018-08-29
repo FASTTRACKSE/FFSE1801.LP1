@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hưng</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function giaiptbac2(a,b,c) {
+			dt=b*b-4*a*c;
+			if (dt>0) {
+				x1=(-b*b+Math.sqrt(dt))/(2*a);
+				x2=(-b*b-Math.sqrt(dt))/(2*a);
+				return "Phương trình có 2 nghiệm x1 ="+x1 +"<br>"+ "và x2="+x2+"<br>"
+			}else{
+				if (dt==0) {
+					x=(-b)/(2*a);
+					return "Phương trình có nghiệm kép x ="+x;
+				}else{
+					return " Phương trình vô nghiệm";
+				}
+			}
+		}
+var kq=giaiptbac2(6,3,4);
+kq2=giaiptbac2(1,5,2);
+document.write(kq+"<br>");
+document.write(kq2);
+	</script>
+</body>
+</html>

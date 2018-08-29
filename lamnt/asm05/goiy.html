@@ -1,0 +1,41 @@
+<pre>
+<script>
+	arr_ten=['Nguyễn Thành Nam','Bùi Văn Tiên',"Trần Thị Mai"];
+	arr_monhoc=['Toán','Lý','Hóa',"Sử"];
+	arr_Toan=[10,7,9];
+	arr_Ly=[6,8,8];
+	arr_Hoa=[7,8,8];
+	arr_Su=[4,5,6];
+	function hien_thi_tab(arr){
+		for (var i = 0; i < arr.length; i++) {
+			document.write(arr[i]+"\t");
+		}
+		document.write("<br>");
+	}
+	function hien_thi_tab_diem(arr){
+		for (var i = 0; i < arr.length; i++) {
+			document.write(arr[i]+"\t \t \t ");
+		}
+		document.write("<br>");
+	}
+	function hien_thi_mon_hoc(arr){
+		for (var i = 0; i < arr.length; i++) {
+			document.write(arr[i]+"\t");
+			switch(i){
+				case 0:
+				hien_thi_tab_diem(arr_Toan);break;
+				case 1:
+				hien_thi_tab_diem(arr_Ly);break;
+				case 2:
+				hien_thi_tab_diem(arr_Hoa);break;
+				case 3:
+				hien_thi_tab_diem(arr_Su);break;
+			}
+			document.write("<br>");
+		}
+	}
+	document.write("Ten hs:\t")
+	hien_thi_tab(arr_ten);
+	hien_thi_mon_hoc(arr_monhoc);
+</script>
+</pre>

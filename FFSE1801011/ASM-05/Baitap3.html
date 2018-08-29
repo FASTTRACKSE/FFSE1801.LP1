@@ -5,37 +5,17 @@ do {n=parseInt(prompt("Nhap so n trong khoang tu 1-9:"));
 } while (n>9 || n<1);
     function docso(N){
     switch (N){
-        case 1 : {
-            document.write("Số một.")
-        break;}
-        case 2 : {
-            document.write("Số hai.")
-        break;}
-        case 3 : {
-            document.write("Số ba.")
-        break;}
-        case 4 : {
-            document.write("Số bốn.")
-        break;}
-        case 5 : {
-            document.write("Số năm.")
-        break;}
-        case 6 : {
-            document.write("Số sáu.")
-        break;}
-        case 7 : {
-            document.write("Số bảy.")
-        break;}
-        case 8 : {
-            document.write("Số tám.")
-        break;}
-        case 9 : {
-            document.write("Số chín.")
-        break;}
-        default: {
-            document.write("Du lieu dau vao khong hop le.")
-        }
+        case 1 : {return "Số một."}
+        case 2 : {return "Số hai."}
+        case 3 : {return "Số ba."}
+        case 4 : {return "Số bốn."}
+        case 5 : {return "Số năm."}
+        case 6 : {return "Số sáu."}
+        case 7 : {return "Số bảy."}
+        case 8 : {return "Số tám."}
+        case 9 : {return "Số chín."}
+        default: {return "Du lieu dau vao khong hop le."}
         }
     }
-    docso(n);
+    document.write(docso(n));
 </script>
