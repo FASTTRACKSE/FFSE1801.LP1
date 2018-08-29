@@ -133,7 +133,7 @@ function diemtongketmon(hesoi, hesoii, diemthi) {
     for (let i = 0; i < hesoi.length; i++) {
       t_hesoi = parseInt(hesoi[i]) + t_hesoi;
     }
-    return (hesoii + diemthi + t_hesoi) / (2 + hesoi.length);
+    return (hesoii + diemthi + t_hesoi) / (5 + hesoi.length);
   }
 }
 
