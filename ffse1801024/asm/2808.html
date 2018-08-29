@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+        <script>
+            var tong_hs = 0, ho_ten, mon_hoc, diemthi, hesoI, hesoII, arrMon_hoc, arrHS = []
+            mon_hoc = ['toán', 'lý', 'hóa', 'văn', 'sử', 'địa', 'Anh', 'cn', 'cd']
+            tong_hs = eval(prompt('tong hoc sinh can nhap'))
+            for (let f = 0; f < tong_hs; f++) {
+                ho_ten = prompt('ho ten')
+                arrMon_hoc = []
+                var arrTemp = []
+                for (let i = 0; i < mon_hoc.length; i++) {
+                    hesoI = []
+                    var tenmon = mon_hoc[i]
+                    var lm_point = prompt('tong so cot diem he I mon ' + tenmon)
+                    for (let j = 0; j < lm_point; j++) {
+                        hesoI[j] = eval(prompt('diem cot ' + (j + 1) + tenmon))
+                    }
+                    hesoII = prompt('diem he so II' + tenmon)
+                    diemthi = prompt('diem thi' + tenmon)
+                    var arr = [tenmon, hesoI, hesoII, diemthi]
+
+                    arrMon_hoc.push(arr)
+                }
+                arrTemp = [ho_ten, arrMon_hoc]
+                arrHS[f] = arrTemp
+            }
+            console.log(arrHS)
+
+
+            for (let k = 0; k < arrHS.length; k++) {
+                var Ihs = arrHS[k]
+                console.log(Ihs[1])
+
+                document.write('<br>')
+                document.write('Họ tên:' + '\t' + '\t' + Ihs[0] + '<br>')
+                document.write('Môn học:' + '\t')
+
+                for (let e = 0; e < Ihs[1].length; e++) {
+                    document.write(Ihs[1][e][0] + '\t')
+                }
+                document.write('<br>')
+                document.write('Hệ số I:')
+                for (let e = 0; e < Ihs[1].length; e++) {
+                    document.write('\t')
+                    if (Ihs[1][e][1].length > 1) {
+                        for (let k = 0; k < Ihs[1][e][1].length; k++) {
+
+                            document.write(Ihs[1][e][1][k])
+                            if (k < ((Ihs[1][e][1].length) - 1)) {
+                                document.write('-')
+                            }
+
+
+                            // document.write(Ihs[1][e][1][k])
+                            // if (k < ((Ihs[1][e][1].length) - 1)) {
+                            //     document.write('-')
+                            // }
+                        }
+                    } else {
+                        document.write('-1')
+                    }
+                }
+                document.write('<br>')
+                document.write('Hệ số II:')
+                for (let e = 0; e < Ihs[1].length; e++) {
+                    if (Ihs[1][e][2] == "") {
+                        document.write('\t' + '-1')
+
+                    } else {
+                        document.write('\t' + Ihs[1][e][2])
+                    }
+                }
+                document.write('<br>')
+                document.write('Điểm thi:')
+                for (let e = 0; e < Ihs[1].length; e++) {
+                    if (Ihs[1][e][3] == "") {
+                        document.write('\t' + '-1')
+
+                    } else {
+                        document.write('\t' + Ihs[1][e][3])
+                    }
+                }
+
+                document.write('<br>')
+                document.write('Tổng kết môn:')
+                var arrSum = []
+                flag = true
+                for (let e = 0; e < Ihs[1].length; e++) {
+                    if (Ihs[1][e][1].length < 2) {
+                        flag = false
+                    } else if (Ihs[1][e][2] == "") {
+                        flag = false
+                    } else if (Ihs[1][e][3] == "") {
+                        flag = false
+                    }
+                    if (flag) {
+                        var sumI = 0, sum = 0, l_sumI = Ihs[1][e][1].length
+                        for (let k = 0; k < Ihs[1][e][1].length; k++) {
+                            sumI = eval(Ihs[1][e][1][k]) + sumI
+                        }
+                        sum = (sumI + eval(Ihs[1][e][2]) * 2 + eval(Ihs[1][e][3]) * 3) / (l_sumI + 2)
+                        arrSum[e] = sum
+                        document.write('\t' + sum)
+                    } else {
+                        arrSum[e] = 'f'
+                        document.write('\t' + '-1')
+                    }
+                }
+                document.write('<br>')
+                document.write('Xếp loại:')
+                sumtk = 0
+                i = 0
+                for (let a = 0; a < arrSum.length; a++) {
+                    if (arrSum[a] != 'f') {
+                        i++
+                        sumtk = eval(arrSum[a]) + sumtk
+
+                    }
+                }
+                sumtk = sumtk / i
+                if (sumtk >= 5 && sumtk <= 6.5) {
+                    document.write('Đạt')
+                } else if (sumtk >= 6.5 && sumtk <= 8) {
+                    document.write('Khá')
+                } else if (sumtk >= 8) {
+                    document.write('Giỏi')
+                } else {
+                    document.write('không đạt')
+                }
+                document.write('<hr>')
+            }
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </pre>
+</body>
+
+</html>
