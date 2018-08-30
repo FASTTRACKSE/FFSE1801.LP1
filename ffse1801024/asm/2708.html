@@ -11,17 +11,36 @@
 <body>
     <script>
         // Đảo ngược dãy số lớn hơn 2 số
-        var a;
-        do {
-            n = prompt('Nhập giá trị')
-        } while (n < 10);
-        while (n != 0) {
-            dv = n % 10
-            n = Math.floor(n / 10)
-            document.write(dv)
+        // var a;
+        // do {
+        //     n = prompt('Nhập giá trị')
+        // } while (n < 10);
+        // while (n != 0) {
+        //     dv = n % 10
+        //     n = Math.floor(n / 10)
+        //     document.write(dv)
+        // }
+        // Đảo ngược mảng 
+        var icon, arr, i
+        arr = []
+        i = 0
+        icon = '1'
+        while (icon == '1') {
+            icon = prompt('Bài ', 'Nhập 1 để tiếp tục 0 để dừng lại');
+            if (icon != '1') {
+                break;
+            }
+            iarr = eval(prompt('Nhập giá trị của mảng', ''))
+            arr[i] = iarr
+            i++
         }
 
-
+        // for (i = 0; i < Math.floor(arr.length / 2); i++) {
+        //     temp = arr[arr.length-i]
+        //     arr[i] = temp 
+        //     arr[6.length] = arr[i]
+        // }
+    document.write(arr)
     </script>
 </body>
 

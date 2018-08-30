@@ -1,0 +1,29 @@
+<script type="text/javascript">
+	var j,dem,n,stt;
+	var arSo=[];
+	n=parseInt(prompt("Nhập số lượng phần tử mảng: "));
+	for(var i=0;i<n;i++){
+		arSo[i]=parseInt(prompt("Nhập giá trị phần tử thứ "+i+" trong mảng: "));
+	}
+	for(var t=0;t<n;t++){
+		document.write(arSo[t]+",");
+	}
+	dem=0;
+	j=0;
+	while(j<n){
+		stt=true;
+		if(arSo[j]!=1){
+	        for(var k=2;k<arSo[j];k++){
+		        if(arSo[j]%k==0){
+			        stt=false;
+			        break;
+		        }
+   	        }
+	        if(stt==true){
+		        dem++;
+		    }
+	    }j++
+	}
+	document.write("<br>");
+	document.write("Có "+dem+" số nguyên tố trong mảng!");
+</script>

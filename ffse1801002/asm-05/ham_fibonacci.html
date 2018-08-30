@@ -1,0 +1,14 @@
+<script type="text/javascript">
+	function fibonacci(n){
+		var tg,tr=0,sa=1,i=2;
+		document.write("Ta co day so fibonacci la: "+tr+","+sa);
+		while(i<n){
+			tg=tr+sa;
+			tr=sa;
+			sa=tg;
+			document.write(","+tg);
+			i++;
+		}
+	}
+	fibonacci(11);
+</script>

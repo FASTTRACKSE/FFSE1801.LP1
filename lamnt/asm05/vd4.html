@@ -1,0 +1,13 @@
+<script>
+	var arrSo=[3,5,7,5,4,8];
+	for (var i = 0; i < arrSo.length/2; i++) {
+		tg = arrSo[i];
+		arrSo[i]=arrSo[arrSo.length-i-1];
+		arrSo[arrSo.length-i-1]=tg
+	}
+
+	for (var i = 0; i < arrSo.length; i++) {
+		document.write(arrSo[i]+" ");
+	}
+
+</script>

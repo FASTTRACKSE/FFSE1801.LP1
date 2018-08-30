@@ -1,0 +1,15 @@
+<script type="text/javascript">
+	function kttamgiac(a,b,c){
+		if(a>0 && b>0 && c>0){
+		    if(a+b>c && a+c>b && b+c>a){
+			    return "Ba canh do la mot tam giac!";
+		    }else{
+			    return "Ba canh do khong the tao thanh tam giac!";
+		    }
+	    }else{
+	    	return "Do dai 3 canh khong hop le!";
+	    }
+	}
+	var kq=kttamgiac(3,4,-1);
+	document.write(kq);	
+</script>

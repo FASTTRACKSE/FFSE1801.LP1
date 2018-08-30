@@ -1,0 +1,18 @@
+<script type="text/javascript">
+	var i,m=0;
+	var n;
+	var arso=[];
+	n=parseInt(prompt("Nhập 1 số lớn hơn 2 chữ số"));
+	while(n<100){
+		n=parseInt(prompt("Bạn nhập sai rồi! Vui lòng nhập lại số có chữ số lớn hơn 2 chữ số!"));
+	}
+	document.write("Số vừa nhập là <br>");
+	document.write(n+"<br>");
+	document.write("Ta có số sau khi đảo ngược là <br>");
+	while(n!=0){
+		i=n%10;
+		m=m*10+i;
+		n=Math.floor(n/10);
+	}
+	document.write(m);
+</script>

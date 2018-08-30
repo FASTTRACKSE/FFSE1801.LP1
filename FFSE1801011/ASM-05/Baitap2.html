@@ -1,0 +1,15 @@
+<script>
+    
+    var n;
+    do(n = parseInt(prompt("Nhập số N cần kiểm tra tính nguyên tố (n>1)")))
+    while (n<2);
+        
+    function snt (N){
+    for (var i =2; i<=Math.sqrt(N);i++)
+    {var x=1;
+        if ((N%i)==0){x= 0; document.write("N khong phai la so nguyen to."); break;}
+    }
+    if(x==1){document.write("N la so nguyen to.");}
+    }
+    snt(n);
+</script>

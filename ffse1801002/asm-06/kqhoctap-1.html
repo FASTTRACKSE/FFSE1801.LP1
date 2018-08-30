@@ -1,0 +1,93 @@
+<pre>
+<script type="text/javascript">
+	var a=[],b=[],c=[],d=[],e=[];
+	var j=0,t=0,u=0,l=0,m=0,v=0,tong=0;
+	var mon=["toan","van","anh","ly","hoa","sinh","su","dia","cd"];
+	//--------------------------------------------------------------------
+    var n=parseInt(prompt("Nhap so luong hoc sinh:"));
+    for(var i=0;i<n;i++){
+    	a[i]=prompt("Nhap ho ten hoc sinh thu "+(i+1));
+    }
+    //--------------------------------------------------------------------
+    function nhapmon(){
+	    for(var k=0;k<mon.length;k++){
+		   	b[u]=parseInt(prompt("Nhap diem he so 1 mon "+mon[k]+" lan 1 cua "+a[l]));
+		   	b[u+1]=parseInt(prompt("Nhap diem he so 1 mon "+mon[k]+" lan 2 cua "+a[l]));
+		   	c[j]=parseInt(prompt("Nhap diem he so 2 mon "+mon[k]+" cua "+a[l]));
+		   	d[j]=parseInt(prompt("Nhap diem thi mon "+mon[k]+" cua "+a[l]));
+		   	j++;
+		   	u=u+2;
+		}
+	}
+	//--------------------------------------------------------------------
+	function kiemtra(){
+		tong=tong/9;
+		var n = parseFloat(tong); 
+			tong = Math.round(n * 10)/10;
+		document.write("\t Diem trung binh "+tong+" Xep loai: ");
+		if(tong<8){
+			if(tong<6.5){
+				if(tong<5){
+					document.write("Khong dat");
+				}else document.write("Dat");
+			}else document.write("Kha");
+		}else document.write("Gioi");
+	}
+	//--------------------------------------------------------------------
+	function tinhdiem(){
+		var h=v;
+		for(var t=m;t<(m+9);t++){
+			kt=(b[h]+b[h+1]+(c[t]*2)+(d[t]*3))/7;
+			var n = parseFloat(kt); 
+			kt = Math.round(n * 10)/10; 
+			document.write(kt+"\t");
+			tong=tong+kt;
+			h=h+2;
+		}
+	}
+	//--------------------------------------------------------------------
+	function inra(b1,c1,d1){
+		document.write("<br>");	document.write("\t Mon hoc \t\t");	
+		for (var i=0;i<mon.length;i++){
+	   		document.write(mon[i]+"\t");
+	   	}
+		document.write("<br>");
+		document.write("\t Diem he so 1 \t\t");
+		for (var i=v;i<(v+18);i=i+2){
+	   		document.write(b1[i]+","+b1[i+1]+"\t");
+	   	}
+		document.write("<br>");
+		document.write("\t Diem he so 2 \t\t");
+		for (var i=m;i<(m+9);i++){
+	   		document.write(c1[i]+"\t");
+	   	}
+		document.write("<br>");
+		document.write("\t Diem thi \t\t");
+		for (var i=m;i<(m+9);i++){
+	   		document.write(d1[i]+"\t");
+	   	}
+		document.write("<br>");
+		document.write("\t Diem tong ket mon \t");
+	}
+	//--------------------------------------------------------------------
+	document.write("So thu tu: <br>");
+	document.write("<hr>");
+	for(var i=0;i<n;i++){
+		document.write((i+1)+".");
+		document.write("Ho va ten: \t");
+	    document.write(a[i]);
+		nhapmon();
+		inra(b,c,d);
+		tinhdiem();
+		document.write("<br>");
+		document.write("<hr>");
+		kiemtra();
+		document.write("<br>");
+		document.write("<hr>");
+		l++;
+		m=m+9;
+		v=v+18;
+		tong=0;
+	}
+</script>
+</pre>

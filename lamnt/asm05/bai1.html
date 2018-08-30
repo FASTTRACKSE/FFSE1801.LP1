@@ -1,0 +1,16 @@
+<script>
+	function kt_tamgiac(a,b,c){
+		if((a+b)>c&&(a+c)>b&&(b+c)>a){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+	var kq=kt_tamgiac(4,5,2);
+	if(kq==true){
+		document.write("La tam giac");
+	}else{
+		document.write("Khong phai la tam giac");
+	}
+</script>

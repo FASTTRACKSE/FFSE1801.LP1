@@ -1,0 +1,22 @@
+<script>
+	var a=prompt("Hay nhap a voi gia tri khac 0");
+	while(a<=0){
+		var a=parseInt(prompt("Vui long nhap lai a"));
+	}
+	var b=prompt("Hay nhap b");
+	var c=prompt("Hay nhap c");
+	D=(b*b)-(4*a*c);
+	if(D>0){
+		document.write("Pt co hai nghiem la <br>");
+		document.write("X1= "+(-b+Math.sqrt(D))/(2*a)+"<br>");
+		document.write("X2= "+(-b-Math.sqrt(D))/(2*a));
+	}else{
+		if(D==0){
+			document.write("Pt co mot nghiem kep la <br>")
+			document.write("X= "+(-b/(2*a)));
+		}else{
+			document.write("Pt vo nghiem")
+		}
+	}
+
+</script>

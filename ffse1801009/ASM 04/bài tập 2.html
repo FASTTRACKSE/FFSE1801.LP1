@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hưng</title>
+</head>
+<h2 style="color: green">Các số nguyên tố có trong mảng</h2>
+<body style="text-align: center;">
+	<script type="text/javascript">
+		var arSo=[];
+		var n=prompt("Nhập độ dài của mảng");
+		for (var i = 0; i < n; i++) {
+			arSo[i]=prompt(" Nhập giá trị phần tử thứ :"+(i+1));
+		}
+		var dem=0;
+		for (var i = 0; i < arSo.length; i++) {
+			check=0;
+			for (var j = 2; j < n;j++){
+				if(arSo[i]%j==0) {
+					check++;
+				}
+
+			}
+		}
+		if (check==0){
+			dem=dem+1;
+		}
+			document.write(" Có  "+dem+" số nguyên tố ");
+
+		
+	</script>
+</body>
+</html>
