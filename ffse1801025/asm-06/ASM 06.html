@@ -40,32 +40,19 @@
 				document.write("Diem trung binh"+"\t\t"+tb1+"\t"+tb2+"\t"+tb3)
 				document.write("<br>")
 				document.write("Xep Loai\t\t")
-				if(tb1>=8){
+		function Diemtrungbinh(arr) {
+			if(arr>=8){
 					document.write("gioi\t")
-				}else{
-					if(tb1>5&&tb1<=7){
+			    }else{
+				     if(arr>5&&arr<=7){
 						document.write("Kha\t")
-					}else{
+				     }else{
 						document.write("Yeu\t")
 					}
 				}
-				if(tb2>=8){
-					document.write("gioi\t")
-				}else{
-					if(tb2>5&&tb2<=7){
-						document.write("Kha\t")
-					}else{
-						document.write("Yeu\t")
-					}
-				}
-				if(tb3>=8){
-					document.write("gioi")
-				}else{
-					if(tb3>5&&tb3<=7){
-						document.write("Kha")
-					}else{
-						document.write("Yeu")
-					}
-				}
+			}
+				Diemtrungbinh(tb1)
+				Diemtrungbinh(tb2)
+				Diemtrungbinh(tb3)
 	</script>
 </pre>
