@@ -1,6 +1,10 @@
 <pre>
 <script>
-	//Tao diem LP1,LP2,LP3 cho 4 sinh vien, va in diem trung binh mon      
+	//Tao diem LP1,LP2,LP3 cho 4 sinh vien, va in diem trung binh mon  
+	so1=9;
+	so2=8;
+	so3=8;
+	mang_so=[9,8,8];    
 	var hs1={
 		name: "Nguyen Van Nam",
 		class:"FFSE1801",
@@ -20,17 +24,30 @@
 		class:"FFSE1802",
 		lp1:5,
 		lp2:6,
-		lp3:8
+		lp3:1
 	};
 	function xuong_dong(){
-		document.write("<hr>");
+    		document.write("<hr>");
 	}
 	function tinh_dtb(mon1,mon2,mon3){
 		return (mon1+mon2+mon3)/3;
 	}
 	function hien_thi_hs(hs){
 		dtb=tinh_dtb(hs.lp1,hs.lp2,hs.lp3);
-		document.write(hs.name+ "\t \t" + hs.class+ "\t"+ hs.lp1 + "\t"+hs.lp2+"\t"+hs.lp3+"\t"+dtb);
+		if(dtb>=8){
+			xep_loai= "Loai gioi";
+		}else{
+			if(dtb>=6.5){
+				xep_loai="loai kha";
+			}else{
+				if(dtb>=5){
+					xep_loai="dat";
+				}else{
+					xep_loai="rot";
+				}
+			}
+		}
+		document.write(hs.name+ "\t \t" + hs.class+ "\t"+ hs.lp1 + "\t"+hs.lp2+"\t"+hs.lp3+"\t"+dtb+"\t"+xep_loai);
 
 		xuong_dong();
 	}
@@ -38,7 +55,7 @@
 	xuong_dong();
 	hien_thi_hs(hs1);
 	hien_thi_hs(hs2);
-	hien_thi_hs(hs3);
+	 hien_thi_hs(hs3);
 
 </script>
 </pre>
