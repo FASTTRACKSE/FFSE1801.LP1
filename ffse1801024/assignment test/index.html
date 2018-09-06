@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Excercise</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- đề I -->
+        <h3>Đề I:</h3>
+        <div class="alert alert-primary" role="alert">
+            Bài 1:Nhập một số nguyên n và kiểm tra số đó có phải là số nguyên tô hay không.
+        </div>
+        <!-- Bài 1 -->
+        <form>
+            <div class="form-row mb-2">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nhập n" id="in1_n_bt1">
+                </div>
+            </div>
+            <div class="flex-column align-items-end d-flex">
+
+                <input type="button" onclick="btn1_bt1()" class="btn btn-primary p-2" value="In kết quả">
+            </div>
+            <p id="ou1_kq_bt1"></p>
+        </form>
+        <div class="alert alert-primary" role="alert">
+            Bài 2:Nhập n và in ra n số fibonanci.
+        </div>
+        <!-- Bài 2 -->
+        <form>
+            <div class="form-row mb-2">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nhập n" id="in1_n_bt2">
+                </div>
+            </div>
+            <div class="flex-column align-items-end d-flex">
+
+                <input type="button" onclick="btn1_bt2()" class="btn btn-primary p-2" value="In kết quả">
+            </div>
+            <p id="ou1_kq_bt2"></p>
+        </form>
+        <div class="alert alert-primary" role="alert">
+            Bài 3:Nhập mảng số nguyên gồm n phần tử. Và sắp xếp mảng đó từ nhỏ đến lớn.
+        </div>
+        <!-- Bài 3 -->
+        <form>
+            <div class="form-row mb-2">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nhập n phần tử: 1,2,3,4,5 (các phần tử ngăn cách nhau bởi dấu , )" id="in1_n_bt3">
+                </div>
+            </div>
+            <div class="flex-column align-items-end d-flex">
+
+                <input type="button" onclick="btn1_bt3()" class="btn btn-primary p-2" value="In kết quả">
+            </div>
+            <p id="ou1_kq_bt3"></p>
+        </form>
+        <div class="alert alert-primary" role="alert">
+            Bài 4:Đếm có bao nhiêu số nguyên tố trong mảng số nguyên. Yêu cầu:<br> a. Tạo hàm nhập mảng số nguyên n phần
+            tử.
+            <br> b. Tạo hàm kiểm tra 1 số có phải là số nguyên tố.
+
+        </div>
+        <!-- Bài 4 -->
+        <form>
+            <div class="form-row mb-2">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nhập n phần tử: 1,2,3,4,5 (các phần tử ngăn cách nhau bởi dấu , )" id="in1_n_bt4">
+                </div>
+            </div>
+            <div class="flex-column align-items-end d-flex">
+
+                <input type="button" onclick="btn1_bt4()" class="btn btn-primary p-2" value="In kết quả">
+            </div>
+            <p id="ou1_kq1_bt4"></p>
+            <p id="ou1_kq2_bt4"></p>
+            <p id="ou1_kq3_bt4"></p>
+        </form>
+        <hr>
+        <!-- đề II -->
+        <h3>Đề II:</h3>
+        <div class="alert alert-primary" role="alert">
+            Bài 1:Nhập một số nguyên n và kiểm tra số đó có phải là số hoàn hảo hay không.
+        </div>
+        <!-- Bài 1 -->
+        <form>
+            <div class="form-row mb-2">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nhập n" id="in2_n_bt1">
+                </div>
+            </div>
+            <div class="flex-column align-items-end d-flex">
+
+                <input type="button" onclick="btn2_bt1()" class="btn btn-primary p-2" value="In kết quả">
+            </div>
+            <p id="ou2_kq_bt1"></p>
+        </form>
+        <div class="alert alert-primary" role="alert">
+            Bài 2:Nhập n và in ra các số chia hết cho 5 từ 1 đến n.
+        </div>
+        <!-- Bài 2 -->
+        <form>
+            <div class="form-row mb-2">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nhập n" id="in2_n_bt2">
+                </div>
+            </div>
+            <div class="flex-column align-items-end d-flex">
+
+                <input type="button" onclick="btn2_bt2()" class="btn btn-primary p-2" value="In kết quả">
+            </div>
+            <p id="ou2_kq_bt2"></p>
+        </form>
+        <div class="alert alert-primary" role="alert">
+            Bài 3:Nhập mảng số nguyên gồm n phần tử. Tìm vị trí của số lớn nhất trong mảng.
+        </div>
+        <!-- Bài 3 -->
+        <form>
+            <div class="form-row mb-2">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nhập n phần tử: 1,2,3,4,5 (các phần tử ngăn cách nhau bởi dấu , )" id="in2_n_bt3">
+                </div>
+            </div>
+            <div class="flex-column align-items-end d-flex">
+
+                <input type="button" onclick="btn2_bt3()" class="btn btn-primary p-2" value="In kết quả">
+            </div>
+            <p id="ou2_kq_bt3"></p>
+        </form>
+        <div class="alert alert-primary" role="alert">
+            Bài 4: Đếm có bao nhiêu số hoàn hảo trong mảng số nguyên. Yêu cầu:<br>a. Tạo hàm nhập mảng số nguyên n phần tử.
+            <br>b. Tạo hàm kiểm tra 1 số có phải số hoàn hảo.
+
+        </div>
+        <!-- Bài 4 -->
+        <form>
+            <div class="form-row mb-2">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nhập n phần tử: 1,2,3,4,5 (các phần tử ngăn cách nhau bởi dấu , )" id="in2_n_bt4">
+                </div>
+            </div>
+            <div class="flex-column align-items-end d-flex">
+
+                <input type="button" onclick="btn2_bt4()" class="btn btn-primary p-2" value="In kết quả">
+            </div>
+            <p id="ou2_kq1_bt4"></p>
+            <p id="ou2_kq2_bt4"></p>
+            <p id="ou2_kq3_bt4"></p>
+        </form>
+        <hr>
+        <!-- đề III -->
+        <h3>Đề III:</h3>
+        <div class="alert alert-primary" role="alert">
+            Bài 1:Nhập hai số a,b và tìm ước số chung nhỏ nhất của 2 số đó.
+        </div>
+        <!-- Bài 1 -->
+        <form>
+            <div class="form-row mb-2">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nhập n" id="in2_n1_bt1">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nhập n" id="in2_n2_bt1">
+                </div>
+            </div>
+            <div class="flex-column align-items-end d-flex">
+
+                <input type="button" onclick="btn3_bt1()" class="btn btn-primary p-2" value="In kết quả">
+            </div>
+            <p id="ou2_kq1_bt1"></p>
+            <p id="ou2_kq2_bt1"></p>
+        </form>
+        <div class="alert alert-primary" role="alert">
+            Bài 2:Nhập n và in ra các số lẻ từ 1 đến n .
+        </div>
+        <!-- Bài 2 -->
+        <form>
+            <div class="form-row mb-2">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nhập n" id="in3_n_bt2">
+                </div>
+            </div>
+            <div class="flex-column align-items-end d-flex">
+
+                <input type="button" onclick="btn3_bt2()" class="btn btn-primary p-2" value="In kết quả">
+            </div>
+            <p id="ou3_kq_bt2"></p>
+        </form>
+        <div class="alert alert-primary" role="alert">
+            Bài 3: Nhập mảng số nguyên gồm n phần tử. Tìm vị trí của số bé nhất trong mảng.
+
+        </div>
+        <!-- Bài 3 -->
+        <form>
+            <div class="form-row mb-2">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nhập n phần tử: 1,2,3,4,5 (các phần tử ngăn cách nhau bởi dấu , )" id="in3_n_bt3">
+                </div>
+            </div>
+            <div class="flex-column align-items-end d-flex">
+
+                <input type="button" onclick="btn3_bt3()" class="btn btn-primary p-2" value="In kết quả">
+            </div>
+            <p id="ou3_kq_bt3"></p>
+        </form>
+        <div class="alert alert-primary" role="alert">
+            Bài 4:Tìm phần tử có giá trị lớn nhất và có chứa toàn bộ chữ số lẻ của 1 mảng (Vd: 135). Yêu cầu: <br>a. Tạo
+            hàm nhập mảng số nguyên n phần tử . <br>b. Tạo hàm kiểm tra 1 số có phải số toàn lẻ hay không.
+
+
+        </div>
+        <!-- Bài 4 -->
+        <form>
+            <div class="form-row mb-2">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nhập n phần tử: 1,2,3,4,5 (các phần tử ngăn cách nhau bởi dấu , )" id="in3_n_bt4">
+                </div>
+            </div>
+            <div class="flex-column align-items-end d-flex">
+
+                <input type="button" onclick="btn3_bt4()" class="btn btn-primary p-2" value="In kết quả">
+            </div>
+            <p id="ou3_kq1_bt4"></p>
+            <p id="ou3_kq2_bt4"></p>
+            <p id="ou3_kq3_bt4"></p>
+        </form>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
