@@ -1,0 +1,28 @@
+<html>
+    <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <title>12346</title>
+    </head>
+    <body>
+        <pre>
+        <script>
+            var n = [];
+            var m = prompt("số phần tử bạn muốn nhập là");
+            for(i=0;i<m;i++){
+                n[i]=prompt("phần tử thứ " +(i+1)+" là");
+            }
+            document.write("dãy bạn nhập là "+n.join());
+            for(i=0;i<m;i++){
+                for(j=i+1;j<m;j++){
+                    if(n[i]>n[j]){
+                        var tg = n[i];
+                        n[i] = n[j];
+                        n[j] = tg;
+                    }
+                }
+            }
+            document.write("<br/>thứ tự là "+n.join());
+        </script>
+        </pre>
+    </body>
+</html>
