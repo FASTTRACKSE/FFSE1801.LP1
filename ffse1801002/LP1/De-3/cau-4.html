@@ -1,0 +1,46 @@
+<script type="text/javascript">
+	var n=parseInt(prompt("Nhap so luong phan tu trong mang:"));
+	var a=[],b=[],c=[];
+	var k=0,t=0,max;
+	function nhapmang(j){
+		for(var i=0;i<n;i++){
+		j[i]=parseInt(prompt("Nhap gia tri phan tu thu "+(i+1)+" la:"));
+		}
+	}
+	nhapmang(a);
+	function kt(j){
+		while(j!=0){
+			m=j%10;
+			if(m%2==0) return false;
+			j=Math.floor(j/10);
+		}
+		return true;
+	}
+	for(var i=0;i<n;i++){
+		if(a[i]%2!=0){
+			b[k]=a[i];
+			k++;
+		}
+	}
+	document.write("Ta co mang la: ");
+	for(var i=0;i<n;i++){
+		document.write(a[i]+",");
+	}
+	document.write("<br>");
+	document.write("Cac so toan le trong mang la: ");
+	for(var i=0;i<b.length;i++){
+		if(kt(b[i])==true){
+			document.write(b[i]+",");
+			c[t]=b[i];
+			t++;
+		}
+	}
+	max=c[0];
+	for(var i=0;i<c.length;i++){
+		if(max<c[i]){
+			max=c[i];
+		}
+	}
+	document.write("<br>");
+	document.write("So lon nhat toan le trong mang la: "+max);
+</script>

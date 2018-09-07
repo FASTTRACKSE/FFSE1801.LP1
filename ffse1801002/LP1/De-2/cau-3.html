@@ -1,0 +1,21 @@
+<script type="text/javascript">
+	var n=parseInt(prompt("Nhap so luong phan tu trong mang:"));
+	var arso=[];
+	var vt=0,max;
+	for(var i=0;i<n;i++){
+		arso[i]=parseInt(prompt("Nhap gia tri phan tu thu "+(i+1)+" la:"));
+	}
+	document.write("Ta co mang moi nhap la: ");
+	for(var i=0;i<n;i++){
+		document.write(arso[i]+",");
+	}
+	max=arso[0];
+	document.write("<br>");
+	for(var i=0;i<n;i++){
+		if(max<arso[i]){
+			max=arso[i];
+			vt=i;
+		}
+	}
+	document.write("Vi tri so lon nhat trong mang la: "+vt);
+</script>

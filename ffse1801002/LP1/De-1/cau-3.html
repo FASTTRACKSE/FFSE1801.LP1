@@ -1,0 +1,26 @@
+<script type="text/javascript">
+	var n=parseInt(prompt("Nhap so luong phan tu trong mang:"));
+	var arso=[];
+	var tg=0;
+	for(var i=0;i<n;i++){
+		arso[i]=parseInt(prompt("Nhap gia tri phan tu thu "+(i+1)+" la:"));
+	}
+	document.write("Ta co mang moi nhap la: ");
+	for(var i=0;i<n;i++){
+		document.write(arso[i]+",");
+	}
+	document.write("<br>");
+	for(var i=0;i<n-1;i++){
+		for(var j=i+1;j<n;j++){
+			if(arso[i]>arso[j]){
+				tg=arso[i];
+				arso[i]=arso[j];
+				arso[j]=tg;
+			}
+		}
+	}
+	document.write("Mang sau khi sap xep la: ");
+	for(var i=0;i<n;i++){
+		document.write(arso[i]+",");
+	}
+</script>
