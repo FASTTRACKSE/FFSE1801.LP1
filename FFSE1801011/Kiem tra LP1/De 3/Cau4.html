@@ -1,0 +1,37 @@
+<script>
+function InArr(){
+    let n=parseInt(prompt("Nhap so luong phan tu cua mang can kiem tra: "));
+    let arr=new Array(n);
+    for (i=0;i<n;i++){
+    arr[i]=parseInt(prompt("Nhap phan tu thu "+ (i+1) + " cua mang: "));
+    } return arr
+}
+function toanle(h){
+b=h.toString();
+let c=1, mod;
+    for (var i=0;i<b.length;i++){
+        mod=(h%2);
+        h=Math.floor(h/10);
+        if (mod==0){c=0;break}
+    } return c;
+}
+
+mang=InArr();
+mangle=[];
+j=0;
+for (i=0;i<mang.length;i++){
+    if (toanle(mang[i])==1){mangle[j]=mang[i];j++}
+}
+document.write("Mang toan le: ")
+for (i=0;i<mangle.length;i++){
+    document.write(mangle[i]+"-")
+}
+var max=0;
+for (i=0;i<mangle.length;i++){
+    if (mangle[max]<mangle[i]){
+        max=i;
+    }
+}
+document.write("<br>");
+document.write("So toan le lon nhat mang la: "+mangle[max]);
+</script>

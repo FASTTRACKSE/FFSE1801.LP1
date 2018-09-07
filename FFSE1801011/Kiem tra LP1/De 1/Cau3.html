@@ -1,0 +1,33 @@
+<script>
+function InArr(){
+    let n=parseInt(prompt("Nhap so luong phan tu cua mang can kiem tra: "));
+    let arr=new Array(n);
+    for (i=0;i<n;i++){
+    arr[i]=parseInt(prompt("Nhap phan tu thu "+ (i+1) + " cua mang: "));
+    }
+return arr}
+
+t=InArr();
+document.write("Input: ");
+for (var i = 0; i < t.length; i++)
+    {document.write(t[i] + " - ");}
+    document.write("</br>");
+
+for (i=0; i<t.length; i++)
+{var c=i;
+    for (var j=i+1; j<t.length+1; j++)
+    {
+        if (t[c]>t[j])
+        {c=j};
+    }; 
+    tg=t[i];
+    t[i]=t[c];
+    t[c]=tg;
+}
+
+document.write("Output: ");
+for (var e = 0; e < t.length; e++){
+document.write(t[e]+" - ")};
+document.write("</br>");
+
+</script>

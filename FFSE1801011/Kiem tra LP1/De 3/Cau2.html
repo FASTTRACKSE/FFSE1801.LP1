@@ -1,0 +1,15 @@
+<script>
+    var n=parseInt(prompt("Nhap n de in mang so le"))
+    arr=[];
+    c=0;
+    for (let i=0;i<n+1;i++){
+        if (i%2==1){
+            arr[c]=i;
+            c++;}
+    }
+
+    document.write("Cac so le trong mang tu 1 den n la: ");
+    for (let i=0;i<arr.length;i++){
+        document.write(arr[i]+"-");
+    }
+    </script>

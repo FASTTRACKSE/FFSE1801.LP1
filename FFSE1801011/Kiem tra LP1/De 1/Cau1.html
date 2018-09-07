@@ -1,0 +1,14 @@
+<script>
+    var n = parseInt(prompt("Nhập số N cần kiểm tra tính nguyên tố"));
+    while (n<2)
+    {
+    var n = parseInt(prompt("Xin hay nhap lai so N > 1"));}
+     
+    var x=1;
+    for (var i =2; i<=Math.sqrt(n);i++)
+    {
+        if ((n%i)==0){x= 0; document.write("N khong phai la so nguyen to"); break;}
+    }
+    if(x==1){document.write("N la so nguyen to");}
+
+</script>
