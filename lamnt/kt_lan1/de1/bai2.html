@@ -1,0 +1,20 @@
+<script>
+	var t=0;s=1;
+	var n = prompt("vui long nhap so n");
+	if(n==1){
+		document.write("0");
+	}else{
+		if(n==2){
+			document.write("0 1");
+		}else{
+			document.write("0 1 ");
+			for (var i = 2; i <n; i++) {
+				tg= t+s;
+				t=s;
+				s=tg;
+				document.write(" "+tg);
+			}
+		}
+	}
+
+</script>

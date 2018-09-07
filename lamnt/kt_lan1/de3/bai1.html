@@ -1,0 +1,16 @@
+<script>
+	function uscln(a,b){
+		while(a!=b){
+			if(a>b){
+				a=a-b;
+			}else{
+				b=b-a;
+			}
+		}
+		return a;
+	}
+
+	var a = parseInt(prompt("Nhap a: "));
+	var b = parseInt(prompt("Nhap b: "));
+	document.write("USCLN "+ uscln(a,b));
+</script>
