@@ -1,0 +1,15 @@
+<script type="text/javascript">
+	var n=prompt("Nhập số phần tử")
+	    t=0;
+	    s=1;
+	    
+	    document.write(t+" - "+s)
+	for (var i = 0; i <= n; i++) {
+		if(n>0){
+			tg=t+s;
+			t=s;
+			s=tg;
+			document.write(" - "+s)
+		}
+	}
+</script>
