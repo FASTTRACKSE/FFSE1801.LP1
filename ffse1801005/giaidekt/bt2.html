@@ -1,0 +1,16 @@
+<script lang="javascript">
+	var n=prompt(" nhập vào 1 số ");
+	function fibonaci(a){
+		var s1,s2,tg;
+		s1=0;
+		s2=1;
+		document.write(s1+"-"+s2);
+		for (var i = 2; i < a; i++) {
+			tg=s1+s2;
+			s1=s2;
+			s2=tg;
+			document.write("-"+tg);
+		}
+	}
+	fibonaci(n);
+</script>
