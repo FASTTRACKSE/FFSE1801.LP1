@@ -51,7 +51,7 @@ let mark=[[],[]];
                 [6,4,4,7,5,5],
             ],
         ]
-function tbmon(arr){
+function sbjavg(arr){
     let c=0; s=0;avg=0      //Khoi tao bien dem c, tong s, average BEN NGOAI FOR
     for (let i = 5; i > -1; i--) {
         if (arr[i]<0){      //Dem so lan thieu diem thi
@@ -68,7 +68,7 @@ function tbmon(arr){
         else {avg=s/(arr.length-c+3);
         return avg}
     }
-function tbhk(i,sbj,mrk){
+function semavg(i,sbj,mrk){
     let s=0; avg=0; x=true;  
     for (let j=0;j<sbj.length;j++){
         if (mrk[i][j][6]<0){x= false; break;} 
@@ -88,20 +88,20 @@ function tbhk(i,sbj,mrk){
     }
 
 for (let i = 0; i < name.length; i++) {
-    document.write("Ho va ten: "+name[i]+"<br> \t \t Diem HS 1 \t Diem HS 2 \t Diem hoc ky \t Diem tong ket \t"+"</br>"); //In row header 
+    document.write("Ho va ten: "+name[i]+"<hr> \t \t Diem HS 1 \t Diem HS 2 \t Diem hoc ky \t Diem tong ket \t"+"</br>"); //In row header 
     for (let j=0;j< subject.length;j++){            //In subject name column
     document.write(subject[j] + "\t");
         for (let k = 0; k < 7; k++) {   //Không thể thay 7 bằng mark[i][j].length vì sẽ lặp vô tận
             if(k < 4) {document.write(mark[i][j][k] + ", ")}
                 else if (k<6) {document.write("\t \t"+mark[i][j][k])}
-                    else {mark[i][j][k]=tbmon(mark[i][j]); //Mảng mark[i][j] chưa bao gồm phần tử k cuối cùng này
+                    else {mark[i][j][k]=sbjavg(mark[i][j]); //Mảng mark[i][j] chưa bao gồm phần tử k cuối cùng này
                         if (mark[i][j][k]!=-1){document.write("\t \t"+ parseFloat(mark[i][j][k]).toFixed(1))}
                         else {document.write("\t Khong du DK tong ket")}
                     }
         }document.write("</br>");
         
     }document.write("Ket qua hoc ky: ");
-    document.write(tbhk(i,subject,mark)+"<br>" + "<br>");
+    document.write(semavg(i,subject,mark)+"<br>" + "<br>");
 }
 </script>
 </pre>

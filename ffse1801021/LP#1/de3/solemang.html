@@ -1,0 +1,47 @@
+
+<script>
+	var a=[],b=[],c=[];
+	var t=0,d=0,max;
+	var n=parseInt(prompt("Nhap so luong phan tu trong mang:"));
+	function nhapmang(k){
+		for(var i=0;i<n;i++){
+		k[i]=parseInt(prompt("Nhap gia tri phan tu thu "+(i+1)+" la:"));
+		}
+	}
+	nhapmang(a);
+	function kiemtra(k){
+		while(k!=0){
+			m=k%10;
+			if(m%2==0) return false;
+			k=Math.floor(k/10);
+		}
+		return true;
+	}
+	for(var i=0;i<n;i++){
+		if(a[i]%2!=0){
+			b[t]=a[i];
+			t++;
+		}
+	}
+	document.write("Ta có mảng là: ");
+	for(var i=0;i<n;i++){
+		document.write(a[i]+",");
+	}
+	document.write("<br>");
+	document.write("Các số lẻ trong mảng là: ");
+	for(var i=0;i<b.length;i++){
+		if(kiemtra(b[i])==true){
+			document.write(b[i]+",");
+			c[d]=b[i];
+			d++;
+		}
+	}
+	max=c[0];
+	for(var i=0;i<c.length;i++){
+		if(max<c[i]){
+			max=c[i];
+		}
+	}
+	document.write("<br>");
+	document.write("Số lẻ lớn nhất trong mảng là: "+max);
+</script>

@@ -1,0 +1,11 @@
+<script type="text/javascript">
+	var n=parseInt(prompt("Nhap so n:"));
+	var tam,t=0,s=1;
+	document.write("Ta co day so fibonacci co "+n+" phan tu la: "+t+","+s);
+	for(var i=2;i<n;i++){
+		tam=t+s;
+		t=s;
+		s=tam;
+		document.write(","+tam);
+	}
+</script>
