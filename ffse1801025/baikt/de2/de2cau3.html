@@ -1,0 +1,16 @@
+<script type="text/javascript">
+	var arso=[]
+	var max=0
+	var n=parseInt(prompt("nhap so phan tu"));
+		for(i=0;i<n;i++){
+			arso[i]=parseInt(prompt("nhap phan tu thu "+i))
+		}
+	document.write(arso+"<hr> ")
+	for(i=1;i<arso.length;i++){
+		if(arso[i]>arso[max]){
+			max=i+1
+		}
+	}
+	document.write("Gia tri lon nhat la: "+arso[max]+"<hr>")
+	document.write("vi tri cua gia tri lon nhat: "+max)
+</script>
