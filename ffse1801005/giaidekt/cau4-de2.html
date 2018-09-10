@@ -1,0 +1,32 @@
+<script lang="javascript">
+	// hàm nhập mảng
+	function nhap_mang(){
+		var mang=[];
+		n=prompt("nhập vào số phần tử của mảng");
+		for (var i = 0; i < n; i++) {
+			mang[i]=prompt(" nhập vào phần tử thứ "+(i+1)+" của mảng");
+		}
+		return mang;
+	}
+	var mang=nhap_mang();
+	document.write("mảng: "+mang);
+	// hàm kt số hoàn hảo
+	function kt_shh(a){
+		tg=0;
+		for (var i = 1; i < a; i++) {
+			tg=tg+i;
+		}
+		if (tg==a) {
+			return true;
+		}else{
+			return false;
+		}
+	}
+	dem=0;
+	for (var i = 0; i < mang.length; i++) {
+		if (kt_shh(mang[i])==true) {
+			dem++;
+		}
+	}
+	document.write("<hr> có "+dem +" số hoàn hảo trong mảng");
+</script>
