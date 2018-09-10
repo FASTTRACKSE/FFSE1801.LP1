@@ -1,0 +1,20 @@
+<script>
+	function kt_chan_le(n){
+		if(n%2==0){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+	ar_so=[5,7,8,5,3,7,4];
+	 
+	dem=0;
+	for (var i = 0; i < ar_so.length; i++) {
+		kq= kt_chan_le(ar_so[i]);
+		if(kq==true){
+			dem++;
+		}
+	}
+	document.write("So chan trong mang      la: "+dem);
+</script>

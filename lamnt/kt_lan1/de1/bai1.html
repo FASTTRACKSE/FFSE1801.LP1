@@ -1,0 +1,21 @@
+<script>
+	function kt_snt(n){
+		if(n<=2){
+			return false;
+		}else{
+			for(var i =2;i<=Math.sqrt(n);i++){
+				if(n%i==0){
+					return false;
+				}
+			}
+			return true;
+		}	
+	}
+
+	var n = prompt("Nhap n: ");
+	if(kt_snt(n)==true){
+		document.write("la snt");
+	}else{
+		document.write("khong phai la snt");
+	}
+</script>

@@ -1,0 +1,17 @@
+<script>
+	var mang=[];
+	var n = prompt("Vui long nhap so phan tu cua mang");
+	for(var i = 0 ; i<n;i++){
+		mang[i]=prompt("Nhap phan tu thu "+(i+1));
+	}
+	for (var i = 0; i < mang.length-1; i++) {
+		for (var j = i+1; j < mang.length; j++) {
+			if(mang[i]>mang[j]){
+				tg=mang[i];
+				mang[i]=mang[j];
+				mang[j]=tg;
+			}
+		}
+	}
+	document.write(mang);
+</script>

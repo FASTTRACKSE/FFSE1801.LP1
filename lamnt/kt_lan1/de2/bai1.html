@@ -1,0 +1,21 @@
+<script>
+	var n = prompt("Vui long nhap n");
+	function kt_shh(n){
+		tong=0;
+		for(var i = 1;i<n;i++){
+			if(n%i==0){
+				tong=tong+i;
+			}
+		}
+		if(tong==n){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	if(kt_shh(n)==true){
+		document.write("la so hh");
+	}else{
+		document.write("k phai la so hh");
+	}
+</script>

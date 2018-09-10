@@ -1,0 +1,14 @@
+<script type="text/javascript">
+	var n=parseInt(prompt("nhap vao so can kiem tra ",' '));
+	var s=0;
+	for (var i=1;i<n;i++){
+		if(n%i==0){
+			s=s+i
+		}
+	}
+	if(s==n){
+		document.write(+n+" la so hoan hao");
+	}else{
+		document.write(+n+" khong phai la so hoan hao");
+	}
+</script>

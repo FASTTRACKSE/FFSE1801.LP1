@@ -1,0 +1,38 @@
+<script type="text/javascript">
+	var a=[];
+	var n=parseInt(prompt("Nhap pt trong mang:"));
+	function nhap(j){
+		for(var i=0;i<j;i++){
+		a[i]=parseInt(prompt("Nhap gia tri pt thu "+(i+1)+" la:"));
+		}
+	}
+	function snt(j){
+		if(j<2){
+			return false
+		}else{
+		if(j<4){
+			return true
+		}else{	
+		for(var i=2;i<j;i++){
+		if(j%i==0){
+			return false
+		}else{
+			return true
+		}
+		}
+		}
+		}
+	}
+		
+	nhap(n);
+	document.write("Ta co mang la:"+a)
+	document.write("<br>");
+	dem=0;
+	for(var i=0;i<n;i++){
+		kq=snt(a[i]);
+		if (kq==true){
+			dem++;
+		}
+	}
+	document.write("mang co "+dem+" so nguyen to")
+</script>

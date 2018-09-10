@@ -1,0 +1,35 @@
+<script>
+	function kt_toanle(n){
+		while(n!=0){
+			dv= n%10;
+			if(dv%2==0){
+				return false;
+			}
+			n=Math.floor(n/10);
+		}
+		return true;
+	}
+	
+	function nhap_mang(){
+		var mang=[];
+		var n = prompt("Vui long nhap so phan tu cua mang");
+		for(var i = 0 ; i<n;i++){
+			mang[i]=parseInt(prompt("Nhap phan tu thu "+(i+1)));
+		}
+		return mang;
+	}
+	//document.write(kt_toanle(13));
+	var ar_so= nhap_mang();
+	var max=0;
+	for (var i = 0; i < ar_so.length; i++) {
+		if(kt_toanle(ar_so[i])==true&&max<ar_so[i]){
+			max=ar_so[i];
+		}
+	}
+	if(max==0){
+		document.write("KHong co so toan le trong mang");
+	}else{
+		document.write("So toan le lon nhat trong mang la "+max);
+	}
+	
+</script>
