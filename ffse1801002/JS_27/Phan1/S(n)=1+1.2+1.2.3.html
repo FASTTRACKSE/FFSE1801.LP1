@@ -1,0 +1,10 @@
+<script type="text/javascript">
+	var n=parseInt(prompt("Nhap mot so nguyen:"));
+	var tong=0,phu=1;
+	document.write("So n vua nhap la: "+n+"<br>");
+	for(var i=1;i<=n;i++){
+		phu*=i;
+		tong+=phu;
+	}
+	document.write("Tong nguyen S(n) = 1 + 1.2 + 1.2.3 + … + 1.2…n la: "+tong);
+</script>
