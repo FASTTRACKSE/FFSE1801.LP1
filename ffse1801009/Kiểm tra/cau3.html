@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hưng</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var arso,n;
+		arso=[];
+		n=prompt("Nhập số phần tử mảng :");
+		for (var i = 0; i < n; i++) {
+			arso[i]=prompt("Nhập phần thứ " +(i+1));
+		}
+		document.write(arso);
+		document.write("<br>");
+		var tong = 0;
+		for (var i = 1; i <= arso.length ; i++) {
+			if (i % 2 == 0 ) {
+				document.write(i+ " ,");
+				tong = tong+ i;
+// document.write(tong);
+			}
+		}
+			document.write("Tổng các phần tử ở vị trí chẵn trong mảng là :"+tong);
+	</script>
+</body>
+</html>

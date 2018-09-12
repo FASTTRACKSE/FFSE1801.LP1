@@ -1,0 +1,29 @@
+<pre>
+    <script>
+        function nhap_mang() {
+            var ar = [];
+            var n = parseInt(prompt("Nhập số phần tử mảng: "));
+            document.write("Mảng đã nhập: ");
+            for ( var i = 0 ; i < n ; i++ ){
+                ar[i] = prompt("Nhập phần thứ " +(i+1));
+                document.write(ar[i]+" ");
+            }
+        return ar;
+        }
+        function kiem_tra(x){
+            if  ( x%2 != 0 ) {  
+                return true;
+            } else return false;
+        }
+        var arr = [] ;  
+        var dem = 0 ;
+        arr = nhap_mang(arr);
+        for ( var j = 0 ; j < arr.length ; j++ ) {
+            if ( kiem_tra(arr[j]) == true ) {
+                dem++ ;
+            }
+        }   
+        document.write("<br>");
+        document.write("Số các phần tử có giá trị lẻ trong mảng là: "+dem);
+    </script>
+</pre>
