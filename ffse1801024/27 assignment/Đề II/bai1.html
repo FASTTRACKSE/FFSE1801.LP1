@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var mang=[];
+            n=parseInt(prompt("nhập n nào!"));
+            document.write("mảng bạn đã nhập là: ")
+        for(var i=0;i<n;i++){
+            mang[i]=parseInt(prompt("nhập phần tử thứ "+(i+1)+" cho mảng!"))
+            document.write(mang[i]+", ");
+        }
+        document.write("<br> các phần tử âm trong mảng trên là: ");
+        for(var i=0;i<n;i++){
+            if(mang[i]<0){
+                document.write(mang[i]+", ");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var mang=[];
+            n=parseInt(prompt("nhập n nào!"));
+            document.write("mảng bạn đã nhập là: ")
+        for(var i=0;i<n;i++){
+            mang[i]=parseInt(prompt("nhập phần tử thứ "+(i+1)+" cho mảng!"))
+            document.write(mang[i]+", ");
+        }
+        var s=0;
+        for(var i=0;i<n;i++){
+            if(i%2!=0){
+                s=s+mang[i];
+            }
+        }
+        document.write("<br> tổng giá trị các phần tử có vị trí chẵn trong mảng là: "+s);
+    </script>
+</body>
+</html>

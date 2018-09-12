@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n=parseInt(prompt("vui lòng nhập giá trị góc cần xét!"));
+        kt=Math.floor(n/360);
+        if(n>0){
+            if((0<n)&&(n<=90)){
+                document.write("góc bạn đã nhập là ở góc phần 4 thứ nhất!");
+            }
+            if((n>=90)&&(n<180)){
+                document.write("góc bạn đã nhập là ở góc phần 4 thứ hai!");
+            }
+            if((n>=18)&&(n<270)){
+                document.write("góc bạn dã nhập là ở góc phần tư thứ ba!");
+            }
+            if((n<=270)&&(n<360)){
+                document.write("góc bạn đã nhập là ở góc phần tư thứ tư!");
+            }
+        }else{
+            document.write("vui lòng nhập giá trị từ 0 đến 360");
+        }
+    </script>
+</body>
+</html>

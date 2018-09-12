@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var mang=[];
+            n=parseInt(prompt("nhập n nào!"));
+            document.write("mảng bạn đã nhập là: ")
+        for(var i=0;i<n;i++){
+            mang[i]=parseInt(prompt("nhập phần tử thứ "+(i+1)+" cho mảng!"))
+            document.write(mang[i]+", ");
+        }
+        var tg;
+        for(var i=0;i<(n/2);i++){
+            tg=mang[i];
+            mang[i]=mang[n-1-i];
+            mang[n-1-i]=tg;
+        }
+        document.write("<br> các phần được sắp xếp tăng dần: "+mang); 
+    </script>
+</body>
+</html>
