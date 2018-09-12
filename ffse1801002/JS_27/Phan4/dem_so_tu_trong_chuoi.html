@@ -1,0 +1,15 @@
+<script type="text/javascript">
+	var s="";
+	var dem;
+	s=prompt("Nhap mot chuoi:");
+	document.write("Chuoi moi nhap la: "+s+"<br>");
+	if(s[1]==" "){
+		dem=0;
+	}else dem=1;
+	for(var i=0;i<s.length;i++){
+		if(s[i]==" " && s[i+1]!=" "){
+			dem++;
+		}
+	}
+	document.write("Co "+dem+" tu trong chuoi!");
+</script>

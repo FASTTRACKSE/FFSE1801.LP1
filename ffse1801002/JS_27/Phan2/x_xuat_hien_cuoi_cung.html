@@ -5,12 +5,14 @@
 	for(var i=0;i<n;i++){
 		a[i]=parseInt(prompt("Nhap phan tu thu "+(i+1)));
 	}
+	var x=parseInt(prompt("Nhap gia tri x:"));
 	document.write("Mang ta co la: "+a);
 	document.write("<br>");
-	for(var i=1;i<n;i++){
-		if(i%2!=0){
-			tong+=a[i];
+	for(var i=n-1;i>=0;i--){
+		if(a[i]==x){
+			vt=i;
+			break;
 		}
 	}
-	document.write("Tong cac phan tu o vi tri chan trong mang la: "+tong);
+	document.write("Vi tri phan tu co gia tri "+x+" xuat hien cuoi cung trong mang la: "+(vt+1));
 </script>

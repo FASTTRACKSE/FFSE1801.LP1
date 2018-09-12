@@ -1,0 +1,15 @@
+<script type="text/javascript">
+	var s="",t="";
+	s=prompt("Nhap mot chuoi:");
+	document.write("Chuoi moi nhap la: "+s+"<br>");
+	var c=prompt("Nhap ki tu can kiem tra:");
+	for(var i=0;i<s.length;i++){
+		if(s[i]==c){
+			t+=(i+1)+",";
+		}
+	}
+	document.write("Vi tri xuat hien cua ki tu "+c+" trong chuoi la: ");
+	if(t==""){
+		document.write("-1");
+	}else document.write(t);
+</script>
