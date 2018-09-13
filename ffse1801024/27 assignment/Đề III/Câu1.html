@@ -9,6 +9,8 @@
 </head>
 
 <body>
+
+    <pre>
     <script>
         var arr_a = [],
             arr_b = [],
@@ -37,24 +39,54 @@
             }
         }
 
-        for (let i = 0; i < row; i++) {
-            arr_c[i] = [];
-            for (let j = 0; j < column; j++) {
-                arr_c[i][j] = arr_b[i][j] + arr_a[i][j];
+        // for (let i = 0; i < row; i++) {
+        //     arr_c[i] = [];
+        //     for (let j = 0; j < column; j++) {
+        //         arr_c[i][j] = arr_b[i][j] + arr_a[i][j];
+        //     }
+        // }
+
+        // for (let i = 0; i < row; i++) {
+        //     document.write("<br>Hàng thứ " + i + " của mảng a: " + arr_a[i]);
+        //     document.write("<br>Hàng thứ " + i + " của mảng b: " + arr_b[i]);
+        //     document.write(
+        //         "<br>Kết quả của mảng a cộng mảng b tại hàng " + i + ": " + arr_c[i]
+        //     );
+        // }
+        document.write("\t")
+
+        for (let i = 0; i < arr_a.length; i++) {
+            for (let j = 0; j < arr_a.length; j++) {
+                document.write("[" + i + "]" + "[" + j + "]" + "\t")
             }
-        }
 
-        for (let i = 0; i < row; i++) {
-            document.write("<br>Hàng thứ " + i + " của mảng a: " + arr_a[i]);
-            document.write("<br>Hàng thứ " + i + " của mảng b: " + arr_b[i]);
-            document.write(
-                "<br>Kết quả của mảng a cộng mảng b tại hàng " + i + ": " + arr_c[i]
-            );
         }
+        document.write("<hr>mảng a\t")
+        for (let i = 0; i < arr_a.length; i++) {
+            for (let j = 0; j < arr_a.length; j++) {
+                document.write("  " + arr_a[i][j] + "\t")
+            }
 
+        }
+        document.write("<hr>mảng b\t")
+        for (let i = 0; i < arr_b.length; i++) {
+            for (let j = 0; j < arr_b.length; j++) {
+                document.write("  " + arr_b[i][j] + "\t")
+            }
+
+        }
+        document.write(`<hr>b+c\t`)
+        for (let i = 0; i < arr_b.length; i++) {
+            for (let j = 0; j < arr_b.length; j++) {
+                document.write("  " + (arr_a[i][j] + arr_b[i][j]) + "\t")
+            }
+
+        }
 
 
     </script>
+
+    </pre>
 </body>
 
 </html>
