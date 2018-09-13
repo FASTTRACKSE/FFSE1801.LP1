@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+            Sắp xếp mảng giảm dần
+        </title>
+    </head>
+    <body>
+        <pre>
+            <script>
+                var tg;
+                var a=[];
+
+
+                n= parseInt(prompt("Nhập số lượng phần tử: "));
+                for (var i = 0 ; i < n ; i++ ){
+                    
+                    a[i]= parseInt(prompt("Nhập giá trị phần tử thứ " + (i+1) +" của mảng: "));
+                }
+
+
+                document.write("Mảng đã nhập là "+a+"<br>");
+                for (var i=0;i<n-1;i++){
+                    for (var j=i+1;j<n;j++){
+
+                        if (a[i]<a[j]){
+
+                            tg=a[j];
+
+                            a[j]=a[i];
+
+                            a[i]=tg
+                        }
+                    
+                    }
+            
+                }   
+                
+                document.write("Mảng đã sắp xếp là: ");
+                for (var t=0;t<n;t++) {
+
+                    document.write(a[t]+",") 
+                } 	
+            </script>
+        </pre>
+    </body>
+</html>

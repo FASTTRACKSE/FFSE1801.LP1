@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            Tính Tổng 2n
+        </title>
+    </head>
+    <body>
+        <pre>
+            <script>
+                
+                var n = parseInt(prompt("Nhập số n: "));
+                s = 0;
+
+                for ( let i = 1 ; i <= n ; i++ ) {
+
+                    s += 1/(2*i);
+                }
+
+                document.write("Tổng s = 1/2 + 1/4 + ... + 1/2n là: "+s.toFixed(2));
+            </script>
+        </pre>
+    </body>
+</html>

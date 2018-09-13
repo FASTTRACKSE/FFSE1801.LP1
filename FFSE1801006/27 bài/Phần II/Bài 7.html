@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            Tính tổng giá trị của các phần tử có vị trí chắn trong mảng
+        </title>
+    </head>
+    <body>
+        <pre>
+            <script>
+                
+                var a = [];
+                var n = parseInt(prompt("Nhập số lượng phần tử có trong mảng: "));
+                
+                document.write("Mảng đã nhập: ");
+                for ( let i = 0 ; i < n ; i++ ) {
+
+                    a[i] = parseInt(prompt("Nhập giá trị của phần tử thứ "+i+" của mảng: "));
+                    document.write("\t"+a[i]);
+                }
+
+                var s = 0 ;
+                for ( let j = 0 ; j < n ; j++ ) {
+
+                        if ( j%2 == 0 ) {
+                            s += a[j];
+                    }
+                }
+                
+                
+                document.write("\n");
+                document.write("Tổng giá trị của các phần tử có vị trí chẵn trong mảng: "+s);
+
+            </script>
+        </pre>
+    </body> 
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            Tìm vị trí có giá trị nhỏ nhất trong mảng
+        </title>
+    </head>
+    <body>
+        <pre>
+            <script>
+                
+                var a = [];
+                var n = parseInt(prompt("Nhập số lượng phần tử có trong mảng: "));
+                
+                document.write("Mảng đã nhập: ");
+                for ( let i = 0 ; i < n ; i++ ) {
+
+                    a[i] = prompt("Nhập giá trị của phần tử thứ "+i+" của mảng: ");
+                    document.write("\t"+a[i]);
+                }
+
+                var max = a[1];
+                var m ;
+                
+                for ( let i = 0 ; i < n ; i++ ) {
+
+                    if ( a[i] >  max ) {
+                        max = a[i];
+                        m = i+1;
+                    }
+                }
+                
+                document.write("\n");
+                document.write("Vị trí có giá trị nhỏ nhất là: "+m);
+
+            </script>
+        </pre>
+    </body>
+</html>

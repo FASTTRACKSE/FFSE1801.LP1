@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            Xóa kí tự space
+        </title>
+    </head>
+    <body>
+        <pre>
+            <script>
+                
+                var a = prompt("Nhập chuỗi kí tự: ");
+                b = "";
+                
+                for ( var i = 0 ; i < a.length ; i++ ) {
+
+                    if ( ( a[i] !== " " ) || ( a[i] !== "\t") ) {
+
+                        b += a[i];
+                    }
+                }
+
+                document.write("Mảng sau khi xóa ký tự space là: "+b);
+            </script>
+        </pre>
+    </body>
+</html>

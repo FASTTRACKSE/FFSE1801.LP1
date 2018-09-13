@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>
+            Tìm phần tử có giá trị xa x trong mảng
+        </title>
+    </head>
+    <body>
+        <pre>
+            <script>
+                
+                var a = [];
+                var b = [];
+                var m;
+                var n = parseInt(prompt("Nhập số lượng phần tử có trong mảng: "));
+                
+                document.write("Mảng đã nhập: ");
+                for ( let i = 0 ; i < n ; i++ ) {
+
+                    a[i] = prompt("Nhập giá trị của phần tử thứ "+(i+1)+" của mảng: ");
+                    document.write("\t"+a[i]);
+                }
+                
+                var x = parseInt(prompt("Nhập giá trị x: "));
+                
+                
+                for ( let i = 0 ; i < n ; i++ ) {
+
+                    if ( x > a[i] ) { 
+
+                        b[i] = x - a[i] ;
+                        
+                    } else if ( x < a[i] ) {
+
+                        b[i] = a[i] - x ;
+                    }
+                }
+                
+                max = b[0];
+                for ( let i = 0 ; i < b.length ; i++ ) {
+
+                    if ( max < b[i] ) {
+
+                        max = b[i] ;
+
+                        m = i;
+                    }
+                }
+                
+                document.write("\n");
+                document.write("Phần tử xa "+x+" nhất trong mảng là: "+a[m]);
+
+            </script>
+        </pre>
+    </body>
+</html> 
