@@ -1,0 +1,27 @@
+<script type="text/javascript">
+	//Tìm vị trí của phần tử nhỏ nhất trong mảng 1 chiều
+	alert("Tìm vị trí của phần tử nhỏ nhất trong mảng 1 chiều");
+	var a=[];
+	var min,k;
+	do
+		n=parseInt(prompt("Nhập độ dài mảng"));
+	while(n<1)
+
+	for(var i=0;i<n;i++)
+	{
+		a[i]=parseInt(prompt("Nhập phần tử thứ "+(i+1)));
+		document.write(a[i]+" ");
+	}
+	document.write("<br>");
+	min=a[0];
+	k=0;
+	for(i=1;i<n;i++)
+		if(a[i]<min)
+		{
+			min=a[i];
+			k=i;
+		}
+
+	document.write("Vị trí số nhỏ nhất là a["+k+"]="+min);
+
+</script>

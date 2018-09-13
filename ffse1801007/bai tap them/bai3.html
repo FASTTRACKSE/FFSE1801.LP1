@@ -1,0 +1,20 @@
+<script type="text/javascript">
+	//Tách các chữ số thuộc hàng trăm, hàng chục, hàng đơn vị
+	alert("Tách các chữ số thuộc hàng trăm, hàng chục, hàng đơn vị");
+	var n=prompt("Nhập số n có 3 chữ số");
+	if(n>=100 && n<=999)
+	{
+	var a=n%10;
+	n=Math.floor(n/10);
+	var b=n%10;
+	n=Math.floor(n/10);
+	var c=n%10;
+	n=Math.floor(n/10);
+	document.write("chu so hang don vi "+a);
+	document.write("<br>chu so hang chuc "+b);
+	document.write("<br>chu so hang tram "+c); 
+	}
+	else 
+		document.write("Error");
+	
+</script>

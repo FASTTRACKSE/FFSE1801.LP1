@@ -1,0 +1,33 @@
+<script type="text/javascript">
+	//Tìm phần tử trong mảng gần giá trị x nhất
+	alert("Tìm phần tử trong mảng gần giá trị x nhất");
+	var a=[];
+	var tong=0;
+	var dist,min,j;
+	var l=parseInt(prompt("Nhập 1 số"));;
+	do
+		n=parseInt(prompt("Nhập độ dài mảng"));
+	while(n<1)
+
+	for(var i=0;i<n;i++)
+	{
+		a[i]=parseInt(prompt("Nhập phần tử thứ "+(i+1)));
+		document.write(a[i]+" ");
+	}
+	document.write("<br>");
+	
+	min=Math.abs(a[0]-l);
+	for(i=0;i<n;i++)
+	{
+		dist=Math.abs(a[i]-l);
+		if(dist<min)
+		{
+			min=dist;
+			j=i;
+		}
+	}
+	document.write("gia tri gan "+l+" nhat : "+a[j])
+
+
+	
+</script>

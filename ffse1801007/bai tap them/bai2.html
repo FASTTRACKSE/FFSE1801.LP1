@@ -1,0 +1,10 @@
+<script type="text/javascript">
+	//Tính tổng S(x, n) = x + x^2 + x^3 +…+ x^n
+	alert("Tính tổng S(x, n) = x + x^2 + x^3 +…+ x^n");
+	var tong=0;
+	var x=parseInt(prompt("Nhập số x"));
+	var n=parseInt(prompt("Nhập số n"));
+	for(var i=1;i<=n;i++)
+		tong=tong+Math.pow(x,i);
+	document.write("Kết quả: "+tong);
+</script>
