@@ -1,0 +1,26 @@
+<script>
+	ds_sv=[
+		{
+			hoten:"Nguyen van a",
+			lop:"ffse1701"
+		},
+		{
+			hoten:"Nguyen van b",
+			lop:"ffse1701"
+		},
+		{
+			hoten:"Nguyen van c",
+			lop:"ffse1701"
+		}
+	]
+	for (var i = 0; i < ar_so.length-1; i++) {
+		for(var j=i+1;j<ar_so.length;j++){
+			if(ar_so[i]>ar_so[j]){
+				tg=ar_so[i];
+				ar_so[i]=ar_so[j];
+				ar_so[j]=tg;
+			}
+		}
+	}
+	document.write(ar_so);
+</script>

@@ -1,0 +1,19 @@
+<script>
+	arso=[4,1,5,16,8,5,7];
+	n=prompt("Nhap n can then");
+	vt=0;
+	arsoNew=[];
+	for (var i = 0; i < arso.length; i++) {
+		arsoNew[i]=arso[i];
+		if(arso[i]>arso[vt]){
+			vt=i
+		}
+	}
+	document.write(arsoNew);
+	arsoNew[vt+1]=n;
+	for (var i = vt+2; i <= arso.length; i++) {
+		 arsoNew[i]=arso[i-1];
+	}
+	document.write("<br>");
+	document.write(arsoNew)
+</script>
