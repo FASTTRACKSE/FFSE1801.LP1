@@ -1,0 +1,35 @@
+<script>
+    var ar = [];
+    var br = [];
+    var h = parseInt(prompt("Nhap so hang cua ma tran:"));
+    var c = parseInt(prompt("Nhap so cot cua ma tran:"));
+    function nhap(a, ar_name){
+        for (let i=0;i<h; i++){
+            a[i]=[]; // khởi tạo chiều thứ 2 tại hàng i
+            for(let j=0;j<c;j++){
+                a[i][j] = parseInt(prompt("Nhập phần tử "+ar_name+"["+i+"]"+"["+j+"]"));
+            }
+        }
+    }
+    function xuat(a){
+        for(let i=0;i<h;i++){
+            for(let j=0;j<c;j++){
+                document.write(a[i][j]+" ");
+            } document.write("<br>");
+        }
+    }
+    nhap(ar, "a");
+    nhap(br, "b");
+    document.write("Ma tran thu nhat:<br>");
+    xuat(ar);
+    document.write("<hr>");
+    document.write("Ma tran thu hai:<br>");
+    xuat(br);
+    document.write("<hr>");
+    document.write("Tong hai ma tran:<br>");
+    for(let i=0;i<h;i++){
+        for(let j=0;j<c;j++){
+            document.write((ar[i][j]+br[i][j])+" ");
+        } document.write("<br>");
+    }
+</script>
