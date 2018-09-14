@@ -1,0 +1,18 @@
+<script>
+	var a=[];
+	var min,vt;
+    	n= parseInt(prompt("nhập số phần tử của mảng"));
+    	for (var i=0;i<n;i++){
+    		a[i]= parseInt(prompt("nhập phần tử thứ "+(i+1)))
+    	}
+    	min=a[0];
+    	document.write("ta có mảng là "+a+"<br>");
+    	document.write("vị trí phần tử nhỏ nhất trong mảng là: ");
+    	  for (var i=0;i<n;i++){
+    	  	if (min>a[i]){
+    	  		min=a[i];
+    	  		vt=i+1;
+    	  	}
+    	  }
+    	  document.write(vt);
+</script>

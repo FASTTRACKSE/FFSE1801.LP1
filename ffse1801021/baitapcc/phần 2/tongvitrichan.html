@@ -1,0 +1,16 @@
+<script>
+	var a=[];
+	var s=0;
+	 	n= parseInt(prompt("nhập số phần tử của mảng "));
+	 		for (var i=0;i<n;i++){
+	 			a[i]= parseInt(prompt("nhập phần tử thứ "+(i+1)));
+	 		}
+	 		document.write("ta có mảng là: "+a+"<br>");
+	 		document.write("tổng các phần tử ở vị trí chẵn = ")
+	 			for (var i=1;i<n;i++){
+	 				if (i % 2 ==0){
+	 					s=s+a[i];
+	 				}
+	 			}
+	 					document.write(s);
+</script>
