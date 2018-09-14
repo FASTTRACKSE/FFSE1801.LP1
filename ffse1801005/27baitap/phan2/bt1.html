@@ -1,0 +1,19 @@
+<script "javascript">
+	// in cac phan tu le cua mang
+	function nhap_mang(){
+		var mang=[];
+		n=prompt(" nhập vào số phần tử của mảng");
+		for (var i = 0; i < n; i++) {
+			mang[i]=prompt(" nhập vào phần tử thứ "+(i+1)+" của mảng");
+		}
+		return mang;
+	}
+	var mang=nhap_mang();
+	document.write("mang: "+mang+"<hr>");
+	 for (var i = 0; i < mang.length; i++) {
+	 	if (mang[i]%2==1) {
+	 		document.write(mang[i]+"-");
+	 	}
+	}
+	document.write(" là các số lẻ trong mảng: ");
+</script>

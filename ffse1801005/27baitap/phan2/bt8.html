@@ -1,0 +1,16 @@
+<script lang="javascript">
+	n=prompt(" nhập vào số phần tử của mảng");
+	mang=[];
+	for (var i = 0; i < n; i++) {
+		mang[i]=parseInt(prompt(" nhập vào phần tử thứ "+(i+1)));
+	}
+	document.write("mang: "+mang);
+	//tính tổng ở vt chẵn trong mảng trong mảng
+	var tong=0;
+	for (var i = 0; i < mang.length; i++) {
+		if(i%2==0){
+			tong=tong+mang[i];
+		}
+	}
+	document.write("<hr> tổng ở vị trí chẵn trong mảng: "+tong);
+</script>

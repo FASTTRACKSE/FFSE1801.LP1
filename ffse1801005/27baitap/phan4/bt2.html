@@ -1,0 +1,20 @@
+<script lang="javascript">
+	// vị trí của kí tự c trong chuỗi
+	var chuoi="";
+	chuoi=prompt("nhập vào chuỗi");
+	document.write(chuoi+"<hr>");
+	vt="";
+	c=prompt("nhập vào 1 kí tự để kiểm tra");
+	for (var i = 0 ; i <= chuoi.length; i++) {
+		if(chuoi[i]==c){
+			vt=vt+i+",";
+		}
+	}
+	document.write("vị trí xuất hiện của kí tự "+c+" : " );
+	// k tìm thấy trả về -1
+	if (vt=="") {
+		document.write("-1");
+	}else{
+		document.write(vt);
+	}
+</script>

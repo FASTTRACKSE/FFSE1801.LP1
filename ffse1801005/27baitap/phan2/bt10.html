@@ -1,0 +1,12 @@
+<script lang="javascript">
+	// tính tổng phần tử cực đại
+	arrs=[1,5,6,3,7,8,2,9,1];
+	document.write(arrs);
+	tong=0;
+	for (var i = 0; i < arrs.length; i++) {
+		if (arrs[i+1]>arrs[i]&&arrs[i+1]>arrs[i+2]) {
+			tong=tong+arrs[i+1];
+		}
+	}
+	document.write("<hr> tổng các phần tử cực đại: "+tong);
+</script>

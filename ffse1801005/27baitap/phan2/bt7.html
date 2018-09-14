@@ -1,0 +1,14 @@
+<script lang="javascript">
+	// tim vi tri so be nhat trong mang
+	var mang=[3,4,5,5,7,8,1,4,2];
+	document.write("mảng: "+mang+"<hr>");
+	vt=0;
+	min=mang[0];
+	for (var i = 0; i < mang.length; i++) {
+		if (min>mang[i]) {
+			min=mang[i];
+			vt=i+1;
+		}
+	}
+	document.write("vị trí số bé nhất: "+vt);
+</script>

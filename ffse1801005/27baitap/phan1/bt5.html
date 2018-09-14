@@ -1,0 +1,14 @@
+<script lang="javascript">
+	// nhập vào 4 số tìm giá trị lớn nhất
+	var n=[];
+	for (var i = 0; i < 4; i++) {
+		n[i]=prompt("nhập vào số thứ "+(i+1));
+	}
+	max=n[0];
+	for (var i = 0; i < n.length; i++) {
+		if (max<n[i]) {
+			max=n[i]
+		}
+	}
+	document.write("số lớn nhất: "+ max);
+</script>

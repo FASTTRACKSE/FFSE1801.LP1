@@ -1,0 +1,14 @@
+<script lang="javascript">
+	// tim vi tri so lon nhat trong mang
+	var mang=[3,4,5,5,7,8,1,4,2];
+	document.write("mảng: "+mang+"<hr>");
+	vt=0;
+	max=mang[0];
+	for (var i = 0; i < mang.length; i++) {
+		if (max<mang[i]) {
+			max=mang[i];
+			vt=i+1;
+		}
+	}
+	document.write("vị trí số lớn nhất: "+vt);
+</script>

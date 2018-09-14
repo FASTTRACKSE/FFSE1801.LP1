@@ -1,0 +1,18 @@
+<script lang="javascript">
+	mang=[2,3,5,7,3,2,9,1];
+	document.write(mang);
+	n=prompt("nhập số cần chèn");
+	vt=0;
+	mang1=[];
+	for (var i = 0; i < mang.length; i++) {
+		mang1[i]=mang[i]
+		if (mang[i]>mang[vt]) {
+			vt=i;
+		}
+	}
+	mang1[vt+1]=n;
+	for (var i = vt+2; i <=mang.length; i++) {
+		mang1[i]=mang[i-1];
+	}
+	document.write("<br>"+mang1);
+</script>
