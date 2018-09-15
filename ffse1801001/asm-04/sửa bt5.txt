@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bt5_250818</title>
+</head>
+<body>
+      <script>
+      
+            var x1, x2;
+            var delta;
+            var a, b, c;
+            a = eval(prompt('Mời nhập giá trị của a (Với a#0)', ''))
+            b = eval(prompt('Mời nhập giá trị của b', ''))
+            c = eval(prompt('Mời nhập giá trị của c', ''))
+            if (a == 0) {
+                ptbn(b, c)
+            } else {
+                delta = (b * b - 4 * a * c);
+                if (delta == 0) {
+                    x1 = x2 = -b / (2 * a);
+                    alert("Phương trình có nghiệm kép: ");
+                    alert('x:' + x1);
+                }
+                else if (delta < 0) {
+                    alert("Phương trình vô nghiệm!");
+                }
+                else {
+                    alert("Phương trình có hai nghiệm phân biệt: ");
+                    x1 = (-b - Math.sqrt(delta)) / (2 * a);
+                    x2 = (-b + Math.sqrt(delta)) / (2 * a);
+                    alert("x1: " + x1);
+                    alert("x2: " + x2);
+                }
+            }
+
+        function ptbn(a, b) {
+            if (a == 0) {
+                if (b == 0) {
+                    alert("Phương trình có vô số nghiệm!");
+                } else {
+                    alert("Phương trình vô nghiệm!");
+                }
+            } else {
+                alert("Phương trình chỉ có duy nhất 1 nghiệm " + (-b / a))
+            }
+        }
+
+      </script>
+</body>
+</html>

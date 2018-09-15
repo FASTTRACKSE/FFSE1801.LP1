@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 5</title>
+</head>
+
+<body>
+    <script>
+        // Bài 5: Tách 1 mảng thành 2 mảng chẵn và lẻ:
+
+        var n, arr = [], arrchan = [], arrle = [];
+        n = parseInt(prompt("Vui lòng nhập số phần tử n của mảng!"));
+        for (let i = 0; i < n; i++) {
+            value = parseInt(prompt("Nhập giá trị " + (i + 1) + " của mảng!"))
+            arr[i] = value
+        }
+        var chan = 0, le = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 == 0) {
+                arrchan[chan] = arr[i]
+                chan++
+            } else {
+                arrle[le] = arr[i]
+                le++
+            }
+        }
+        document.write("Mảng đã nhập là: " + arr)
+        document.write("<br>Dãy số chẳn là: " + arrchan)
+        document.write("<br>Dãy số lẻ là: " + arrle)
+    </script>
+</body>
+
+</html>

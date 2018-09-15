@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // I.. Sử dụng phép gán để nhập giá trị, sử dụng write để in kết quả:
+        // 1. Tạo 1 biến và nhập giá trị, sau đó in biến ra màn hình:
+        // var n;
+        // n = 6;
+        // document.write(n);
+
+
+        // 2. Tạo a,b gán giá trị và in ra màn hình kết quả + - * / 
+        // Nhập: a=6
+        //       b=5
+        // In:  a+b, a-b, a*b, a/b
+
+        // var a, b;
+        // a = 6;
+        // b = 5;
+        // document.write("Tổng của a, b: " + (a + b) + '<br>')
+        // document.write("Hiệu của a, b: " + (a - b) + '<br>')
+        // document.write("Tích của a, b: " + (a * b) + '<br>')
+        // document.write("Thương của a, b: " + (a / b) + '<br>');
+
+        // 3. Kiểm tra số nhập vào chẳn hoặc lẻ:
+        // Nhập: 12
+        // In: số chẳn
+
+        // var n;
+        // n = 3;
+        // if (n == 0) {
+        //     document.write("Số bạn vừa nhập không phải số chẳn cũng không phải số lẻ!")
+        // } else {
+        //     if (n % 2 == 0) {
+        //         document.write("Số " + n + " là số chẳn!")
+        //     } else {
+        //         document.write("Số " + n + " là số lẻ!")
+        //     }
+        // }
+
+        // 4. Nhập số từ 1 -> 9 in ra màn hình cách đọc số (sử dụng if else):
+        // Nhập: 1
+        // In: Số một
+
+        // var n;
+        // n = 4;
+        // if (n == 1) {
+        //     document.write("Số một")
+        // } else if (n == 2) {
+        //     document.write("Số hai")
+        // } else if (n == 3) {
+        //     document.write("Số ba")
+        // } else if (n == 4) {
+        //     document.write("Số bốn")
+        // } else if (n == 5) {
+        //     document.write("Số năm")
+        // } else if (n == 6) {
+        //     document.write("Số sáu")
+        // } else if (n == 7) {
+        //     document.write("Số bảy")
+        // } else if (n == 8) {
+        //     document.write("Số tám")
+        // } else {
+        //     document.write("Số chín")
+        // }
+
+        // 5.Tạo a, b, c gán giá trị cho a và c, gán phép tính cho b in rAa màn hình kết quả tương ứng (sử dụng if else) nếu không phải trả về kết quả không phải phép tính:      
+        // Nhập: a=5, b=+, c=4
+        //In: a b c = 9
+
+        // var a, b, c;
+        // a = 4, c = 7, b = 'a'
+        // if (b == '+') {
+        //     document.write("Kết quả bằng: " + (a + c))
+        // } else if (b == '-') {
+        //     document.write("Kết quả là: " + (a - b))
+        // } else if (b == '*') {
+        //     document.write("Kết quả là: " + (a * b))
+        // } else if (b == '/') {
+        //     document.write("Kết quả là: " + (a / b))
+        // } else {
+        //     document.write("Không phải là phép tính!")
+        // }
+
+        // 6. Làm bài 5 các phép tính bỏ vào function:
+        // <!-- 
+        //         // Nhập
+        //         var a, b, c;
+        //         function input() {
+        //             a = 5, c = 8, b = '*';
+        //         }
+        //         // In
+        //         function output(out) {
+        //             document.write(out)
+        //         }
+        //         // Xử lí
+        //         function handle(x1, pt, x2) {
+        //             if (pt == '+') {
+        //                 c = 'Phép cộng ' + (x1 + x2)
+        //                 output(c)
+        //             } else if (pt == '-') {
+        //                 c = 'Phép trừ ' + (x1 + x2)
+        //                 output(c)
+        //             } else if (pt == '*') {
+        //                 c = 'Phép nhân ' + (x1 * x2)
+        //                 output(c)
+        //             } else if (pt == '/') {
+        //                 c = 'Phép chia ' + (a / b)
+        //                 output(c)
+        //             } else {
+        //                 c = 'Không phải phép tính!!!'
+        //                 c = pt
+        //                 output(c)
+        //             }
+        //         }
+
+        //         // Gọi hàm
+        //         input()
+        //         handle(a, b, c) -->
+
+        // 7. Tính phương trình bậc hai nếu a = 0 thì cuyển sang bậc nhất:
+
+        // var a, b, c, x1, x2, delta;
+        // a = 5, b = 6, c = 8;
+        // delta = b * b - 4 * a * c;
+        // if (a == 0) {
+        //     if (b == 0) {
+        //         if (c == 0) {
+        //             document.write("Phương trình có vô số nghiệm!")
+        //         } else {
+        //             document.write("Phương trình vô nghiệm!")
+        //         }
+        //     } else {
+        //         document.write("Phương trình có duy nhất một nghiệm: " + (-b / a))
+        //     }
+        // } else if (delta > 0) {
+        //     document.write("Phương trình có hai nghiệm phân biệt!" + '<br>')
+        //     x1 = ((-b + Math.sqrt(delta)) / 2 * a)
+        //     x2 = ((-b - Math.sqrt(delta)) / 2 * a)
+        //     document.write("x1= " + x1, +'<br>' + "x2= " + x2)
+        // } else if (delta < 0) {
+        //     document.write("Phương trình chỉ có một nghiệm duy nhất!" + '<br>')
+        //     x = -b / 2 * a
+        //     document.write("x1=x2= " + x)
+        // } else if (delta == 0) {
+        //     document.write("Phương trình vô nghiệm!")
+        // }
+
+        // 8. Tìm số lớn nhất nhỏ nhất trong một dãy số:
+
+        // var mang = [4, 7, 5, 3, 0, 8, 2];
+        // MIN = mang[0], MAX = mang[0];
+        // for (let i = 0; i < mang.length; i++) {
+        //     if (MAX < mang[i]) {
+        //         MAX = mang[i]
+        //     } if (MIN > mang[i]) {
+        //         MIN = mang[i]
+        //     }
+        // }
+        // document.write("Kết quả: " + '<br>' + "MAX là: " + MAX + '<br>' + "MIN là: " + MIN)
+
+        // 9. Bài tập kiểm tra số chính phương:
+
+        // var mang = [4, 8, 16, 99, 5, 64, 49, 81, 50, 98, 33], sochinhphuong = "", sokochinhphuong = "";
+        // for (let i = 0; i < mang.length; i++) {
+        //     if (Math.sqrt(mang[i]) % 1 == 0) {
+        //         sochinhphuong = sochinhphuong + mang[i] + "  "
+        //     } else {
+        //         sokochinhphuong = sokochinhphuong + mang[i] + "  "
+        //     }
+        // }
+        // document.write('Số chính phương: ' + sochinhphuong)
+        // document.write('<br>Không phải số chính phương: ' + sokochinhphuong)
+
+        // 10. Kiểm tra số nguyên tố:
+
+        var mang = [3, 7, 77, 55, 43, 74, 23, 98, 4, 223, 978, 454, 43], songuyento = "", kophaisonguyento = "";
+        for (let i = 0; i < mang.length; i++) {
+            flag = true
+            if (mang[i] < 2) {
+                flag = false
+                // kophaisonguyento = kophaisonguyento + mang[i] + "  "
+                // break;
+            }
+            else {
+                for (let j = 2; j < (mang[i] - 1); j++) {
+                    if (mang[i] % j == 0) {
+                        flag = false
+                        // kophaisonguyento = kophaisonguyento + mang[i] + "  "
+                        break;
+                    }
+                }
+            }
+            if (flag) {
+                songuyento = songuyento + mang[i] + "  "
+
+            } else {
+                kophaisonguyento = kophaisonguyento + mang[i] + "  "
+            }
+        }
+        document.write("Số nguyên tố: " + songuyento)
+        document.write("<br>Không phải số nguyên tố: " + kophaisonguyento)
+
+        // 11. Tính tổng các số lẻ trong mảng bằng function có return mà không có return:
+
+        // Có return:
+
+        // mang = [56, 4, 7, 5, 8, 89, 565, 44, 65, 86, 98, 23, 53, 61]
+        // function tinh_tong_so_le(mang) {
+        //     var tong = 0;
+        //     for (var i = 0; i < mang.length; i++) {
+        //         if (mang[i] % 2 != 0) {
+        //             tong = tong + mang[i]
+        //         }
+        //     }
+        //     return tong;
+        // }
+        // document.write("Tổng các số lẻ: " + tinh_tong_so_le(mang))
+
+        // Không có return:
+
+        // mang = [56, 4, 7, 5, 8, 89, 565, 44, 65, 86, 98, 23, 53, 61]
+        // function tinh_tong_so_le(mang) {
+        //     var tong = 0;
+        //     for (var i = 0; i < mang.length; i++) {
+        //         if (mang[i] % 2 != 0) {
+        //             tong = tong + mang[i]
+        //         }
+        //     }
+        //     document.write(tong)
+        // }
+        // tinh_tong_so_le(mang) 
+
+        // 12. Tính giá trị của biểu thức: (Cấp số cộng, cấp số nhân)
+
+        // var n = 20, dayso = "  ";
+        // for (let i = 1; i <= n; i++) {
+        //     dayso = dayso + i + "  "
+        // }
+        // document.write("Dãy cấp số cộng với công sai d=1 là: " + dayso)
+
+        // var n = 20, dayso = "  ", p = 2, bt = 0;
+        // for (let i = 3; i <= n; i++) {
+        //     if (i == 3) {
+        //         dayso = dayso + (i) + "  "
+        //         bt = i * p
+        //     } else {
+        //         dayso = dayso + (bt) + "  "
+        //         bt = bt * p
+        //     }
+        // }
+        // document.write("Dãy cấp số nhân với công bội p=2 là: " + dayso)
+
+        // 13. Viết chương trình nhập số nguyên dương có 3 chữ số, viết ra màn hình chữ số hàng trăm, hàng chục, hàng đơn vị:
+
+        // var a = 246;
+
+        // b = 246 % 10
+        // document.write("Chữ số hàng đơn vị là: " + b + '<br>')
+        // c = (246 - b) / 10
+        // d = c % 10
+        // document.write("Chữ số hàng chục là: " + d + '<br>')
+        // e = (c - d) / 10
+        // document.write("Chữ số hàng trăm là: " + e)
+
+        var n, arr = []
+        //nhập giá trị
+        n = parseInt(prompt("Nhập n"))
+        for (let i = 0; i < n; i++) {
+            value = parseInt(prompt("Nhập giá trị " + (i + 1) + " của mảng")) //Số n cần nhập
+            arr[i] = value
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 4</title>
+</head>
+
+<body>
+    <script>
+        // // Bài 4: Xác định góc phần tư thứ mấy trên đường tròn lượng giác:
+
+        var x;
+        x = eval(prompt("Vui lòng nhập giá trị cần xác định góc!"));
+        document.write("Giá trị bạn vừa nhập là: " + x);
+        var k;
+        k = parseInt(x / 360)
+        if (x >= 0 && x < 360 && k >= 0) {
+            if (x >= 360 * k && x < 90 + 360 * k) {
+                document.write("<br>Giá trị bạn vừa nhập thuộc góc phần tư thứ nhất!")
+            } else if (x >= 90 + 360 * k && x < 180 + 360 * k) {
+                document.write("<br>Giá trị bạn vừa nhập thuộc góc phần tư thứ hai!")
+            } else if (x >= 180 + 360 * k && x < 270 + 360 * k) {
+                document.write("<br>Giá trị bạn vừa nhập thuộc góc phần tư thứ ba!")
+            } else if (x >= 270 + 360 * k && x < 360 * (k + 1)) {
+                document.write("<br>Giá trị bạn vừa nhập thuộc góc phần tư thứ tư!")
+            }
+        } else {
+            document.write("Giá trị không hợp lệ. Vui lòng nhập một giá trị khác (0<=x<360)");
+        }
+
+
+    </script>
+</body>
+
+</html>

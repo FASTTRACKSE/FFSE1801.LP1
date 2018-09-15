@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 7</title>
+</head>
+
+<body>
+    <p id="demo1"></p>
+    <script>
+        // Bài 7: Chèn X vào vị trí đầu của mảng 1 chiều:
+
+        var n, x, arr = [], arrchen = [];
+        n = eval(prompt("Vui lòng nhập số phần tử n của mảng cần chèn!"));
+        for (let i = 0; i < n; i++) {
+            value = parseInt(prompt("Nhập giá trị " + (i + 1) + " của mảng cần chèn!"))
+            arr[i] = value
+        }
+        x = parseInt(prompt("Vui lòng nhập số phần tử của mảng chèn vào!"))
+        for (let i = 0; i < x; i++) {
+            let value = parseInt(prompt("Nhập giá trị " + (i + 1) + " của mảng chèn vào!"))
+            arrchen[i] = value
+        }
+        document.write("Mảng cần chèn là: " + arr)
+        document.write('<br/>');
+
+        arr.unshift(arrchen)
+        document.write("Mảng chèn vào là: " + arrchen);
+        document.write("<br>Mảng sau khi được chèn là: " + arr);
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bài 3</title>
+</head>
+
+<body>
+    <script>
+        // var n, max;
+        // n = parseInt(prompt("Nhập số phần tử n của mảng!"))
+        // for(var i = 1; i<=n; i++){
+        //     if(){
+
+        //     }
+        // }
+
+        function btn2_bt3() {
+            var n;
+            (n = document.getElementById("in2_n_bt3").value), (vitri = 0);
+            n = n.split(",");
+            temp = n[0];
+            console.log("do");
+            for (let i = 0; i < n.length; i++) {
+                if (temp < n[i]) {
+                    temp = n[i];
+                    vitri = i;
+                }
+            }
+            document.getElementById("ou2_kq_bt3").innerHTML =
+                "Vị trí số lớn nhất là: " + (vitri + 1);
+
+    </script>
+</body>
+
+</html>

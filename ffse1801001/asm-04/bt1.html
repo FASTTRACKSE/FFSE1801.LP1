@@ -1,0 +1,88 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <script>
+        var n;
+      do {
+             n = prompt("Nhập giá trị lớn hơn 10!");
+      }while(n<10)
+    //   document.write(n);
+    while(n!=0){
+        donvi = n%10;
+        n = Math.floor(n/10);
+        document.write("Dãy số sau khi đảo ngược là: "+donvi);
+    }
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bt2</title>
+</head>
+<body>
+    <script>
+    // viết hàm tính tổng hai số
+    function tinhtonghaiso(a,b) {
+        S = a+b;
+         return  S;
+    }
+    </script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bt3</title>
+</head>
+<body>
+    <script>
+    function nhap_ten (){
+           var n = prompt("Vui lòng nhập tên!");
+           return n;
+
+    }
+    var ten1=nhap_ten();
+    var ten2=nhap_ten();
+
+    document.write("Tên người thứ nhất: "+ten1+ '<br>');
+    document.write("Tên người thứ hai:  "+ten2);
+    // Viêt hàm hiển thị tên
+       function hien_thi(ten){
+           document.write(ten);
+       }
+       function xuong_dong(){
+           document.write('<br>');
+           document.write('<hr>');
+       }
+       
+       // Viết hàm nhập và hiển thị ra màn hình kết quả vừa nhập
+       function chay_chuong_trinh(){
+            var n = nhap_ten();
+            hien_thi(n);
+        }
+        chay_chuong_trinh();
+        
+    </script>
+</body>
+</html>

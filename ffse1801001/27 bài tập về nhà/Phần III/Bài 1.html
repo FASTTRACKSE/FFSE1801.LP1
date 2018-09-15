@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 1</title>
+</head>
+
+<body>
+    <pre>
+    </table>
+    <script>
+        // Bài 1: Cộng 2 ma trận:
+
+        var arr_1 = [],
+            arr_2 = [],
+            row = 0,
+            column = 0;
+
+        row = eval(prompt("Vui lòng nhập số hàng!"))
+        column = eval(prompt("Vui lòng nhập số cột!"))
+
+        for (let i = 0; i < row; i++) {
+            arr_1[i] = [];
+            for (let j = 0; j < column; j++) {
+                arr_1[i][j] = eval(prompt("Nhập gía trị tại hàng " + "arr_1[" + i + "] " + "[" + j + "]"));
+            }
+        }
+        for (let i = 0; i < row; i++) {
+            arr_2[i] = [];
+            for (let j = 0; j < column; j++) {
+                arr_2[i][j] = eval(prompt("Nhập gía trị tại cột " + "arr_2[" + i + "] " + "[" + j + "]")
+                );
+            }
+        }
+
+        document.write('\t')
+
+        for (let i = 0; i < arr_1.length; i++) {
+            for (let j = 0; j < arr_1.length; j++) {
+                document.write("[" + i + "]" + "[" + j + "]" + "\t")
+            }
+
+        }
+        document.write("<hr>Mảng 1  \t")
+        for (let i = 0; i < arr_1.length; i++) {
+            for (let j = 0; j < arr_1.length; j++) {
+                document.write("  " + arr_1[i][j] + '\t')
+            }
+
+        }
+        document.write("<hr>Mảng 2  \t")
+        for (let i = 0; i < arr_2.length; i++) {
+            for (let j = 0; j < arr_2.length; j++) {
+                document.write("  " + arr_2[i][j] + '\t')
+            }
+
+        }
+        document.write('<hr>Tổng \t')
+        for (let i = 0; i < arr_2.length; i++) {
+            for (let j = 0; j < arr_2.length; j++) {
+                document.write("  " + (arr_1[i][j] + arr_2[i][j]) + '\t')
+            }
+        }
+
+
+
+    </script>
+    </pre>
+</body>
+
+</html>

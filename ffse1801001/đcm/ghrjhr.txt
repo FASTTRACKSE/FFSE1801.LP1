@@ -1,0 +1,26 @@
+tạo cơ sở dữ liệu
+create DB
+create table
+alter table
+not null
+primary key
+foreign key
+auto increment
+SQL Constraints
+
+
+phần lấy dữ liệu
+select
+where
+order by
+group by
+between
+select into
+
+phần cập nhật cơ sở dữ liệu 
+insert into select
+update
+delete
+
+
+

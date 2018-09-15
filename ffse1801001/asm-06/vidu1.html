@@ -1,0 +1,197 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+        <script>
+            var tong_hs = 0, ho_ten, mon_hoc, diemthi, hesoI, hesoII, arrMon_hoc, arrHS = []
+            mon_hoc = ['toán', 'lý', 'hóa', 'văn', 'sử', 'địa', 'Anh', 'cn', 'cd']
+            tong_hs = eval(prompt('tong hoc sinh can nhap'))
+            for (let f = 0; f < tong_hs; f++) {
+                ho_ten = prompt('ho ten')
+                arrMon_hoc = []
+                var arrTemp = []
+                for (let i = 0; i < mon_hoc.length; i++) {
+                    hesoI = []
+                    var tenmon = mon_hoc[i]
+                    var lm_point = prompt('tong so cot diem he I mon ' + tenmon)
+                    for (let j = 0; j < lm_point; j++) {
+                        hesoI[j] = eval(prompt('diem cot ' + (j + 1) + tenmon))
+                    }
+                    hesoII = prompt('diem he so II' + tenmon)
+                    diemthi = prompt('diem thi' + tenmon)
+                    var arr = [tenmon, hesoI, hesoII, diemthi]
+
+                    arrMon_hoc.push(arr)
+                }
+                arrTemp = [ho_ten, arrMon_hoc]
+                arrHS[f] = arrTemp
+            }
+            console.log(arrHS)
+
+
+            for (let k = 0; k < arrHS.length; k++) {
+                var Ihs = arrHS[k]
+                console.log(Ihs[1])
+
+                document.write('<br>')
+                document.write('Họ tên:' + '\t' + '\t' + Ihs[0] + '<br>')
+                document.write('Môn học:' + '\t')
+
+                for (let e = 0; e < Ihs[1].length; e++) {
+                    document.write(Ihs[1][e][0] + '\t')
+                }
+                document.write('<br>')
+                document.write('Hệ số I:')
+                for (let e = 0; e < Ihs[1].length; e++) {
+                    document.write('\t')
+                    for (let k = 0; k < Ihs[1][e][1].length; k++) {
+                        document.write(Ihs[1][e][1][k])
+                        if (k < ((Ihs[1][e][1].length) - 1)) {
+                            document.write('-')
+                        }
+                    }
+                }
+                document.write('<br>')
+                document.write('Hệ số II:')
+                for (let e = 0; e < Ihs[1].length; e++) {
+                    document.write('\t' + Ihs[1][e][2])
+                }
+                document.write('<br>')
+                document.write('Điểm thi:')
+                for (let e = 0; e < Ihs[1].length; e++) {
+                    document.write('\t' + Ihs[1][e][3])
+                }
+
+                document.write('<br>')
+                document.write('Tổng kết môn:')
+
+                flag = true
+                for (let e = 0; e < Ihs[1].length; e++) {
+                    if (Ihs[1][e][1].length < 2) {
+                        flag = false
+                    } else if (Ihs[1][e][2] == "") {
+                        flag = false
+                    } else if (Ihs[1][e][3] == "") {
+                        flag = false
+                    }
+                    if (flag) {
+                        document.write('\t' + 'đđk')
+                    } else {
+                        document.write('\t' + 'kđđk')
+                    }
+                }
+
+
+                document.write('<hr>')
+
+            }
+
+
+ -->
+
+
+
+
+
+<!-- 
+
+        </script>
+    </pre>
+</body>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+        <script>
+            arr_ten = ['Nguyễn Thành Nam', 'Bùi Văn Tiên']
+            arr_monhoc = ['Toán', 'Lý', 'Hóa', 'Sử', 'Văn', 'GDCD', 'Anh', 'Sinh']
+            arr_toan = [10, 7]
+            arr_ly = [6, 8]
+            arr_toan = [10, 7]
+            arr_ly = [6, 8]
+            arr_toan = [10, 7]
+            arr_ly = arr[6, 8]
+            arr_toan = [10, 7]
+
+            function hien_thi_tab(arr) {
+                for (var i = 0; i < arr.length; i++) {
+                    document.write(arr[i] + "\t")
+                }
+                document.write("<br>")
+            }
+            function hien_thi_tab_diem(ar) {
+                for (var i = 0; i < arr.length; i++) {
+                    document.write(arr[i] + "\t \t \t");
+
+                }
+                document.write("<br>"); const elemen
+            }
+            function hien_thi_monhoc(arr) {
+                for (let i = 0; i < arr.length; i++)
+                    document.write()
+
+
+                switch (i) {
+                    case 0:
+                        hien_thi_tab_diem(arr_)
+                }
+            }
+            function hien_xep_loại() {
+                document.write("Xếp loại: \t")
+                for (var i = 0; i < arr_ten.length; i++) {
+                    dth = (arr_Toan)()
+                }
+            }
+            document.write("Tên hs:" + "\t \t \t")
+
+
+        </script>
+    </pre>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dathangtam</title>
+</head>
+
+<body>
+
+    <pre>
+    <script>
+
+
+    </script>
+</pre>
+
+</body>
+
+</html>

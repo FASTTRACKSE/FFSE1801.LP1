@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 6</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        // Bài 6: Nối 2 mảng số nguyên:
+
+        var n1, n2, arr1 = [], arr2 = [], arrtong;
+        n1 = parseInt(prompt("Vui lòng nhập số phần tử của mảng 1!"))
+        for (let i = 0; i < n1; i++) {
+            let value = parseInt(prompt("Nhập giá trị " + (i + 1) + " của mảng 1!"))
+            arr1[i] = value
+        }
+        n2 = parseInt(prompt("Vui lòng nhập số phần tử của mảng 2!"))
+        for (let i = 0; i < n2; i++) {
+            let value = parseInt(prompt("Nhập giá trị " + (i + 1) + " của mảng 2!"))
+            arr2[i] = value
+        }
+        arrtong = arr1.concat(arr2);
+        document.getElementById("demo").innerHTML = arrtong
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 3</title>
+</head>
+
+<body>
+    <script>
+        // Bài 3: In ra các phần tử chẵn và nhỏ hơn 20:
+
+        var n, arr = [], daysochan = '';
+        n = parseInt(prompt("Vui lòng nhập số phần tử n của mảng!"))
+        for (let i = 0; i < n; i++) {
+            value = parseInt(prompt("Nhập giá trị " + (i + 1) + " của mảng"))
+            arr[i] = value
+            if (value % 2 == 0 && value < 20) {
+                daysochan += (value + " ")
+            }
+        }
+        document.write("Mảng đã nhập là: " + arr)
+        document.write(daysochan == '' ? "<br>Không có số chẳn nào phù hợp!" : "<br>Dãy số chẵn nhỏ hơn 20 là: " + daysochan)
+    </script>
+</body>
+
+</html>

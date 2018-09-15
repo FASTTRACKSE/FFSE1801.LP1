@@ -1,0 +1,203 @@
+
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>250818</title>
+</head>
+
+<body>
+    <input type="button" onclick="bt1()" value="Bài 1">
+    <hr>
+    <input type="button" onclick="bt2()" value="Bài 2">
+    <hr>
+    <input type="button" onclick="bt3()" value="Bài 3">
+    <hr>
+    <input type="button" onclick="bt4()" value="Bài 4">
+    <hr>
+    <p>5 Viết hàm giải phương trình bậc hai với a==0 chuyển thành bậc nhất </p>
+
+    <input type="button" onclick="bt5()" value="Bài 5">
+    <hr>
+    <p>5.1 Viết hàm giải phương trình bậc hai với a==0 bắt nhập lại </p>
+    <input type="button" onclick="bt5_1()" value="Bài 5.1">
+    <script>
+        function inputarr(bt) {
+            var icon, arr, i
+            arr = []
+            i = 0
+            icon = '1'
+            while (icon == '1') {
+                icon = prompt('Bài ' + bt, 'Nhập 1 để tiếp tục 0 để dừng lại!');
+                if (icon != '1') {
+                    break;
+                }
+                iarr = eval(prompt('Nhập các phần tử của mảng n!', ''))
+                arr[i] = iarr
+                i++
+            }
+            return arr
+        }
+
+        //     1.Nhập mảng số gồm n phần tử. Đếm các số nguyên chia hết cho 7 trong mảng.
+
+
+
+        function bt1() {
+            var mang = inputarr(1);
+            var dem = 0;
+            for (let i = 0; i < mang.length; i++) {
+                if (mang[i] % 7 == 0) {
+                    dem++;
+                }
+            }
+            alert("Số phần tử của n chia hết cho 7 là " + dem + " phần tử!")
+        }
+
+
+        //     2.	Nhập mảng số gồm n phần tử. Đếm có bao nhiêu số nguyên tổ trong mảng.
+
+
+        function bt2(params) {
+            var mang = inputarr(2); 
+            var dem = 0;
+            for (let i = 0; i < mang.length; i++) {
+                var b = true;
+                if (mang[i] < 2) {
+                    b = false;
+                } else {
+                    for (let j = 2; j <= (Math.sqrt(mang[i])); j++) {
+                        if (mang[i] % j == 0) {
+                            b = false
+                            break;
+                        }
+                    }
+                }
+
+                if (b) {
+                    console.log(mang[i])
+                    dem++;
+                }
+            }
+            alert("Số chữ số nguyên tố trong dãy n là " + dem + " chữ số!")
+        }
+
+        //     3.	Nhập một số n lớn hơn 2 chữ số. Đảo ngược lại số n trên ( vd: 123 đảo thành 321)
+
+        function bt3() {
+            var so;
+            so = prompt('Nhập n (Với n lớn hơn 2 chữ số)', '')
+            if (so.length > 2) {
+                for (var i = so.length - 1, os = ''; i >= 0; os += so[i--]) { }
+                alert("Giá trị dãy số sau khi đảo ngược là: " + os)
+            } else {
+                alert("Bạn nhập sai rồi! Xin vui lòng nhập số lớn hơn hai chữ số!")
+            }
+        }
+
+
+        //     4.	Nhập mảng số gồm n phần tử. Đảo ngược lại vị trí các phần tử trên( vd: [3,2,4,1] đảo thành [1,4,2,3])
+
+        function bt4() {
+            var mang = inputarr(4);
+            mang.reverse();
+            alert("Thứ tự giá trị mảng sau khi đảo ngược là: " + mang)
+        }
+
+
+        //     5.	Viết hàm giải phương trình bậc hai với  a==0 chuyển thành bậc nhất. 
+
+
+
+        function bt5() {
+            var x1, x2;
+            var delta;
+            var a, b, c;
+            a = eval(prompt('Mời nhập giá trị của a (Với a#0)', ''))
+            b = eval(prompt('Mời nhập giá trị của b', ''))
+            c = eval(prompt('Mời nhập giá trị của c', ''))
+            if (a == 0) {
+                phuongtrinhbacnhat(b, c)
+            } else {
+                delta = (b * b - 4 * a * c);
+                if (delta == 0) {
+                    x1 = x2 = -b / (2 * a);
+                    alert("Phương trình có nghiệm kép: ");
+                    alert('x:' + x1);
+                }
+                else if (delta < 0) {
+                    alert("Phương trình vô nghiệm!");
+                }
+                else {
+                    alert("Phương trình có hai nghiệm phân biệt: ");
+                    x1 = (-b - Math.sqrt(delta)) / (2 * a);
+                    x2 = (-b + Math.sqrt(delta)) / (2 * a);
+                    alert("x1: " + x1);
+                    alert("x2: " + x2);
+                }
+            }
+
+        }
+        function ptbn(a, b) {
+            if (a == 0) {
+                if (b == 0) {
+                    alert("Phương trình có vô số nghiệm!");
+                } else {
+                    alert("Phương trình vô nghiệm!");
+                }
+            } else {
+                alert("Phương trình chỉ có 1 nghiệm duy nhất " + (-b / a))
+            }
+        }
+        //     5.1	Viết hàm giải phương trình bậc hai với  a==0 bắt nhập lại . 
+
+
+
+        function bt5_1() {
+            var x1, x2;
+            var delta;
+            var a, b, c;
+            a = eval(prompt('Mời nhập giá trị của a (Với a#0)', ''))
+            while (a == 0) {
+                a = eval(prompt('Mời nhập giá trị của a (Với a#0)', 'vui lòng nhập a #0'))
+            }
+            b = eval(prompt('Mời nhập giá trị của b', ''))
+            c = eval(prompt('Mời nhập giá trị của c', ''))
+            delta = (b * b - 4 * a * c);
+            if (delta == 0) {
+                x1 = x2 = -b / (2 * a);
+                alert("Phương trình có nghiệm kép: ");
+                alert('x:' + x1);
+            }
+            else if (delta < 0) {
+                alert("Phương trình vô nghiệm!");
+            }
+            else {
+                alert("Phương trình có hai nghiệm phân biệt: ");
+                x1 = (-b - Math.sqrt(delta)) / (2 * a);
+                x2 = (-b + Math.sqrt(delta)) / (2 * a);
+                alert("x1: " + x1);
+                alert("x2: " + x2);
+            }
+
+        }
+        a = prompt('Mời nhập giá trị của a')
+        function reverse(s) {
+            var i = s.length, o = '';
+            while (i > 0) {
+                o += s.substring(i - 1, i);
+                i--;
+            }
+            return o;
+        }
+        alert(reverse(a))
+    </script>
+
+</body>
+
+</html>
