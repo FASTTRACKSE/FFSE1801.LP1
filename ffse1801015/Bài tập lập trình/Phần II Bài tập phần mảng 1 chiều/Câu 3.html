@@ -1,0 +1,14 @@
+<script type="text/javascript">
+	//Tính tổng các phần tử cực đại trong mảng các số nguyên
+    var n=[1,5,2,6,3,5,1,8,6];
+        s=0;
+    document.write(""+n)
+    document.write("<br>Các số cực đại trong mảng là: ")
+    for (var i = 1; i < n.length-1; i++) {
+    	if(n[i]>n[i-1]&&n[i]>n[i+1]){
+    		s=s+n[i]
+    		document.write(n[i]+",")
+    	}
+    }
+    document.write("<br>Tổng các số cực đại là: "+s)
+</script>

@@ -1,0 +1,16 @@
+<script type="text/javascript">
+	//In ra các phần tử có giá trị lẻ của mảng
+    var n=prompt("Nhập kích thước mảng");
+        mang=[];
+    for (var i = 0; i < n; i++) {
+    	mang[i]=prompt("Nhập số thứ "+(i+1))
+    }
+    document.write("Ta có mảng là: "+mang+"<br>")
+    document.write("Các số lẻ là: ")
+
+    for (var i = 0; i <= mang.length; i++) {
+    	if(i%2!=0){
+    		document.write(i+",")
+    	}
+    }
+</script>

@@ -1,0 +1,22 @@
+<script type="text/javascript">
+	//Tìm vị trí của phần tử nhỏ nhất và lớn nhất trong mảng 1 chiều
+    var n=parseInt(prompt("Nhập kích thước mảng"));
+        mang=[];
+    for (var i = 0; i < n; i++) {
+    	mang[i]=prompt("Nhập số thứ "+(i+1))
+    }
+    document.write("Ta có mảng là: "+mang)
+    
+    var min=mang[0];
+    var max=mang[0];
+    for (var i = 0; i < mang.length; i++) {
+    	if(min>mang[i]){
+    		min=mang[i]
+    	}
+    	if(max<mang[i]){
+    		max=mang[i]
+    	}
+    }
+    document.write("<br>Số lớn nhất trong mảng là: "+max)
+    document.write("<br>Số nhỏ nhất trong mảng là: "+min)
+</script>

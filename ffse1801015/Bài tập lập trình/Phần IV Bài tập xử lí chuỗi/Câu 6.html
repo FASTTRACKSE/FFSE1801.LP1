@@ -1,0 +1,13 @@
+<script type="text/javascript">
+	//Thay thế kí tự trong chuỗi
+    var n=prompt("Nhập chuỗi: ");
+	var a=prompt("Nhập kí tự cần đếm: ");
+	var dem=0;
+	document.write("Chuỗi vừa nhập là: "+n+"<br>")
+	for(var i = 0; i < n.length; i++) {
+		if(n[i]==a){
+			dem++
+		}
+	}
+	document.write("Số lần kí tự "+"("+a+")"+" xuất hiện là: "+dem);
+</script>

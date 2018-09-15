@@ -1,0 +1,11 @@
+<script type="text/javascript">
+	//Sắp xếp mảng theo thứ tự giảm dần
+    var n=prompt("Nhập kích thước mảng");
+        mang=[];
+    for (var i = 0; i < n; i++) {
+    	mang[i]=parseInt(prompt("Nhập kích thước mảng "+(i+1)));
+    }
+    document.write("Ta có mảng là: "+mang)
+
+    document.write("<br>Sắp xếp theo thứ tự giảm dần: "+mang.sort(function(a,b){return b - a}))
+</script>

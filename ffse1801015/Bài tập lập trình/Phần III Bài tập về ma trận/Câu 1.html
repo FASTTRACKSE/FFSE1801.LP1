@@ -1,0 +1,19 @@
+<script type="text/javascript">
+	//Ma trận
+    var mt1=[
+	    [1,2],
+        [3,7],
+	];
+	var mt2=[
+	    [5,9],
+	    [11,6],
+	];
+	var tong=[[],[]];
+	for(var c = 0; c < mt1.length || c < mt2.length; c++) {
+		for(var h = 0; h < mt1.length || h < mt2.length; h++) {
+			tong[c][h] = mt1[c][h] + mt2[c][h];
+			document.write(tong[c][h]+" ");
+		}
+		document.write("<br>");
+	}
+</script>

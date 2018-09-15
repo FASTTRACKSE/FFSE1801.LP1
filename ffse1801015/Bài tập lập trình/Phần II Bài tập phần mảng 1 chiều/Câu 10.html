@@ -1,0 +1,17 @@
+<script type="text/javascript">
+	//Sắp xếp các phần tử chẵn giảm dần
+    var n=prompt("Nhập kích thước mảng");
+        mang=[];
+    for (var i = 0; i < n; i++) {
+    	mang[i]=parseInt(prompt("Nhập kích thước mảng "+(i+1)));
+    }
+    document.write("Ta có mảng là: "+mang+"<br>")
+    document.write("Các số chẵn theo thứ tự giảm dần là: ")
+
+    for (var i = 0; i < mang.length; i++) {
+    	if(mang[i]%2==0){
+    		document.write(mang[i]+",")
+    	}
+    }
+    document.write(mang[i].sort(function(a,b){return a - b}))
+</script>
