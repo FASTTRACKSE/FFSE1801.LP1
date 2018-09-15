@@ -1,0 +1,21 @@
+<script>
+var n;
+do {n=parseInt(prompt("Nhap so n trong khoang tu 1-9:"));
+    
+} while (n>9 || n<1);
+    function docso(N){
+    switch (N){
+        case 1 : {return "Số một."}
+        case 2 : {return "Số hai."}
+        case 3 : {return "Số ba."}
+        case 4 : {return "Số bốn."}
+        case 5 : {return "Số năm."}
+        case 6 : {return "Số sáu."}
+        case 7 : {return "Số bảy."}
+        case 8 : {return "Số tám."}
+        case 9 : {return "Số chín."}
+        default: {return "Du lieu dau vao khong hop le."}
+        }
+    }
+    document.write(docso(n));
+</script>

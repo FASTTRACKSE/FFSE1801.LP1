@@ -1,0 +1,17 @@
+<script type="text/javascript">
+	var n=prompt("nhap vao n pt cua mang",'');
+	var mang=[];
+	for (var i=0;i<n;i++){
+		mang[i]=parseInt(prompt("nhap pt thu "+(i+1)));
+	}
+	document.write("ta co mang "+mang);
+	document.write("<br>");
+	vtmin=0;
+	for (var j=0;j<mang.length;j++){
+		if(mang[j]<=mang[vtmin]){
+			vtmin=j+1;
+			
+		}
+	}
+	document.write("pt co gia tri nho nhat la "+mang[vtmin-1]+" vi tri trong mang la "+vtmin);
+</script>

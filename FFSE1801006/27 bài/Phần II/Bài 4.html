@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            Tìm vị trí có giá trị x trong mảng
+        </title>
+    </head>
+    <body>
+        <pre>
+            <script>
+                
+                var a = [];
+                var m;
+                var n = parseInt(prompt("Nhập số lượng phần tử có trong mảng: "));
+                
+                document.write("Mảng đã nhập: ");
+                for ( let i = 0 ; i < n ; i++ ) {
+
+                    a[i] = prompt("Nhập giá trị của phần tử thứ "+(i+1)+" của mảng: ");
+                    document.write("\t"+a[i]);
+                }
+                
+                var x = parseInt(prompt("Nhập giá trị cần tìm vị trí: "));
+                
+                for ( let i = 0 ; i < n ; i++ ) {
+
+                    if ( a[i] == x ) {
+                        m = i+1;
+                    }
+                }
+                
+                document.write("\n");
+                document.write("Vị trí có giá trị là "+x+" trong mảng là: Vị trí thứ "+m);
+
+            </script>
+        </pre>
+    </body>
+</html>

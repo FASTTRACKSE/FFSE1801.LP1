@@ -1,0 +1,17 @@
+<script type="text/javascript">
+	//Kiểm tra tính đối xứng của chuỗi
+	alert("Kiểm tra tính đối xứng của chuỗi");
+	var s="radar";
+	var stt=true;
+
+	document.write(s+"<br>");
+	for (var i=0;i<s.length/2;i++)
+		if (s[i]!=s[s.length-1-i])
+			stt=false;
+	
+	if(stt)		
+		document.write("Chuỗi đối xứng");
+	else
+		document.write("Chuỗi không đối xứng");
+
+</script>

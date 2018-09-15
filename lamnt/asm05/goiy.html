@@ -1,0 +1,111 @@
+<pre>
+<script>
+
+	var arr_ten=['Nguyễn Thành Nam','Bùi Van Tiên',"Tr ần Thị Mai"];
+	arr_monhoc=['Toán','Lý','Hóa',"Sử","Văn",'Địa','DGCD','Anh','Sinh'];
+	cs_timkiem= arr_ten.indexOf("Bùi Van Tiên");
+	arr_ten[cs_timkiem]="Bùi Văn Tiên";
+	//xoa_item(cs_timkiem-1);
+	var arr_Toan=["10","7","9"];
+	var arr_Ly=[1,8,8];
+	var arr_Hoa=[7,8,8];
+	var arr_su=[4,5,6];
+	 //arr_Su[2]=9;
+	var arr_Van=[4,5,9];
+	var arr_Dia=[4,5,9];
+	var arr_CD=[4,5,9];
+	var arr_Anh=[4,5,9];
+	var arr_Sinh=[4,5,9];
+	function hien_thi_tab(arr){
+		for (var i = 0; i < arr.length; i++) {
+			document.write(arr[i]+"\t \t");
+		}
+		document.write("<br>");
+	}
+	function hien_thi_tab_diem(arr){
+		for (var i = 0; i < arr.length; i++) {
+			document.write(arr[i]+"\t \t \t \t ");
+		}
+		document.write("<br>");
+	}
+	function hien_thi_mon_hoc(arr){
+		for (var i = 0; i < arr.length; i++) {
+			document.write(arr[i]+"\t \t");
+			switch(i){
+				case 0:
+				hien_thi_tab_diem(arr_Toan);break;
+				case 1:
+				hien_thi_tab_diem(arr_Ly);break;
+				case 2:
+				hien_thi_tab_diem(arr_Hoa);break;
+				case 3:
+				hien_thi_tab_diem(arr_Su);break;
+				case 4:
+				hien_thi_tab_diem(arr_Van);break;
+				case 5:
+				hien_thi_tab_diem(arr_Dia);break;
+				case 6:
+				hien_thi_tab_diem(arr_CD);break;
+				case 7:
+				hien_thi_tab_diem(arr_Anh);break;
+				case 8:
+				hien_thi_tab_diem(arr_Sinh);break;
+			}
+			document.write("<br>");
+		}
+	}
+
+	function xoa_item(id=0){
+		id=0;
+		arr_ten.splice(id, 1);
+		arr_su.splice(id, 1);
+		arr_Toan.splice(id, 1);
+		arr_Ly.splice(id, 1);
+		arr_Hoa.splice(id, 1);
+		arr_Van.splice(id, 1);
+		arr_Dia.splice(id, 1);
+		arr_CD.splice(id, 1);
+		arr_Anh.splice(id, 1);
+		arr_Sinh.splice(id, 1);
+	}
+
+	document.write("Ten hs:\t \t")
+	hien_thi_tab(arr_ten);
+	hien_thi_mon_hoc(arr_monhoc);
+	hienthi_diem_tb();
+	document.write("<br>");
+	hien_xep_loai();
+
+	function hienthi_diem_tb(){
+		document.write("Diem TB: \t")
+		for (var i = 0; i < arr_ten.length; i++) {
+			dtb = (arr_Toan[i]+arr_Sinh[i]+arr_Anh[i]+arr_CD[i]+arr_Dia[i]+arr_Van[i]+arr_Su[i]+arr_Ly[i]+arr_Hoa[i])/9;
+			document.write(parseFloat(dtb).toFixed(2)+"\t \t \t \t");
+		}
+	}
+
+	function hien_xep_loai(){
+		document.write("Xep loai: \t")
+		for (var i = 0; i < arr_ten.length; i++) {
+			dtb = (arr_Toan[i]+arr_Sinh[i]+arr_Anh[i]+arr_CD[i]+arr_Dia[i]+arr_Van[i]+arr_Su[i]+arr_Ly[i]+arr_Hoa[i])/9;
+			if(dtb>=8){
+				document.write("Loại giỏi \t \t \t \t");
+			}else{
+				if(dtb>=6.5){
+					document.write("Loại khá \t \t \t \t");
+				}else{
+					if(dtb>=5){
+						document.write("Đạt \t \t \t \t");
+					}else{
+						document.write("Không đạt  \t \t \t");
+					}
+				}
+			}
+		}
+	}
+</script>
+</pre>
+
+<script>
+
+</script>

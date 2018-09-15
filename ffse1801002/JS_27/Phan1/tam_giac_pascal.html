@@ -1,0 +1,18 @@
+<script>
+    var n = 10;
+    var a =[[1],[1,1]]
+    document.write("<br/>"+a[0].join()+"<br/>");
+    document.write(a[1].join()+"<br/>")
+    for(i=2;i<n;i++){
+        a[i]=[]
+        for(j=0;j<=i;j++){
+            if(j==i || j==0 ){
+                a[i][j]=1;
+            }
+            else{
+                a[i][j]=a[i-1][j-1]+a[i-1][j];
+            }
+        }
+        document.write(a[i].join()+"<br/>")
+    }
+</script>

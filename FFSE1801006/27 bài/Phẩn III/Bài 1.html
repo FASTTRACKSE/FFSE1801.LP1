@@ -1,0 +1,79 @@
+<script>
+                
+    function nhapmatran(a,x) {
+
+        
+        for ( let i = 0 ; i < n ; i++ ) {
+            a[i] = [];
+            for ( let j = 0  ; j < m ; j ++ ) {
+
+                a[i][j] = parseInt(prompt("Nhập phần tử có vị trị ( "+i+" ; "+j+" trong "+x+": "));
+            } 
+        
+        }
+        
+    }
+    
+
+    
+
+    function xuatmatran(a) {
+
+        for ( let i = 0 ; i < n ; i++ ) {
+            for ( let j = 0 ; j < m ; j++ ) {
+
+                document.write(a[i][j]+"     ");
+            }
+            
+            document.write("<br>");
+        
+        }
+    }
+
+    
+    var matran1 = [];
+    var matran2 = [];
+    var x1 = "Ma Trận 1";
+    var x2 = "Ma Trận 2";
+    
+
+
+    var n = parseInt(prompt("Nhập số hàng của mảng của 2 ma trận: "));
+    var m = parseInt(prompt("Nhập số cột của mảng của 2 ma trận: "));
+  //  matran1 = nhapmatran(matran1);
+          nhapmatran(matran1,x1);
+    
+   // matran2 = nhapmatran(matran2);
+           nhapmatran(matran2,x2);
+    
+    document.write("Ma trận thứ nhất: ");
+    document.write("<br>");
+    xuatmatran(matran1);
+
+
+    document.write("<hr>")
+
+    
+    document.write("Ma trận thứ hai: ");    
+    document.write("<br>");
+    xuatmatran(matran2);
+
+
+    document.write("<hr>");
+    document.write("Tong hai ma tran la: <br>");
+                for ( let i = 0 ; i < n ; i++ ) {
+                        for ( let j = 0  ; j < m ; j ++ ) {
+
+                            document.write((matran1[i][j]+matran2[i][j])+" ");
+                            
+                        } document.write("<br>");
+    
+                    }
+
+    xuatmatran(matrantong);
+    
+
+ 
+
+
+</script>

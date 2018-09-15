@@ -1,0 +1,31 @@
+<script>
+	function kt_shh(n){
+		tong=0;
+		for(var i = 1;i<n;i++){
+			if(n%i==0){
+				tong=tong+i;
+			}
+		}
+		if(tong==n){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	function nhap_mang(){
+		var mang=[];
+		var n = prompt("Vui long nhap so phan tu cua mang");
+		for(var i = 0 ; i<n;i++){
+			mang[i]=prompt("Nhap phan tu thu "+(i+1));
+		}
+		return mang;
+	}
+	var ar_so= nhap_mang();
+	var dem=0;
+	for (var i = 0; i < ar_so.length; i++) {
+		if(kt_shh(ar_so[i])==true){
+			dem=dem+1;
+		}
+	}
+	document.write("Co "+ dem +" so hoan hao trong mang ");
+</script>

@@ -1,0 +1,45 @@
+<script>
+	function name_function(){
+
+	}
+	ps1={
+		tu:0,
+		mau:0,
+	
+		sub:function(ps2){
+			tu = ps1.tu*ps2.mau+ps2.tu*ps1.mau;
+			mau=ps1.mau*ps2.mau;
+			return tu+"/"+mau;
+		}
+		div:function(ps2){
+
+		}
+
+	}
+	ps2={
+		tu:0,
+		mau:0
+	}
+
+	ps1.tu=prompt("Nhap tu so 1: ");
+	ps1.mau=prompt("Nhap mau so 1: ");
+	ps2.tu=prompt("Nhap tu so 2: ");
+	ps2.mau=prompt("Nhap mau so 2: ");
+	document.write(ps1.sub(ps2));
+	//document.write(ps1.tu+"/"+ps1.mau+"-"+ps2.tu+"/"+ps2.mau);
+	function dequi(a,b){
+		if(a==b){
+			return a
+		}else{
+			if(a>b){
+				a=a-b;
+				dequi(a,b);
+			}else{
+				b=b-a;
+				dequi(a,b);
+			}
+		}
+	}
+
+	dequi(2,3);
+</script>

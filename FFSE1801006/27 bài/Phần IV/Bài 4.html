@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            Tìm vị trí đầu tiên của kí tự đã nhập trong chuỗi
+        </title>
+    </head>
+    <body>
+        <pre>
+            <script>
+                
+                var a = prompt("Nhập chuỗi kí tự: ");
+                var n = prompt("Nhập kí tự muốn tìm: ");
+                
+                for ( var i = 0 ; i < a.length ; i++ ) {
+
+                    if ( a[i] === n )  {
+
+                        document.write("Vị trí của kí tự "+n+"đầu tiên trong chuỗi là: "+(i+1));
+                        break;
+                    }
+                }
+
+              
+            </script>
+        </pre>
+    </body>
+</html>

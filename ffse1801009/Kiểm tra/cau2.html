@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hưng</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var n = parseInt(prompt("Vui lòng nhập N"));
+		var a,b,tg;
+		a=0;
+		b=1;
+		document.write("Dãy fibonanci là : " + a +" - "+b );
+		for (var i = 1; i < n-1; i++) {
+			tg=a+b;
+			a=b;
+			b=tg;
+			document.write(" - " +tg);
+
+		}
+	</script>
+</body>
+</html>

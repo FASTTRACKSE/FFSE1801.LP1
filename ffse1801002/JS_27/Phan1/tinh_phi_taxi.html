@@ -1,0 +1,20 @@
+<pre>
+<script type="text/javascript">
+	var n=parseInt(prompt("Nhap so KM da di:"));
+	var tong=0,du=0;
+	document.write("\tTinh cuoc TAXI:\n");
+	document.write("So KM di dc la: "+n+"KM\n");
+	if(n<=1){
+		tong=5000;
+	}
+	if(n>1 && n<=30){
+		tong=4000;
+	}else{
+		if(n>30){
+			du=n-30;
+			tong=4000+(3000*du);
+		}
+	}
+	document.write("So tien phai tra la: "+tong+"VND");
+</script>
+</pre>

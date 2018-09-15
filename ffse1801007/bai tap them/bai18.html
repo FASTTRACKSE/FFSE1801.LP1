@@ -1,0 +1,26 @@
+<script type="text/javascript">
+	//Chèn phần tử X vào vị trí đầu của mảng 1 chiều
+	alert("Chèn phần tử X vào vị trí đầu của mảng 1 chiều");
+	var a=[];
+	var x=parseInt(prompt("Nhập số X muốn chèn vào"));
+
+	do
+		n=parseInt(prompt("Nhập độ dài mảng"));
+	while(n<1)
+
+	for(var i=0;i<n;i++)
+	{
+		a[i]=parseInt(prompt("Nhập phần tử thứ "+(i+1)));
+		document.write(a[i]+" ");
+	}
+	document.write("<br>");
+
+	for(i=n-1;i>=0;i--)
+		a[i+1]=a[i];
+	a[0]=x;
+	n++;
+
+	for(var i=0;i<n;i++)
+		document.write(a[i]+" ");
+			
+</script>

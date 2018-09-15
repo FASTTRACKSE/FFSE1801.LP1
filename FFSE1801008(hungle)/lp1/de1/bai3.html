@@ -1,0 +1,19 @@
+<script type="text/javascript">
+	var n=prompt("nhap vao n pt cua mang",'');
+	var mang=[];
+	for (var i=0;i<n;i++){
+		mang[i]=prompt("nhap pt thu "+(i+1));
+	}
+	document.write("mang can sap xep "+mang);
+	document.write("<br>");
+	for (var i=0;i<n;i++){
+		for(var j=i+1;j<=n;j++){
+			if (mang[i]>mang[j]){
+			tg=mang[i];
+			mang[i]=mang[j];
+			mang[j]=tg;
+		}
+		}
+	}
+	document.write("mang da sap xep "+mang)
+</script>

@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            In ra các phần tử có giá trị lẻ trong mảng
+        </title>
+    </head>
+    <body>
+        <pre>
+            <script>
+                
+                var a = [];
+                var n = parseInt(prompt("Nhập số lượng phần tử có trong mảng: "));
+                
+                document.write("Mảng đã nhập: ");
+                for ( let i = 0 ; i < n ; i++ ) {
+
+                    a[i] = prompt("Nhập giá trị của phần tử thứ "+i+" của mảng: ");
+                    document.write("\t"+a[i]);
+                }
+                
+                document.write("\n");
+                document.write("\tCác phần tử có giá trị lẻ trong mảng: ");
+                for ( let i = 0 ; i < n ; i++ ) {
+
+                    if ( a[i] % 2 != 0 ) {
+                        document.write("\t"+a[i]);
+                    }
+                }
+
+            </script>
+        </pre>
+    </body>
+</html>

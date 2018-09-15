@@ -1,0 +1,80 @@
+<pre>
+<script type="text/javascript">
+    var arr_Ten=['Phát','Vũ','Đạt','Khoa','Tú'];
+        arr_MonHoc=['Toán','Văn','Anh','Hóa'];
+        arr_Toan=[5,1,3,5,6];
+        arr_Van=[5,6,5,8,7];
+        arr_Anh=[6,3,4,6,3];
+        arr_Hoa=[5,4,7,9,2];
+
+    function hien_thi_ten(arr){
+        for (var i = 0; i < arr.length; i++) {
+            document.write("\t"+arr[i]+"\t");
+        }
+      }
+      document.write("Tên hs:\t") 
+      hien_thi_ten(arr_Ten)
+    function hien_thi_tab(arr){
+        for (var i = 0; i < arr.length; i++) {
+            document.write(arr[i]+"\t")
+        }
+    } document.write("<hr>")
+    function hien_thi_tab_diem(arr){
+        for (var i = 0; i < arr.length; i++) {
+            document.write("\t\t"+arr[i])
+        }
+    } 
+    function hien_thi_diem(arr){
+        for (var i = 0; i < arr.length; i++) {
+            document.write(arr[i])
+              switch(i){
+                case 0: hien_thi_tab_diem(arr_Toan);break;
+                case 1: hien_thi_tab_diem(arr_Van);break;
+                case 2: hien_thi_tab_diem(arr_Anh);break;
+                case 3: hien_thi_tab_diem(arr_Hoa);break;
+              }
+              document.write("<hr>")
+        }
+    }
+    hien_thi_diem(arr_MonHoc) 
+    document.write("ĐiểmTB \t\t")
+
+    var tb1=(arr_Toan[0]+arr_Van[0]+arr_Anh[0]+arr_Hoa[0])/3
+        tb2=(arr_Toan[1]+arr_Van[1]+arr_Anh[1]+arr_Hoa[1])/3
+        tb3=(arr_Toan[2]+arr_Van[2]+arr_Anh[2]+arr_Hoa[2])/3
+        tb4=(arr_Toan[3]+arr_Van[3]+arr_Anh[3]+arr_Hoa[3])/3
+        tb5=(arr_Toan[4]+arr_Van[4]+arr_Anh[4]+arr_Hoa[4])/3
+    document.write(tb1.toFixed(2)+"\t\t")
+    document.write(tb2.toFixed(2)+"\t\t")
+    document.write(tb3.toFixed(2)+"\t\t")
+    document.write(tb4.toFixed(2)+"\t\t")
+    document.write(tb5.toFixed(2))
+    document.write("<hr>Xếp loại:")
+
+    function xep_loai(arr){
+            if(arr>=8){
+                document.write("Giỏi")
+            }else{
+                if(arr>=6.5){
+                    document.write("Khá")
+                }else{
+                    if(arr>=5){
+                        document.write("TB")
+                    }else{
+                        document.write("Yếu")
+                    }
+                }
+            }
+    }
+    document.write("\t")
+    xep_loai(tb1)
+    document.write("\t\t") 
+    xep_loai(tb2)
+    document.write("\t\t")
+    xep_loai(tb3)
+    document.write("\t\t")
+    xep_loai(tb4)
+    document.write("\t\t")
+    xep_loai(tb5)
+</script>
+</pre>

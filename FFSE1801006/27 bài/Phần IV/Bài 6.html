@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            Đếm số lần xuất hiện của 1 kí tự trong chuỗi
+        </title>
+    </head>
+    <body>
+        <pre>
+            <script>
+                
+                var a = prompt("Nhập chuỗi kí tự: ");
+                var n = prompt("Nhập kí tự muốn tìm: ");
+                var dem = 0;
+
+                for ( var i = 0 ; i < a.length ; i++ ) {
+
+                    if ( a[i] === n )  {
+
+                        dem++;
+                        
+                    }
+                }
+
+                document.write("Số lần xuất hiện kí tự "+n+" là: "+dem);
+              
+            </script>
+        </pre>
+    </body>
+</html>

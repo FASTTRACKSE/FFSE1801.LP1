@@ -1,0 +1,30 @@
+<script lang="javascript">
+	// hàm nhập mảng
+	function nhap_mang(){
+		var mang=[];
+		document.write("mảng số a= ");
+		n=prompt("nhập số phần tử của mảng");
+		for (var i = 0; i < n; i++) {
+			mang[i]=prompt(" nhập phần tử thứ "+(i+1));
+		}
+		return mang;
+	}
+	var mang=nhap_mang();
+	document.write(mang);
+	// kiểm tra số nt
+	function kt_snt(a){
+		for (var i = 2; i <=Math.sqrt(a); i++) {
+			if (a%i==0) {
+				return false;
+		    }
+		}
+		return true;
+	}
+	dem=0;
+	for (var i = 0; i < mang.length; i++) {
+		if (kt_snt(mang[i])==true) {
+		dem++;
+	    }
+	}
+	document.write("<hr>có "+dem+" số nt trong mảng");
+</script>

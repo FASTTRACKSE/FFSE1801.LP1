@@ -1,0 +1,26 @@
+<script type="text/javascript">
+	var n=prompt("Nhập số nguyên tố:")
+	    flag=true;
+	    if(n<2){
+	    	flag=false;
+	    }else{
+	    	if(n==2){
+                flag=true
+	    	}else{
+	    		if(n%2==0){
+	    			flag=false
+	    		}else{
+	    			for (var i = 0; i <= Math.sqrt(n); i++) {
+	    				if(n%i==0){
+	    					flag=true
+	    				}
+	    			}
+	    		}
+	    	}
+	    }
+	    if(flag==true){
+	    	document.write("Đây là số nguyên tố")
+	    }else{
+	    	document.write("Đây không phải là số nguyên tố")
+	    }
+</script>

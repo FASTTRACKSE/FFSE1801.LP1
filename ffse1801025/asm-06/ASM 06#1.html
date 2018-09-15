@@ -1,0 +1,58 @@
+<pre>
+	<script type="text/javascript">
+		var ten_hoc_sinh=["Vu","Phat","Tu"]
+		var mon_hoc=["Toan","Hoa","Ly"]
+		var diem_Toan=[7,8,9]
+		var diem_Hoa=[5,6,7]
+		var diem_Ly=[6,7,8]
+		function Hocsinh(arr) {
+			for(i=0;i<arr.length;i++)
+				document.write(arr[i]+"\t")
+			    document.write("<br>")
+			
+		}
+		document.write("Ho va ten:\t")
+		Hocsinh(ten_hoc_sinh)
+		function mon(arr) {
+			for (var i = 0; i < arr.length; i++) {
+				document.write(arr[i]+"\t\t\t")
+				switch(i){
+					case 0:tap_diem(diem_Toan);break
+					case 1:tap_diem(diem_Hoa);break
+					case 2:tap_diem(diem_Ly);break
+				}
+				document.write("<br><br>")
+			}
+			
+		}
+		         mon(mon_hoc)
+	
+	    function tap_diem(arr) {
+			for (var i = 0; i < arr.length; i++) {
+					document.write(arr[i]+"\t")
+					
+			}
+		}
+				document.write("<br>")
+		var tb1=(diem_Toan[0]+diem_Hoa[0]+diem_Ly[0])/3
+		var tb2=(diem_Toan[1]+diem_Hoa[1]+diem_Ly[1])/3
+		var tb3=(diem_Toan[2]+diem_Hoa[2]+diem_Ly[2])/3
+				document.write("Diem trung binh"+"\t\t"+tb1+"\t"+tb2+"\t"+tb3)
+				document.write("<br>")
+				document.write("Xep Loai\t\t")
+		function Diemtrungbinh(arr) {
+			if(arr>=8){
+					document.write("gioi\t")
+			    }else{
+				     if(arr>5&&arr<=7){
+						document.write("Kha\t")
+				     }else{
+						document.write("Yeu\t")
+					}
+				}
+			}
+				Diemtrungbinh(tb1)
+				Diemtrungbinh(tb2)
+				Diemtrungbinh(tb3)
+	</script>
+</pre>

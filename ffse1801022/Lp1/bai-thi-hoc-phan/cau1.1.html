@@ -1,0 +1,36 @@
+<html>
+    <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <title>12346</title>
+    </head>
+    <body>
+        <pre>
+        <script>
+            do{
+                var a = parseInt(prompt("số bạn muốn kiểm tra là"));
+                if(isNaN(a) || a =="" ){
+                    alert("bạn cần nhập 1 số");
+                }
+            }
+            while(isNaN(a) || a =='');
+            var flag = true;
+            if (a<2){
+                flag = false;
+            }
+            var b = Math.sqrt(a);
+            for(i=2;i<=b;i++){
+                if(a%i==0){
+                    flag = false;
+                    break;
+                }
+            }
+            if(flag==false){
+                document.write("số bạn nhập không phải là số nguyên tố");
+            }
+            else{
+                document.write("số bạn nhập là số nguyên tố");
+            }
+        </script>
+        </pre>
+    </body>
+</html>

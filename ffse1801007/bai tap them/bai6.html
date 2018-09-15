@@ -1,0 +1,23 @@
+<script type="text/javascript">
+	//Kiểm tra số đối xứng hay không?
+	alert("Kiểm tra số đối xứng hay không?");
+	var n=prompt("Nhập số n");
+	var i=0;
+	var k;
+	var a=[];
+	var stt=true;
+	while(n>0)
+	{
+		k=n%10;
+		n=Math.floor(n/10);
+		a[i]=k;
+		i++
+	}
+	for(var j=0;j<=i/2;j++)
+		if(a[j]!=a[i-1-j])
+			stt=false;
+	if(stt)
+		document.write("Đối xứng");
+	else
+		document.write("Không đối xứng");
+</script>

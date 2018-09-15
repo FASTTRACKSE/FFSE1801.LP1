@@ -1,0 +1,20 @@
+<script type="text/javascript">
+	//Tính giai thừa số n>0
+	alert("Tính giai thừa số n>0");
+	var n,kq;
+
+	function giaithua(n)
+	{
+		if(n==0)
+			return 1;
+		else
+			return n*giaithua(n-1);
+	}
+	
+	do
+		n=prompt("Nhập số n");
+	while(n<0);
+	
+	kq=giaithua(n);
+	document.write(kq);
+</script>

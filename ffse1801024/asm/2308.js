@@ -73,19 +73,19 @@ function ucln(a, b) {
 
 // 2.Hiển thị ra n số Fibonaci
 document.write("<hr>Bài 2: Hiển thị n số fibonaci<br>");
-var n1, n2, n3, i, sopt; 
+var n1, n2, n3, i, sopt;
 n1 = 0;
 n2 = 1;
 n3 = 0;
-sopt = 20; 
-document.write(n1 + " " + n2 + " "); 
+sopt = 20;
+document.write(n1 + " " + n2 + " ");
 for (let i = 2; i < sopt; i++) {
   n3 = n1 + n2;
-  document.write(n3 + " "); 
+  document.write(n3 + " ");
   n1 = n2;
   n2 = n3;
 }
-document.write("<br>"); 
+document.write("<br>");
 
 //3.Tính tổng các số chia hết cho 5 từ 1 đến 20
 document.write("<hr>Bài 5: Tính tổng các số chia hết cho 5 từ 1 đến 20 <br>");
@@ -102,7 +102,7 @@ document.write("Tổng các số chia hết cho 5: " + tong);
 document.write("<hr>Bài 4: : Tính tổng các số chẵn trong dãy số a <br>");
 var mang, tong;
 tong = 0;
-mang = [2, 1, 4, 5, 6, 24]; 
+mang = [2, 1, 4, 5, 6, 24];
 
 for (var i = 0; i < mang.length; i++) {
   if (mang[i] % 2 == 0) {

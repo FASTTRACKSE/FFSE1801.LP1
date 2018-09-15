@@ -1,0 +1,20 @@
+<script type="text/javascript">
+	var n=parseInt(prompt("Nhap so luong phan tu trong mang:"));
+	var a=[];
+	for(var i=0;i<n;i++){
+		a[i]=parseInt(prompt("Nhap phan tu thu "+(i+1)));
+	}
+	document.write("Mang ta co la: "+a);
+	document.write("<br>");
+	for(var i=n-1;i>=0;i--){
+		if(i%2==0){
+			for(var j=i;j<n;j++){
+				a[j]=a[j+1];
+			} n--;
+		}
+	}
+	document.write("Mang moi ta co la: ");
+	for(var i=0;i<n;i++){
+		document.write(a[i]+",");
+	}
+</script>

@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    var m=prompt("số phần tử bạn muốn nhập là:");
+        n=[];
+    function nhap(a,b){
+        for (var i = 0; i < b; i++) {
+            a[i]=prompt("nhập phần tử thứ "+(i+1)+":");
+        } return a
+    }
+    var n=nhap(n,m);
+        document.write("dãy bạn nhập là "+n.join());
+    var s=0;
+        for(var i = 0; i < m; i++) {
+            var flag=true;
+            var a=Math.sqrt(n[i]);
+                for(var j = 2; j <= a; j++) {
+                    if(n[i]%j==0){
+                        flag=false;
+                        break;
+                    }
+                }
+                if(flag==true){
+                    s=s+1;
+                }
+        }
+        document.write("<hr>Có "+s+" số nguyên tố trong mảng")
+</script>

@@ -1,0 +1,12 @@
+<script type="text/javascript">
+	var s="",a="";
+	s=prompt("Nhap mot chuoi:");
+	document.write("Chuoi moi nhap la: "+s+"<br>");
+	a=s[0].toUpperCase();
+	for(var i=1;i<s.length;i++){
+		if(s[i]!=" " && s[i-1]==" "){
+			a+=s[i].toUpperCase();
+		}else a+=s[i];
+	}
+	document.write("Chuoi moi nhap la: "+a+"<br>");	
+</script>

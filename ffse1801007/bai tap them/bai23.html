@@ -1,0 +1,44 @@
+<script type="text/javascript">
+	//Cộng 2 ma trận cùng cấp
+	alert("Cộng 2 ma trận cùng cấp");
+	mt1=[
+		[3,4,5],
+		[1,2,3],
+		[6,7,8]
+	]
+	mt2=[
+		[4,4,9],
+		[8,4,3],
+		[3,7,1]
+	]
+	mt_tong=[
+		[],
+		[],
+		[]
+	]
+	in_mt(mt1);
+	document.write("<br>");
+	in_mt(mt2);
+
+	for(h=0;h<3;h++)//hang
+	{
+		for(c=0;c<3;c++)//cot
+		{
+			mt_tong[h][c]=mt1[h][c]+mt2[h][c];
+		}
+	}
+
+	document.write("<br>");
+	in_mt(mt_tong);
+	function in_mt(arr)
+	{
+		for(h=0;h<3;h++)//hang
+		{
+			for(c=0;c<3;c++)//cot
+			{
+				document.write(arr[h][c]+" ");
+			}
+			document.write("<br>");
+		}
+	}
+</script>

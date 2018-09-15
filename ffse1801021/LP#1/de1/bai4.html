@@ -1,0 +1,33 @@
+<script>
+	var a=[];
+	var n=parseInt(prompt("Nhap so luong phan tu trong mang:"));
+	var thu,dem=0;
+	function nhap(t){
+		for(var i=0;i<t;i++){
+		a[i]=parseInt(prompt("Nhap gia tri phan tu thu "+(i+1)+" la:"));
+		}
+	}
+	function kiemtra(t){
+		thu=0;
+		if(t>1){
+			for(var i=2;i<t;i++){
+				if(t%i==0){
+					thu++;
+				}
+			}if(thu==0){
+				dem++;
+			}
+		}
+	}
+		
+	nhap(n);
+	document.write("Ta có mảng là:  ")
+	for(var i=0;i<n;i++){
+		document.write(a[i]+",");
+	}
+	document.write("<br>");
+	for(var i=0;i<n;i++){
+		kiemtra(a[i]);
+	}
+	document.write("có "+dem+" số nguyên tố trong mảng");
+</script>

@@ -1,0 +1,37 @@
+<script type="text/javascript">
+	//Tách 1 mảng thành 2 mảng chẵn và lẻ
+	alert("Tách 1 mảng thành 2 mảng chẵn và lẻ");
+	var a=[],b=[],c=[];
+	var j=0,k=0;
+	do
+		n=parseInt(prompt("Nhập độ dài mảng"));
+	while(n<1)
+
+	for(var i=0;i<n;i++)
+	{
+		a[i]=parseInt(prompt("Nhập phần tử thứ "+(i+1)));
+		document.write(a[i]+" ");
+	}
+	document.write("<br>");
+
+	for(i=0;i<n;i++)
+		if(a[i]%2!=0)
+		{
+			b[j]=a[i];
+			j++;
+		}
+		else
+		{
+			c[k]=a[i];
+			k++;
+		}
+
+	for(var i=0;i<j;i++)	
+		document.write(b[i]+" ");
+	
+	document.write("<br>");
+
+	for(var i=0;i<k;i++)
+		document.write(c[i]+" ");
+	
+</script>

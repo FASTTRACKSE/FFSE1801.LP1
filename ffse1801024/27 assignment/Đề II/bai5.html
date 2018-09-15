@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var mang=[];
+            n=parseInt(prompt("nhập n nào!"));
+            document.write("mảng bạn đã nhập là: ")
+        for(var i=0;i<n;i++){
+            mang[i]=parseInt(prompt("nhập phần tử thứ "+(i+1)+" cho mảng!"))
+            document.write(mang[i]+", ");
+        }
+        var min=mang[0]; max=mang[0]; vtnn=0; vtln=0;
+        for(var i=0;i<n;i++){
+            if(min>mang[i]){
+                min=mang[i]
+                vtnn=i;
+            }
+        }
+        for(var j=0;j<n;j++){
+            if(max<mang[j]){
+                max=mang[j];
+                vtln=j;
+            }
+        }
+        document.write("<br> vị trí phần tử có giá trị nhỏ nhất trong mảng là: "+(vtnn+1));
+        document.write("<br> vị trí phần tử có giá trị lớn nhất nhất trong mảng là: "+(vtln+1));        
+    </script>
+</body>
+</html>

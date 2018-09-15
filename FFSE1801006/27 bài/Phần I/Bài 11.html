@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            Tính tổng S(n) = 1/2 + 3/4 + 5/6 +…+ (2n+1)/(2n+2)
+        </title>
+    </head>
+    <body>
+        <pre>
+            <script>
+                
+                var n = parseInt(prompt("Nhập số n: "));
+                s = 0;
+
+                for ( let i = 1 ; i <= n ; i++ ) {
+
+                    s += (2*i+1)/(2*i+2);
+                }
+
+                document.write("Tính tổng S(n) = 1/2 + 3/4 + 5/6 +…+ (2n+1)/(2n+2) là: "+s.toFixed(2));
+            </script>
+        </pre>
+    </body>
+</html>

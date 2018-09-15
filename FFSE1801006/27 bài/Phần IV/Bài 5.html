@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            Đếm số từ trong chuỗi
+        </title>
+    </head>
+    <body>
+        <pre>
+            <script>
+                
+                var a = prompt("Nhập chuỗi kí tự: ");
+                var dem = 0;
+                
+                for ( var i = 0 ; i < a.length ; i++ ) {
+
+                    if (( a[i] == " " ) || ( a[i] == "\t" )) {
+
+                        if (( a[i+1] != " ") || ( a[i+1] != b)) {
+                            
+                            dem++;
+                        }
+
+                    }
+                }
+
+                document.write("Chuỗi có "+(dem+1)+" từ. ");
+            </script>
+        </pre>
+    </body>
+</html>

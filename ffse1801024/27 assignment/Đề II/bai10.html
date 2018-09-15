@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         var mang=[];
+            n=parseInt(prompt("nhập n nào!"));
+            document.write("mảng bạn đã nhập là: ")
+        for(var i=0;i<n;i++){
+            mang[i]=parseInt(prompt("nhập phần tử thứ "+(i+1)+" cho mảng!"))
+            document.write(mang[i]+", ");
+        }
+        var tg;
+        var k=parseInt(prompt("nhập số k"));
+        for(var i=0;i<n;i++){
+            for(var j=(i+1);j<=n;j++){
+                if(mang[i]<mang[j]){
+                   tg=mang[i];
+                    mang[i]=mang[j];
+                    mang[j]=tg;
+                }
+            }
+        }
+        for(var i=0;i<n;i++){
+            if((i+1)==k){
+             document.write("<br>"+mang[i]+" là số hạng lớn thứ "+k);break;
+            }
+        }
+    </script>
+</body>
+</html>

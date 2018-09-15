@@ -1,0 +1,16 @@
+<script type="text/javascript">
+	var n=parseInt(prompt("Nhap so nguyen:"));
+	var a=[];
+	var t,j=0;
+	document.write("So n vua nhap la: "+n+"<br>");
+	while(n!=0){
+		t=n%2;
+		a[j]=t;
+		n=Math.floor(n/2);
+		j++;
+	}
+	document.write("He nhi phan cua so n la: ");
+	for(var i=a.length-1;i>=0;i--){
+		document.write(a[i])
+	}
+</script>

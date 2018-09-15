@@ -1,0 +1,16 @@
+<script type="text/javascript">
+	var s="";
+	var n;
+	var bl=true;
+	s=prompt("Nhap mot chuoi:");
+	document.write("Chuoi moi nhap la: "+s+"<br>");
+	n=s.length;
+	for(var i=0;i<s.length/2;i++){
+		if(s[i]==s[n-i-1]){
+			bl=true;
+		}else bl=false;
+	}
+	if(bl==true){
+		document.write("Day la chuoi doi xung!");
+	}else document.write("Day khong phai la chuoi doi xung!");
+</script>

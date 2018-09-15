@@ -1,0 +1,28 @@
+<script type="text/javascript">
+	var a,b,c,x,y,z;
+	function ptb2(a,b,c){
+		if(a==0){
+		document.write("Phương trình bậc 1!");
+	}else{
+		dt=b*b-4*a*c;
+		if(dt<0){
+			document.write("Phương trình vô nghiệm");	
+	}else{
+		if(dt==0){
+			document.write("Phương trình có nghiệm kép x="+(-b)/(2*a));
+		}else{
+			document.write("Phương trình có 2 nghiệm phân biệt:");
+			document.write("<br>");
+			x=(-b+(Math.sqrt(dt)))/(2*a);
+			y=(-b-(Math.sqrt(dt)))/(2*a);
+			document.write("x1="+x+"<br>");
+			document.write("x2="+y);
+		}
+	}
+	}
+	}
+	x=parseInt(prompt("Nhập số a: "));
+	y=parseInt(prompt("Nhập số b: "));
+	z=parseInt(prompt("Nhập số c: "));
+	ptb2(x,y,z);
+</script>

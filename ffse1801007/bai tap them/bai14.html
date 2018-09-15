@@ -1,0 +1,22 @@
+<script type="text/javascript">
+	//Tìm phần tử đầu tiên của mảng lớn hơn 2016
+	alert("Tìm phần tử đầu tiên của mảng lớn hơn 2016");
+	var a=[];
+	do
+		n=parseInt(prompt("Nhập độ dài mảng"));
+	while(n<1)
+
+	for(var i=0;i<n;i++)
+	{
+		a[i]=parseInt(prompt("Nhập phần tử thứ "+(i+1)));
+		document.write(a[i]+" ");
+	}
+	document.write("<br>");
+	for(i=0;i<n;i++)
+		if(a[i]>2016)
+		{
+			document.write("Phần tử đầu tiên lớn hơn 2016 là : a["+i+"]="+a[i]);
+			break;
+		}
+
+</script>

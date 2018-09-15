@@ -1,0 +1,18 @@
+<script type="text/javascript">
+	var n=prompt("Nhập n phần tử:");
+	    arrSo=[];
+	for (var i = 0; i < n; i++) {
+		arrSo[i]=parseInt(prompt("Nhập phần tử thứ "+(i+1)+":"));
+	}
+	document.write("Mảng số là: "+arrSo+"<hr>")
+
+	var min=arrSo[0];
+	    vt=0;
+	for (var i = 0; i < arrSo.length; i++) {
+		if(min>arrSo[i]){
+			min=arrSo[i]
+			vt=i+1
+		}
+	}
+	document.write("Số đứng vị trí thứ "+vt+" có giá trị nhỏ nhất")
+</script>

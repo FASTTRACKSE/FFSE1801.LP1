@@ -1,0 +1,22 @@
+<script>
+	var b=[];
+	    n= parseInt(prompt("nhập phần tử của mảng"));
+        for (i=0;i<n;i++){
+        	b[i]= parseInt(prompt("nhập phần tử thứ"+i))
+        }
+           for (var i=0;i<n-1;i++){
+              for (var j=i+1;j<n;j++){
+              	if(b[i]>b[j]){
+              		tg=b[i];
+              		b[i]=b[j];
+              		b[j]=tg
+
+            }
+        }
+    }document.write("mảng sau được đọc lại là " )
+           for (var t=0;t<n;t++){
+           	document.write(b[t]+" ")
+           }
+           
+
+</script>

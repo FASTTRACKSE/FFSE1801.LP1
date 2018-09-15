@@ -1,0 +1,51 @@
+<script type="text/javascript">
+	var a=[];
+	var n=parseInt(prompt("Nhap so luong phan tu trong mang:"));
+	function nhap(j){
+		for(var i=0;i<j;i++){
+		a[i]=parseInt(prompt("Nhap gia tri phan tu thu "+(i+1)+" la:"));
+		}
+	}
+	nhap(n)
+	document.write("t co mang la "+a);
+	document.write("<br>");
+	
+	function ktsl(j){
+		if(j%2!=0){
+			return true
+		}else{
+			return false
+		}
+	}
+	dem=0;
+	b=[];
+	for(var i=0;i<n;i++){
+		kq= ktsl(a[i]);
+		if (kq==true){
+			b[dem]=a[i];
+
+			dem++;
+		}
+	} 
+	document.write("mang co "+dem+" so le");
+	document.write("<br>");
+	document.write("ta co mang so le la "+b);
+	document.write("<br>");
+	function ktstl(j){
+		while (j!=0){
+			var x;
+			x=j%10;
+			if (x%2==0){return false;}
+			j=Math.floor(j/10);
+		}
+		return true;
+	}
+	var kqstl;
+	for(var i=0;i<b.length;i++){
+		kqstl=ktstl(b[i]);
+		if (kqstl==true){
+			document.write("so toan le cua mang la "+b[i]);
+		}
+	} 
+
+</script>

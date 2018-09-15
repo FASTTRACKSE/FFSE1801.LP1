@@ -1,0 +1,20 @@
+<script type="text/javascript">
+	//Tính tổng các phần tử ở vị trí chẵn trong mảng 1 chiều
+	alert("Tính tổng các phần tử ở vị trí chẵn trong mảng 1 chiều");
+	var a=[];
+	var tong=0;
+	do
+		n=parseInt(prompt("Nhập độ dài mảng"));
+	while(n<1)
+
+	for(var i=0;i<n;i++)
+	{
+		a[i]=parseInt(prompt("Nhập phần tử thứ "+(i+1)));
+		document.write(a[i]+" ");
+	}
+	document.write("<br>");
+	for(i=0;i<n;i+=2)
+		tong+=a[i];	
+
+	document.write("Tổng các phần tử ở vị trí chẵn : "+tong);
+</script>

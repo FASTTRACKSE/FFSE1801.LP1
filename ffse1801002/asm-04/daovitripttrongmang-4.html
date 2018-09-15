@@ -1,0 +1,18 @@
+<script type="text/javascript">
+	var n;
+	var arSo=[];
+	n=parseInt(prompt("Nhập số lượng phần tử mảng: "));
+	for(var i=0;i<n;i++){
+		arSo[i]=parseInt(prompt("Nhập giá trị phần tử thứ "+i+" trong mảng: "));
+	}
+	document.write("Ta có mảng là <br>");
+	for(var t=0;t<n;t++){
+		document.write(arSo[t]+",");
+	}
+	document.write("<br>");
+	arSo.reverse();
+	document.write("Mảng sau khi đảo ngược là <br>");
+	for(var k=0;k<n;k++){
+		document.write(arSo[k]+",");
+	}
+</script>

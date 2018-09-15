@@ -1,0 +1,19 @@
+<script type="text/javascript">
+	//Đổi từ hệ thập phân sang nhị phân
+	alert("Đổi từ hệ thập phân sang nhị phân");
+	var n=prompt("Nhập số hệ thập phân");
+	var a=[];
+	var i=0;
+	var k;
+
+	while(n>=1)
+	{
+		k=n%2;
+		n=Math.floor(n/2);
+		a[i]=k;
+		i++;
+	console.log(n);
+	}
+	for(var j=i-1;j>=0;j--)
+		document.write(a[j]+" ");
+</script>

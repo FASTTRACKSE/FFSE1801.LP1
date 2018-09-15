@@ -1,0 +1,31 @@
+<script>
+function InArr(){
+    let n=parseInt(prompt("Nhap so luong phan tu cua mang can kiem tra: "));
+    let arr=new Array(n);
+    for (i=0;i<n;i++){
+    arr[i]=parseInt(prompt("Nhap phan tu thu "+ (i+1) + " cua mang: "));
+    }
+return arr}
+
+function hoanhao(h){
+    b=h.toString();
+    let add=0;multi=1;
+    
+    for (var i=0;i<b.length;i++){
+        add=add+(h%10);
+        multi=multi*(h%10);
+        h=Math.floor(h/10);
+    }
+    if (add!=multi || b.length<3){return 0} 
+    else {return 1}}
+
+var mang=InArr();
+document.write(mang+"<br>");
+
+var c=0;
+for (var i=0;i<mang.length;i++){
+    if (hoanhao(mang[i])==1){
+        c++};
+};
+document.write("So so hoan hao trong mang la "+c+"."); 
+</script>

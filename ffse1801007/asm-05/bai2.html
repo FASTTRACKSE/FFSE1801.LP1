@@ -1,0 +1,26 @@
+<script type="text/javascript">
+	var n=parseInt(prompt("Nhập số n"));
+	function ktsonguyento(n)
+	{
+	var stt=true;
+		if(n>=2)
+		{
+			for(var i=2;i<=Math.sqrt(n);i++)
+				if(n%i==0)
+				{
+					stt=false;
+					break;
+				}
+			if(stt == true)
+				return n+" là số nguyên tố!";
+			else
+				return n+" không là số nguyên tố!";
+		}
+		else
+			return n+" không là số nguyên tố!";
+		
+	}
+	var kq=ktsonguyento(n);
+	document.write(kq);
+
+</script>

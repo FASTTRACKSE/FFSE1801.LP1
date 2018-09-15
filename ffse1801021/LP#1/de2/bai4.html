@@ -1,0 +1,30 @@
+<script>
+	var a=[];
+		n= parseInt(prompt("nhập số phần tử của mảng"));
+	   		function nhapmang(k){
+	   			for (i=0;i<n;i++){
+	   			a[i]= parseInt(prompt("nhập phần tử thứ "+i));
+	   	}
+	   }
+	   	function kiemtra(t){
+	   		var s=0;
+	   		for (var i=0;i<t;i++){
+	   			if (t % i ==0){
+	   				s=s+i;
+	   		}
+	   	}			if (s==t){
+	   					return true;
+	   	}
+	   }
+	   nhapmang(a);
+			document.write("Ta có mảng là:  ")
+				for(var i=0;i<n;i++){
+			document.write(a[i]+",");
+	}
+	   var dem=0;
+	    	for (i=0;i<n;i++){
+	    		if (kiemtra(a[i])== true){
+	    			dem++;
+	    	}
+	    }	document.write("<br>"+"có "+dem+" số hoàn hảo trong mảng");
+</script>

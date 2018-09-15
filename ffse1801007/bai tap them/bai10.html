@@ -1,0 +1,33 @@
+<script type="text/javascript">
+	//Giải phương trình bậc hai
+	alert("Giải phương trình bậc hai");
+	var a=parseInt(prompt("Nhập số a khác 0"));
+	var b=parseInt(prompt("Nhập số b "));
+	var c=parseInt(prompt("Nhập số c "));
+	function hamsobachai(a,b,c)
+	{
+		if(a!==0)
+		{
+		k= Math.pow(b,2)-4*a*c;
+		if(k==0)
+		{
+			x=-b/(2*a);
+			return "Nghiệm kép x="+x;
+		}
+		else
+			if(k>0)
+			{
+				x1=(-b+Math.sqrt(k))/(2*a);
+				x2=(-b-Math.sqrt(k))/(2*a);
+				return "x1="+x1+"<br>"+"x2="+x2;
+			}
+			else
+				return "Vô ngiệm";
+		}
+		else
+			return "Không phải hàm bậc 2";
+	}
+
+	
+	document.write(hamsobachai(a,b,c));
+</script>

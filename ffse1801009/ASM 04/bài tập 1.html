@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hưng</title>
+</head>
+<h2 style="color: blue">Các số nguyên chia hết cho 7</h2>
+<body style="text-align: center;">
+	<script type="text/javascript">
+		var arSo=[];
+		var n= prompt("Nhập số phần tử :");
+		for (var i = 0; i < n; i++) {
+			arSo[i]=prompt("Nhập số phần tử thứ :"+(i+1));
+		}
+		var dem=0
+		for (var j = 0; j < n; j++) {
+			if (arSo[j]%7==0) {
+				dem++;
+			}
+		} 
+		document.write(" Có "+dem+" phần tử chia hết cho 7");
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<script lang="javascript">
+	function nhap_mang(){
+		var mang=[];
+		n=prompt("nhập vào số phần tử của mảng");
+		document.write(" mảng: ");
+		for (var i = 0; i < n; i++) {
+			mang[i]=prompt(" nhập vào phần tử thứ "+(i+1));
+		}
+		return mang;
+	}
+	mang=nhap_mang();
+	document.write(mang);
+	vt1=1;
+	vt2=1;
+	max=mang[0];
+	min=mang[0];
+	for (var i = 0; i < mang.length; i++) {
+		if (max<mang[i]) {
+			max=mang[i];
+			vt1=i+1;
+		}
+		if (min>mang[i]) {
+			min=mang[i];
+			vt2=i+1;
+		}
+	}
+	document.write(" <hr>số lớn nhất ở vị trí thứ "+vt1+" trong mảng");
+	document.write("<hr> số bé nhất ở vị trí thứ "+vt2+" trong mảng");
+</script>

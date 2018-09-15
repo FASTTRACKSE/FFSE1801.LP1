@@ -1,0 +1,12 @@
+<script>
+    var n=parseInt(prompt("Nhap so n can kiem tra tinh hoan hao: "));
+    b=n.toString();
+    var add=0;multi=1;
+    
+    for (i=0;i<b.length;i++){
+        add=add+(n%10); console.log(add);
+        multi=multi*(n%10);console.log(multi);
+        n=Math.floor(n/10);
+    }
+    if (add==multi){document.write(b+ " la so hoan hao")} else {document.write(b+ " khong phai la so hoan hao")}
+</script>

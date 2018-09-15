@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            Tính tổng S(n) = 1 + 1.2 + 1.2.3 + … + 1.2…n
+        </title>
+    </head>
+    <body>
+        <pre>
+            <script>
+                
+                var n = parseInt(prompt("Nhập số n: "));
+                var s = 0;
+                
+
+                for ( var i = 1 ; i <= n ; i++ ) {
+                    m = 1;
+
+                    for ( var  j = 1 ; j <= i ; j++ ){
+                        m = m*j;
+                    }
+
+                    s += m;
+                }
+
+                document.write("Tính tổng S(n) = 1 + 1.2 + 1.2.3 + … + 1.2…n là: "+s);
+            </script>
+        </pre>
+    </body>
+</html>

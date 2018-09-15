@@ -1,0 +1,23 @@
+<script>
+	var a=[];
+	var s;
+		n= parseInt(prompt("nhập số phần tử của mảng"));
+	   		for (var i=0;i<n;i++){
+	   			a[i]= parseInt(prompt("nhập phần tử thứ "+i));
+	  }
+	  min=a[0];
+	     for (var i=0;i<n;i++){
+	     	if (min>a[i]){
+	     		min=a[i];
+	     		vt=i
+	     	}
+	    }   s=0;
+	     	for (i=0;i<n;i++){
+	     		if (a[i]==min){
+	     			i+1;
+	  
+	     document.write("Số bé nhất ở vị trí thứ "+(i+1));
+	  }
+}	  
+	     
+</script>
