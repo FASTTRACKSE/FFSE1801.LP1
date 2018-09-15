@@ -1,0 +1,14 @@
+<script lang="javascript">
+	//in ra dãy fibonaci
+	n=prompt("nhạp vào 1 số: ");
+	t=0;
+	s=1;
+	var tg;
+	document.write(t+"-"+s);
+	for (var i = 2; i < n; i++) {
+		tg=t+s;
+		t=s;
+		s=tg;
+		document.write("-"+tg);
+	}
+</script>

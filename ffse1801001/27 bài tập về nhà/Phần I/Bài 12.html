@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 12</title>
+</head>
+
+<body>
+    <script>
+        // Bài 12: Hiển thị tam giác pascal:
+
+        var h, a = [];
+        h = eval(prompt("Vui lòng nhập chiều cao của tam giác Pascal!"))
+        document.write("~~~**/// Tam giác Pascal với chiều cao h = " + h + "\\\**~~~")
+        for (let i = 0; i < h; i++) {
+            for (let j = 2; j <= i - 1; j++) {
+                if (i == j || j == 0) {
+                    a[i] = []
+                    a[i][j] = 1;
+                    document.write("    " + a[i][j])
+                } else {
+
+                    document.write("    " + a[i][j])
+                }
+            }
+            document.write("<br>")
+        }
+
+
+    </script>
+</body>
+
+</html>

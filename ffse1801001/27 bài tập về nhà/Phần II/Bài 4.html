@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 4</title>
+</head>
+
+<body>
+    <script>
+        // Bài 4: Tìm phần tử đầu tiên của mảng lớn hơn 2016:
+
+        var n, arr = [], MAX;
+        n = parseInt(prompt("Vui lòng nhập số phần tử n của mảng!"));
+        for (let i = 0; i < n; i++) {
+            value = parseInt(prompt("Nhập giá trị " + (i + 1) + " của mảng"))
+            arr[i] = value
+        }
+        MAX = 2016
+        for (let i = 0; i < arr.length; i++) {
+
+            if (MAX < arr[i]) {
+                MAX = arr[i]
+                break;
+            }
+        }
+        document.write(MAX == 2016 ? "Không có phần tử nào lớn hơn 2016!" : "Phần tử đầu tiên của mảng lớn hơn 2016 là: " + MAX)
+    </script>
+</body>
+
+</html>

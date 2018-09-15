@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 11</title>
+</head>
+
+<body>
+    <script>
+
+
+        // Bài 11: Liệt kê các số nguyên tố nhỏ hơn N:
+
+        var n, dayso = "";
+        n = eval(prompt("Vui lòng nhập số giá trị N các số nguyên tố!"));
+        if (n >= 2) {
+            for (let i = 2; i < n; i++) {
+                flag = true
+                for (let j = 2; j < i - 1; j++)
+                    if (i % j == 0) flag = false
+                if (flag == true) dayso += i + " "
+            }
+            document.write("Dãy số gồm các số nguyên tố nhỏ hơn N là: " + dayso)
+
+        } else {
+            document.write("Vui lòng nhập N lớn hơn hoặc bằng 2!")
+
+        }
+
+    </script>
+</body>
+
+</html>

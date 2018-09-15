@@ -1,0 +1,19 @@
+<script type="text/javascript">
+	var n=parseInt(prompt("Vui long nhap n phan tu "));
+	var arso=[];
+	for(var i=0;i<n;i++){
+		arso[i]=parseInt(prompt("Nhap phan tu thu "+(i+1)));
+	}
+	document.write("Day so nhap la: "+arso+"<br>");
+	document.write("Day so o vi tri chan la: ")
+	var S=0
+	for(i=1;i<arso.length;i++){
+		if(i%2!=0){
+			document.write(arso[i]+" ")
+			S=S+arso[i]
+		}
+	}
+	document.write("<br> Tong cac so o vi tri chan la: "+S)
+	
+
+</script>

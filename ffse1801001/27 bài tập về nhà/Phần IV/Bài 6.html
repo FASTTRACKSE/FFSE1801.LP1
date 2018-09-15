@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 6</title>
+</head>
+
+<body>
+    <script>
+        // Bài 6: Remove space trong chuỗi:
+
+        var s = prompt("Vui lòng nhập chuỗi s: ");
+        document.write("Chuỗi s bạn vừa nhập là: " + s);
+        var temp = "";
+        s = '' + s;
+        splitstring = s.split(" ");
+        for (let i = 0; i < splitstring.length; i++) {
+            temp = temp + splitstring[i];
+        }
+        document.write("<br>Chuỗi sau khi đã Remove space là: " + temp);
+
+    </script>
+</body>
+
+</html>

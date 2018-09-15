@@ -1,0 +1,21 @@
+<script type="text/javascript">
+	var arSo=[];
+	var n=parseInt(prompt("Nhap n phan tu: "));
+	for(i=0;i<n;i++){
+		arSo[i]=parseInt(prompt("Vui long nhap phan tu thu "+i));
+	}
+	document.write("day so da nhap: "+arSo.join()+"<hr>")
+	var max=0
+	for(j=1;j<arSo.length;j++){
+		if(arSo[j]>arSo[max]){
+			max =j
+		}
+	}
+	var x=parseInt(prompt("Nhap so x"));
+	document.write("So x da nhap la: "+x+"<hr>")
+	if(x==arSo[max]){
+		document.write("Vi tri so x la: "+(max+1))
+	}else{
+		document.write("-1")
+	}
+</script>

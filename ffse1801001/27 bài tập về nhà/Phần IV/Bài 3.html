@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 3</title>
+</head>
+
+<body>
+    <script>
+        // Bài 3: Thay thế kí tự trong chuỗi:
+
+        var s = prompt("Vui lòng nhập chuỗi s: "),
+            c = prompt("Vui lòng nhập ký tự cần thay thế trong chuỗi: "),
+            change = prompt("Vui lòng nhập ký tự thay thế: ");
+        document.write("Chuỗi s bạn vừa nhập là: " + s);
+        document.write("<br>Ký tự cần thay thế trong chuỗi là: " + c);
+        document.write("<br>Ký tự thay thế là: " + change);
+        var change_s = 0;
+        for (let i = 0; i < s.length; i++) {
+            if (s[i] == c) {
+                change_s = s.replace(c, change);
+            }
+        }
+        document.write("<br>Chuỗi đã thay thế là: " + change_s);
+    </script>
+</body>
+
+</html>

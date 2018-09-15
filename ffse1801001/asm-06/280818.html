@@ -1,0 +1,128 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>280818</title>
+</head>
+
+<body>
+    <pre>
+   <script>
+    var ho_ten = [],// nơi nhập tên số học sinh ['Nguyễn A'] [0]
+        mon_hoc = [],// Nơi nhập số môn học ( mỗi học sinh tương ứng với 9 giá trị) [0,1,2,3,4,5,6,7,8 ], 0 = ['he so i','he so ii','diem thi']
+        he_so_I = [],// nơi nhập điểm kiểm tra 15p với miệng [0,1], 0 = 1 cột điểm
+        he_so_II = [],// nơi nhập điểm kiểm tra 1 tiết [0]
+        diem_thi = [], // nơi nhập điểm thi [0]
+        so_hoc_sinh = 0,// giá trị dùng để hạn chế số lần nhập hoc sinh 
+        so_mon_hoc = 9 // mỗi học sinh sẽ học 9 môn học 
+
+
+    so_hoc_sinh = prompt("Số lượng học sinh cần nhập!") // nhập số học sinh của 1 lớp học
+
+    for (let i = 0; i < so_hoc_sinh; i++) { // dùng để nhập các giá trị của từng học sinh cả lớp 
+
+        ho_ten[i] = prompt("Nhập họ tên học sinh!") //một vòng lặp tương ứng với 1 hs được nhập
+        for (let j = 0; j < so_mon_hoc; j++) { // dùng để nhập giá trị cho 9 môn học của 1 hs
+
+            mon_hoc[j] = prompt("Nhập môn học!") // nhập tên môn học sau mỗi lần lặp 
+            var cot = prompt("Nhập số cột!") //nhập giới hạn cột điểm hệ số I
+
+            for (let f = 0; f < cot; f++) { // nhập giá trị từng cột điểm của hệ số I
+                var he_so_I = prompt("Nhập điểm miệng hoặc 15 phút!") // nhập điểm từng cột
+
+                // he_so_I[j] = []
+                // he_so_I[j][f] = hhh
+
+            }
+            he_so_II[j] = prompt("Nhập điểm kiểm tra một tiết!") // nhập điểm hệ số II
+            diem_thi[j] = prompt("Nhập đểm thi!") // nhập điểm thi
+
+        }
+    }
+
+    // for (let k = 0; k < so_hoc_sinh; k++) {
+    //     document.write(ho_ten[k] + "\t")
+    // } document.write("<br>")
+    // for (let l = 0; l < so_mon_hoc; l++) {
+    //     document.write(mon_hoc[l] + "\t")
+    // } document.write("<br>")
+    // for (let z = 0; z < cot; z++) {
+    //     document.write(he_so_I[z] + "\t")
+    // } document.write("<br>")
+
+    // document.write(he_so_II + "\t")
+    // document.write("<br>")
+    // document.write(diem_thi + "\t")
+
+
+    document.write(ho_ten[0])
+   for (let mon_hoc = 0; mon_hoc ; mon_hoc++) {
+       nst element = array[mon_hoc];
+       
+
+</script>
+    </pre>
+
+
+</body>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>280818</title>
+</head>
+
+<body>
+    <pre>
+    <script>
+        var mon_hoc = ["Toán", "Lý", "Hóa", "Văn", "Anh", "Sử", "Địa", "CN", "GDCN"], ho_ten, he_so_I = [], he_so_II, diem_thi, lm_he_so_I, arrmon_hoc = []
+        ho_ten = prompt("Nhập tên học sinh!")
+        for (let i = 0; i < mon_hoc.length; i++) {
+            var arr = []
+            lm_he_so_I = eval(prompt("Tổng số cột điểm hệ I!"))
+            for (let j = 0; j < lm_he_so_I; j++) {
+                he_so_I[j] = prompt("Cột " + j + " hệ số I")
+
+            }
+            diem_thi = prompt("Nhập điểm thi!")
+            he_so_II = prompt("Nhập điểm hệ số II!")
+            arr = [diem_thi, he_so_II, he_so_I]
+            arrmon_hoc[i] = arr
+        }
+
+
+        // in tên
+        document.write('\t' + 'Họ tên:')
+        document.write('\t\t' + ho_ten)
+        document.write('<br>')
+
+
+        // tên môn
+        document.write('\t' + 'Môn học:')
+        for (let a = 0; a < mon_hoc.length; a++) {
+            document.write('\t' + mon_hoc[a])
+        }
+        document.write('<br>' + '\t' + 'Điểm hệ I:' + '\t')
+        for (let b = 0; b < arrmon_hoc.length; b++) {
+            for (let c = 0; c < arrmon_hoc[b][2].length; c++) {
+                document.write(arrmon_hoc[b][2][c])
+            }
+            document.write('\t')
+        }
+        console.log(arrmon_hoc)
+    </script>
+    </pre>
+</body>
+
+</html>

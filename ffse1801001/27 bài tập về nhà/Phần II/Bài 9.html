@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 9</title>
+</head>
+
+<body>
+    <script>
+        // Bài 9: Xóa tất cả các phần tử nhỏ hơn X:
+
+        var n, arr = [];
+        n = eval(prompt("Vui lòng nhập số phần tử n của mảng!"));
+        for (let i = 0; i < n; i++) {
+            value = parseInt(prompt("Nhập giá trị " + (i + 1) + " của mảng!"))
+            arr[i] = value
+        }
+        document.write("Mảng bạn vừa nhập là: " + arr);
+
+        // Xóa
+        var x, arr_b = [];
+        x = eval(prompt("Vui lòng nhập x!"));
+        document.write("<br>x = " + x);
+        temp = 0
+        for (let i = 0; i < n; i++) {
+            if (arr[i] >= x) {
+                arr_b[temp] = arr[i];
+                temp++
+            }
+        }
+        document.write("<br>Mảng gồm các phần tử lớn hơn x là: " + arr_b);
+
+    </script>
+</body>
+
+</html>

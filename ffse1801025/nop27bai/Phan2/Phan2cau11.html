@@ -1,0 +1,17 @@
+<script type="text/javascript">
+	var arso=[-1.35,2.3,4,1,9,9.8];
+	var max=[0],min=[0]
+	for(i=0;i<arso.length;i++){
+		if(arso[i]>max){
+			max=arso[i]
+		}
+		if(arso[i]<min){
+			min=arso[i]
+		}
+	}
+	a=Math.round(min)
+	b=Math.round(max)
+	for(i=a;i<=b;i++){
+		document.write(i+" ")
+	}
+</script>

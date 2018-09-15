@@ -1,0 +1,16 @@
+<script>
+	  var a=[];
+	   n= parseInt(prompt("nhập phần tử của mảng "));
+	      for (i=0;i<n;i++){
+	      	a[i]= parseInt(prompt("nhập phần tử thứ "+(i+1)));
+	      	while(a[i]>20){
+	    		a[i]=parseInt(prompt("Nhap lai phan tu thu "+(i+1)));
+	        }
+	    }
+	      document.write(" là các số lẽ trong mảng");
+ 	    for(i=0;i<n;i++){
+	    	if (a[i] % 2 ==0){
+	   			document.write(a[i]+",");
+	   		}
+	    }
+</script>

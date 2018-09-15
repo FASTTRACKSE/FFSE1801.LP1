@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+    <script>
+        so1 = 5;
+        so2 = 6;
+        so3 = 7;
+        so4 = 8;
+        so5 = 9;
+        mang_so = [5, 6, 7, 8, 9];
+        var mang_hs = []
+        mang_hs[0] = hs1;
+        mang_hs[1] = hs2;
+        mang_hs[2] = hs3;
+        mang_hs[3] = hs4;
+        var hs1 = {
+            name: "Nguyễn Văn Nam",
+            class: "1801",
+            LP1: 7,
+            LP2: 6,
+            LP3: 7
+        }
+        var hs2 = {
+            name: "Bùi Thị Mai",
+            class: "1802",
+            LP1: 6,
+            LP2: 8,
+            LP3: 5
+        };
+        var hs3 = {
+            name: "Nguyễn Đúc Việt",
+            class: "1801",
+            LP1: 6,
+            LP2: 8,
+            LP3: 5
+        };
+        var hs4 = {
+            name: "Trần Thị Trang",
+            class: "1801",
+            LP1: 6,
+            LP2: 8,
+            LP3: 9
+        };
+
+
+        function xuong_dong() {
+            document.write("<hr>");
+        }
+
+        function tinh_DTB(a, b, c) {
+            var t = ((a + b + c) / 3);
+            t = Math.round(t * 10) / 10;
+            return t;
+        }
+
+        function xep_loai(diem) {
+            if (diem < 8) {
+                if (diem < 5) {
+                    if (8 > diem > 6.5) {
+                        return "Đạt";
+                    } else return "Không đạt";
+                } else return "Khá";
+            } else return "Giỏi";
+        }
+        xuong_dong();
+        document.write("Họ và tên \t\t\t\t Lớp \t\t\t LP1 \t\t\t LP2 \t\t\t\t LP3 \t\t\t\t Điểm TB \t\t\t\t Xếp Loại");
+        xuong_dong()
+
+        document.write(hs1.name + "\t\t\t\t" + hs1.class + " \t\t\t" + hs1.LP1 + "\t\t\t" + hs1.LP2 + "\t\t\t\t" + hs1.LP3 + "\t\t\t\t" + tinh_DTB(hs1.LP1, hs1.LP2, hs1.LP3) + "\t\t\t\t\t" + xep_loai(tinh_DTB(hs1.LP1, hs1.LP2, hs1.LP3)));
+        xuong_dong();
+        document.write(hs2.name + "\t\t\t\t" + hs2.class + " \t\t\t" + hs2.LP1 + "\t\t\t" + hs2.LP2 + "\t\t\t\t" + hs2.LP3 + "\t\t\t\t" + tinh_DTB(hs2.LP1, hs2.LP2, hs2.LP3) + "\t\t\t\t\t" + xep_loai(tinh_DTB(hs2.LP1, hs2.LP2, hs2.LP3)));
+        xuong_dong();
+        document.write(hs3.name + "\t\t\t\t" + hs3.class + " \t\t\t" + hs3.LP1 + "\t\t\t" + hs3.LP2 + "\t\t\t\t" + hs3.LP3 + "\t\t\t\t" + tinh_DTB(hs3.LP1, hs3.LP2, hs3.LP3) + "\t\t\t\t\t" + xep_loai(tinh_DTB(hs3.LP1, hs3.LP2, hs3.LP3)));
+        xuong_dong();
+        document.write(hs4.name + "\t\t\t\t" + hs4.class + " \t\t\t" + hs4.LP1 + "\t\t\t" + hs4.LP2 + "\t\t\t\t" + hs4.LP3 + "\t\t\t\t" + tinh_DTB(hs4.LP1, hs4.LP2, hs4.LP3) + "\t\t\t\t\t" + xep_loai(tinh_DTB(hs4.LP1, hs4.LP2, hs4.LP3)));
+    </script>
+    </pre>
+</body>
+
+</html>

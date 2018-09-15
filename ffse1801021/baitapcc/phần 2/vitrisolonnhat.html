@@ -1,0 +1,19 @@
+<script>
+	var a=[];
+	var max;
+	var vt=0;
+    	n= parseInt(prompt("nhập số phần tử của mảng"));
+    	for (var i=0;i<n;i++){
+    		a[i]= parseInt(prompt("nhập phần tử thứ "+(i+1)))
+    	}
+    	max=a[0];
+    	document.write("ta có mảng là "+a+"<br>");
+    	document.write("vị trí phần tử lớn nhất trong mảng là: ");
+    	  for (var i=0;i<n;i++){
+    	  	if (max<a[i]){
+    	  		max=a[i];
+    	  		vt=i;
+    	  	}
+    	  }
+    	  document.write(vt+1);
+</script>

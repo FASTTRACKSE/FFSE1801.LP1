@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>270818</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        // 1.	Tạo hàm kiểm tra sự tồn tại của tam giác. (Ba số dương a, b, c là độ dài các cạnh của một tam giác nếu tổng của 2 số bất kỳ lớn hơn số còn lại. Nhập 3 số a, b, c và kiểm tra xem chúng có thể là độ dài của các cạnh của một tam giác hay không.) 
+        //Tạo function nhập
+        // function input(tencanh) {
+        //     var input = eval(prompt("Nhập độ dài cạnh " + tencanh))
+        //     return input
+        // }
+        // //Tạo function xuất
+        // function output(tg) {
+        //     if (tg == 'La tam giac') {
+        //         document.write("Tam giác hợp lệ!")
+        //     } else if (tg == 'Khong hop le') {
+        //         document.write("Vui lòng nhập giá trị lớn hơn 0")
+        //     } else {
+        //         document.write("Không phải tam giác!")
+        //     }
+        // }
+
+        // //Tạo function điều kiện
+        // function handle(a, b, c) {
+        //     if ((a <= 0) && (b <= 0) && (c <= 0)) {
+        //         return 'Khong hop le'
+        //     }
+        //     if ((a + b > c) && (a + c > c) && (b + c > a)) {
+        //         return 'La tam giac'
+        //     } else {
+        //         return 'Khong phai tam giac'
+        //     }
+        // }
+
+        // //Gọi hàm
+
+        // var a, b, c;
+        // a = 0;
+        // b = 0;
+        // c = 0;
+        // a = input('a')
+        // b = input('b')
+        // c = input('c')
+        // output(handle(a, b, c))
+
+
+
+
+
+
+        // 2.	Tạo hàm kiểm tra 1 số có phải là số nguyên tố hay không? 
+
+        // nhập
+
+        // function inputsnt() {
+        //     var input = eval(prompt("Nhập một số nguyên tố!", ''))
+        //     return input
+
+        // }
+        // // in 
+        // function outputsnt(nt) {
+        //     if (nt == "snto") {
+        //         document.write("Là số nguyên tố!")
+        //     } else if (nt == 'kpnt') {
+        //         document.write("Không phải là số nguyên tố!")
+        //     } else {
+        //         document.write("Vui lòng nhập số lớn hơn hoặc bằng 2!")
+        //     }
+        // }
+        // // đk
+        // function handlesnt(number) {
+        //     if (number < 2) {
+        //         return 'nhap lai'
+        //     } else {
+        //         var nt = 'snto';
+        //         for (var i = 2; i <= Math.sqrt(number); i++) {
+        //             if (number % i == 0) {
+        //                 nt = 'kpnt';
+        //                 return nt;
+        //                 break;
+        //             }
+        //         }
+        //         return nt;
+        //     }
+        // }
+        // //gọi
+        // var inputnt
+        // inputnt = 0;
+        // inputnt = inputsnt()
+        // outputsnt(handlesnt(inputnt))
+
+        // 3.	Nhập vào số n từ 1 đến 9. Sau đó tạo hàm hiển thị cách đọc của số đó( Vd: nhập n = 1. Hiển thị " Số một")
+
+        //nhập
+        // function so_n() {
+        //     var inputn = eval(prompt("Nhập vào một số n!", ''))
+        //     return inputn
+        // }
+        // //xuất
+        // function outputn(doc_so_n) {
+        //     document.write(doc_so_n)
+        // }
+
+        // //xử lý
+        // function handlen(so_n) {
+        //     switch (so_n) {
+        //         case 1:
+        //             return 'Số một'
+        //             break;
+        //         case 2:
+        //             return 'Số hai'
+        //             break;
+        //         case 3:
+        //             return 'Số ba'
+        //             break;
+        //         case 4:
+        //             return 'Số bốn'
+        //             break;
+        //         case 5:
+        //             return 'Số năm'
+        //             break;
+        //         case 6:
+        //             return 'Số sáu'
+        //             break;
+        //         case 7:
+        //             return 'Số bảy'
+        //             break;
+        //         case 8:
+        //             return 'Số tám'
+        //             break;
+        //         case 9:
+        //             return 'Số chín'
+        //             break;
+        //         default:
+        //             return 'Số không trong hệ thống!'
+
+        //     }
+        // }
+        // //gọi
+        // var inputn
+        // inputn = so_n()
+
+        // outputn(handlen(inputn))
+
+        // 4.	Tạo hàm in ra n số fibonanci
+
+        // nhập
+        function in_so_fibonanci() {
+            var inputfibonanci = eval(prompt("Số chữ số n của dãy fibonanci!", ''))
+            return inputfibonanci
+        }
+        // in
+        function outputfibonanci(so_fibonanci) {
+            document.write(so_fibonanci+' ')
+        }
+        // đk
+        function handlefibonanci(so_fibonanci) {
+            var n1, n2, n3;
+            n1 = 1
+            n2 = 0
+            n3 = 0
+            outputfibonanci(n1)
+            for (let i = 0; i < so_fibonanci-2; i++) {
+                if (n3 < 2) {
+                    n3 = n1 + n1
+                    outputfibonanci(n1)
+                    n2 = n3
+                }
+                else {
+                    n3 = n2 + n1
+                    n1 = n2
+                    n2 = n3
+                }
+                outputfibonanci(n3)
+
+            }
+
+
+        }
+
+   //gọi
+   var inputfibonanci
+   inputfibonanci = in_so_fibonanci()
+   handlefibonanci(inputfibonanci)
+    </script>
+
+
+</body>
+
+</html>

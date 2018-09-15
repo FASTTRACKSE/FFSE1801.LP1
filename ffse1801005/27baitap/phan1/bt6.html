@@ -1,0 +1,16 @@
+<script lang="javascript">
+	// giải pt bậc hai
+	a=prompt("nhập vào hệ số a");
+	b=prompt("nhập vào hệ số b");
+	c=prompt("nhập vào hệ số c");
+	dt=(b*b)-(4*a*c);
+	if (dt>0) {
+		document.write("phuong trinh co 2 nghiem phan biet x1="+(-b+Math.sqrt(dt))/(2*a)+"<br> x2="+(-b-Math.sqrt(dt))/(2*a));
+	} else {
+		if (dt<0) {
+			document.write("phuong trinh vo nghiem");
+		}else{
+			document.write("phuong trinh co nghiem kep x=:"+(-b/(2*a)));
+           }
+	}
+</script>

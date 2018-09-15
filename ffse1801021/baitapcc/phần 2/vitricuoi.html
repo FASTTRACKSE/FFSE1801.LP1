@@ -1,0 +1,17 @@
+<script>
+	var a=[1,2,3,4,3,5,6];
+	var x= parseInt(prompt("nhập số x"))
+	   n= parseInt(prompt("nhập phần tử của mảng "));
+	     for (var i=0;i<n;i++){
+	       	a[i]= parseInt(prompt("nhập phần tử thứ "+(i+1)));
+     }
+	 document.write("Mang ta co la "+a);
+	 document.write("<br>");
+	    document.write("vị trí phần tử có giá trị "+x+" xuất hiện cuối cùng trong mảng là ")
+	   for(var i=n-1;i>=0;i--){
+        	if (x==a[i]){
+        		document.write(i+1);
+        		break;
+        	}
+	   }      	
+</script>

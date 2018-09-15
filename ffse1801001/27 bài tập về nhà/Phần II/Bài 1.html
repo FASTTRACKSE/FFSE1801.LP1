@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 1</title>
+</head>
+
+<body>
+    <script>
+        // Bài 1: In ra phần tử âm của mảng:
+
+        var n, arr = [], daysoam = '';
+        n = parseInt(prompt("Vui lòng nhập số phần tử của mảng!"))
+        for (let i = 0; i < n; i++) {
+            value = parseInt(prompt("Nhập giá trị " + (i + 1) + " của mảng"))
+            arr[i] = value
+            if (value < 0) {
+                daysoam += (value + " ")
+            }
+        }
+        document.write("Mảng đã nhập là: " + arr)
+        document.write(daysoam == '' ? "<br>Không có số âm nào!" : "<br>Dãy số âm là: " + daysoam)
+
+    </script>
+</body>
+
+</html>

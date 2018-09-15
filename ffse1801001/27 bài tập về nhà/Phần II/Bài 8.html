@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 8</title>
+</head>
+
+<body>
+    <script>
+        // Bài 8: Xóa phần tử có giá trị lớn nhất trong mảng:
+
+        var n, arr = [];
+        n = parseInt(prompt("Vui lòng nhập số phần tử n của mảng!"));
+        for (let i = 0; i < n; i++) {
+            value = parseInt(prompt("Nhập giá trị " + (i + 1) + " của mảng"))
+            arr[i] = value
+        }
+        document.write("Mảng bạn vừa nhập vào là: " + arr)
+
+        // Xóa 
+        var MAX = 0;
+        for (let i = 0; i < n; i++) {
+
+            if (MAX < arr[i]) {
+                MAX = arr[i];
+            }
+        }
+        for (let i = 0; i < n; i++) {
+            if (arr[i] == MAX) {
+                for (let j = i; j < n; j++) {
+                    arr[j] = arr[j + 1];
+                    n--;
+                    i--;
+                }
+            }
+        }
+        document.write("<br>Mảng sau khi đã xóa MAX là: " + arr);
+
+    </script>
+</body>
+
+</html>

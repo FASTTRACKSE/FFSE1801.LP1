@@ -1,0 +1,22 @@
+<script type="text/javascript">
+	//chen sau phan tu lon nhat
+	var arso=[1,2,9,3,4,5,6];
+	vt=0;
+	arsonew=[];
+	for(var i=0;i<arso.length;i++){
+		arsonew[i]=arso[i];
+		if(arso[i]>arso[vt]){
+			vt=i;
+		}
+	}
+	document.write(arsonew+"<br>");
+	// document.write("So lon nhat la: "+arsonew[vt]+"<br>");
+	// document.write("Vi tri so lon nhat la:"+(vt+1)+"<br>");
+	var n=parseInt(prompt("Vui long nhap so n can chen "));
+	arsonew[vt+1]=n;
+	for(i=vt+2;i<=arso.length;i++){
+		arsonew[i]=arso[i-1];
+	}
+	document.write(arsonew+" ");
+	
+</script>

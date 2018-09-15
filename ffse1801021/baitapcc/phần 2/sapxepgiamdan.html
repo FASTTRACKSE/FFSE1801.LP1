@@ -1,0 +1,22 @@
+<script>
+	var tg;
+	var a=[];
+	   n= parseInt(prompt("nhập phần tử của mảng "));
+	      for (var i=0;i<n;i++){
+	      	a[i]= parseInt(prompt("nhập phần tử thứ "+(i+1)));
+	}
+	document.write("ta có mảng là "+a+"<br>");
+	    for (var i=0;i<n-1;i++){
+	    	for (var j=i+1;j<n;j++){
+	    		if (a[i]<a[j]){
+ 					tg=a[j];
+ 					a[j]=a[i];
+ 					a[i]=tg
+	    		}
+	    	}
+
+	    }   
+	    document.write("mảng sau được sắp xếp lại là: ")
+	     	for (var t=0;t<n;t++)
+	     	document.write(a[t]+",")  	
+</script>

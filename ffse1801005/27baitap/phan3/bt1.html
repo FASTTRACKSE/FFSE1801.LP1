@@ -1,0 +1,28 @@
+<script lang="javascript">
+	// cộng hai ma trận
+	mt1=[
+		[1,2,3,4],
+		[2,3,4,5],
+		[4,5,6,7],
+		[5,6,7,8]
+	]
+	mt2=[
+		[6,5,3,2],
+		[1,2,3,5],
+		[8,6,4,3],
+		[4,5,6,7]
+	]
+	mt3=[
+		[],
+		[],
+		[],
+		[]
+	];
+	for (var i = 0; i < 4; i++) {
+		for (var j = 0; j < 4; j++) {
+			mt3[i][j]=mt1[i][j]+mt2[i][j];
+			document.write(mt3[i][j]+" ");
+		}
+		document.write("<br>");
+	}
+</script>

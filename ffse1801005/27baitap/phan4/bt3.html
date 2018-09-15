@@ -1,0 +1,14 @@
+<script lang="javascript">
+	// đếm số lần xuất hiện của 1 kí tự trong chuỗi
+	var chuoi="";
+	chuoi=prompt("nhập vào 1 chuỗi");
+	document.write(chuoi+"<hr>");
+	dem=0;
+	c=prompt("nhập vào 1 kí tự để kiểm tra");
+	for (var i = 0; i < chuoi.length; i++) {
+		if (chuoi[i]==c) {
+			dem++;
+		}
+	}
+	document.write("số lần xuất hiện của "+c+" : "+dem);
+</script>
