@@ -1,0 +1,16 @@
+<script type="text/javascript">
+	var arso=[];
+	var n=parseInt(prompt("Vui long nhap n phan tu"));
+	for( var i=0;i<n;i++){
+		arso[i]=parseInt(prompt("Vui long nhap phan tu thu: "+(i+1)));
+	}
+	document.write("Day so la: "+arso+"<br>")
+	var min=0
+	for(i=1;i<arso.length;i++){
+		if(arso[i]<arso[min]){
+			min=i
+		}
+	}
+	document.write("Vi tri so nho nhat la: "+(min+1))
+
+</script>

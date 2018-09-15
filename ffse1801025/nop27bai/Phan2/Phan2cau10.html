@@ -1,0 +1,15 @@
+<script type="text/javascript">
+	var arso=[-2,2,4,8,23,7];
+	var x=parseInt(prompt("Vui long nhap so x= :"));
+    var a=Math.abs((arso[0]-x))
+    var b, index=0;
+    
+    for(i=1;i<arso.length;i++){
+    	b= Math.abs((arso[i]-x));
+    	if(a>b){
+    	a=b;
+    	index=i;
+        }
+    }
+    document.write(arso[index])
+</script>

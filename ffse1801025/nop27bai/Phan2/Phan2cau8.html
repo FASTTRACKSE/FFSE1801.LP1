@@ -1,0 +1,16 @@
+<script type="text/javascript">
+	var n=parseInt(prompt("Vui long nhap n phan tu: "));
+	var arso=[];
+	for(var i=0;i<n;i++){
+		arso[i]=parseInt(prompt("Vui long nhap phan tu thu: "+(i+1)));
+
+	}
+	document.write("Day so la: "+arso+"<br>");
+	var max=0;
+	for(i=0;i<arso.length;i++){
+		if(arso[i]>arso[max]){
+			max=i;
+		}
+	}
+	document.write("Vi tri so lon nhat la: "+(max+1));
+</script>

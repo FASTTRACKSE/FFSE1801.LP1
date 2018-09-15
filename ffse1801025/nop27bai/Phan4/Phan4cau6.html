@@ -1,0 +1,14 @@
+<script type="text/javascript">
+	var n=prompt("Nhap chuoi:  ");
+	document.write("Chuoi vua nhap la: "+n+"<br>");
+	var a=parseInt(prompt("Nhap vi tri bat dau: "));
+	while(a>=n.length){
+		a=parseInt(prompt("Vui long nhap a < do dai chuoi"));
+	}
+	var b=prompt("Vui long nhap ku tu can xac dinh: ");
+	for(i=a;i<n.length;i++){
+		if(n[i]==b){
+           document.write("chu "+b+" co vi tri trong chuoi la: "+(i+1)+"<br>");
+		}
+	}
+</script>
